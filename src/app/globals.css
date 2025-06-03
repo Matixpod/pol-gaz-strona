@@ -1,26 +1,594 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Custom theme dla Tailwind v4 */
+@theme {
+  --color-pol-gaz-blue: #1e3a8a;
+  --color-pol-gaz-yellow: #fbbf24;
+  --color-pol-gaz-orange: #f97316;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Animowane gradienty */
+.bg-gradient-animated {
+  background: linear-gradient(270deg, #1e3a8a, #164e63, #0f172a);
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+/* Floating bubbles */
+.floating-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: var(--size);
+  height: var(--size);
+  animation: float var(--speed) infinite linear;
+  animation-delay: var(--delay);
+}
+
+@keyframes float {
+  0% { 
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% { 
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Hover effects */
+.service-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+
+/* Custom components */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors font-semibold;
+  }
+  
+  .btn-secondary {
+    @apply bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg hover:bg-yellow-500 transition-colors font-semibold;
+  }
+}
+
+/* Wstążka z latami doświadczenia */
+.ribbon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ribbon {
+  position: relative;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: rotate(-2deg);
+  margin: 0 20px;
+}
+
+/* Lewy trójkąt wstążki */
+.ribbon-left {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #d97706; /* ciemniejszy żółty */
+  border-bottom: 25px solid #d97706;
+  border-left: 10px solid transparent;
+  z-index: -1;
+}
+
+/* Prawy trójkąt wstążki */
+.ribbon-right {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #d97706; /* ciemniejszy żółty */
+  border-bottom: 25px solid #d97706;
+  border-right: 10px solid transparent;
+  z-index: -1;
+}
+
+/* Efekt hover dla wstążki */
+.ribbon:hover {
+  transform: rotate(0deg) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive dla wstążki */
+@media (max-width: 768px) {
+  .ribbon {
+    min-width: 140px;
+    font-size: 0.9rem;
+    transform: rotate(-1deg);
+  }
+  
+  .ribbon-left,
+  .ribbon-right {
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+  }
+}
+
+/* Animacja wstążki przy ładowaniu */
+@keyframes ribbonAnimation {
+  0% {
+    transform: rotate(-10deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-2deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.ribbon {
+  animation: ribbonAnimation 0.8s ease-out;
+}
+/* Style dla linków nawigacji */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* Standardowe podkreślenie przy hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -4px;
+  left: 50%;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Aktywne podkreślenie (zawsze widoczne) */
+.active-link::after {
+  width: 100% !important;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.3);
+}
+
+/* Animacja dla aktywnego linku */
+.active-link {
+  font-weight: 600;
+}
+
+/* Wstążka z latami doświadczenia */
+.ribbon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ribbon {
+  position: relative;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: rotate(-2deg);
+  margin: 0 20px;
+}
+
+/* Lewy trójkąt wstążki */
+.ribbon-left {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #d97706;
+  border-bottom: 25px solid #d97706;
+  border-left: 10px solid transparent;
+  z-index: -1;
+}
+
+/* Prawy trójkąt wstążki */
+.ribbon-right {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #d97706;
+  border-bottom: 25px solid #d97706;
+  border-right: 10px solid transparent;
+  z-index: -1;
+}
+
+/* Efekt hover dla wstążki */
+.ribbon:hover {
+  transform: rotate(0deg) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ribbon {
+    min-width: 140px;
+    font-size: 0.9rem;
+    transform: rotate(-1deg);
+  }
+  
+  .ribbon-left,
+  .ribbon-right {
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+  }
+}
+
+/* Animacja wstążki przy ładowaniu */
+@keyframes ribbonAnimation {
+  0% {
+    transform: rotate(-10deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-2deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.ribbon {
+  animation: ribbonAnimation 0.8s ease-out;
+}
+/* Sticky header z płynną animacją */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+/* Efekt blur dla przewiniętego navbar */
+.backdrop-blur-md {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Style dla linków nawigacji */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* Standardowe podkreślenie przy hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -4px;
+  left: 50%;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Aktywne podkreślenie (zawsze widoczne) */
+.active-link::after {
+  width: 100% !important;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.3);
+}
+
+/* Animacja dla aktywnego linku */
+.active-link {
+  font-weight: 600;
+}
+
+/* Wstążka z latami doświadczenia */
+.ribbon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ribbon {
+  position: relative;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: rotate(-2deg);
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+/* Lewy trójkąt wstążki */
+.ribbon-left {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #d97706;
+  border-bottom: 25px solid #d97706;
+  border-left: 10px solid transparent;
+  z-index: -1;
+}
+
+/* Prawy trójkąt wstążki */
+.ribbon-right {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #d97706;
+  border-bottom: 25px solid #d97706;
+  border-right: 10px solid transparent;
+  z-index: -1;
+}
+
+/* Efekt hover dla wstążki */
+.ribbon:hover {
+  transform: rotate(0deg) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ribbon {
+    min-width: 120px;
+    font-size: 0.8rem;
+    transform: rotate(-1deg);
+    margin: 0 10px;
+  }
+  
+  .ribbon-left,
+  .ribbon-right {
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+  }
+}
+
+/* Animacja wstążki przy ładowaniu */
+@keyframes ribbonAnimation {
+  0% {
+    transform: rotate(-10deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-2deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.ribbon {
+  animation: ribbonAnimation 0.8s ease-out;
+}
+
+/* Dodatkowe style dla smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset dla sticky header przy przewijaniu do sekcji */
+.scroll-offset {
+  scroll-margin-top: 100px;
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 8px 12px;
+  line-height: 1.4;
+}
+
+/* Custom marker styles */
+.custom-marker {
+  background-color: #1e3a8a;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fbbf24;
+}
+
+/* Loading animation */
+.map-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+/* Kontener z diagonalnym podziałem */
+.diagonal-split-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
+  z-index: 2;
+  clip-path: polygon(0 0, 70% 0, 50% 100%, 0 100%);
+}
+
+.right-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+}
+/* Animacje przy ładowaniu */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-section {
+  animation: slideInLeft 1s ease-out;
+}
+
+.right-section {
+  animation: slideInRight 1s ease-out 0.3s both;
+}
+
+/* Responsive dla tablet */
+@media (max-width: 1024px) {
+  .left-section {
+    clip-path: polygon(0 0, 75% 0, 55% 100%, 0 100%);
+  }
+  
+  .right-section {
+    width: 55%;
+  }
+}
+
+/* Responsive dla mobile */
+@media (max-width: 768px) {
+  .diagonal-split-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .left-section {
+    width: 100%;
+    height: 60vh;
+    min-height: 500px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    z-index: 1;
+  }
+  
+  .right-section {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    min-height: 300px;
+    z-index: 2;
+  }
+  
+  .left-section h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Dodatkowe efekty */
+.left-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+
+/* Parallax effect przy scrollowaniu */
+@media (min-width: 768px) {
+  .right-section img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+
+}
+
+/* Floating elements w tle */
+.left-section::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: rgba(251, 191, 36, 0.1);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }

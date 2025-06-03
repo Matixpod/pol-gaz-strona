@@ -1,0 +1,67 @@
+{
+  "services": [
+    {
+      "title": "Naprawa kotłów",
+      "description": "Diagnostyka i naprawa wszelkich usterek kotłów gazowych wszystkich marek",
+      "features": ["Szybka reakcja", "Oryginalne części", "Gwarancja na naprawę"]
+    },
+    {
+      "title": "Montaż urządzeń",
+      "description": "Profesjonalny montaż kotłów, podgrzewaczy wody i systemów grzewczych",
+      "features": ["Doradztwo techniczne", "Zgodność z normami", "Kompleksowa instalacja"]
+    },
+    {
+      "title": "Przeglądy techniczne",
+      "description": "Regularne przeglądy zapewniające bezpieczeństwo i wydajność kotłów",
+      "features": ["Zgodność z gwarancją", "Protokół przeglądu", "Optymalizacja pracy"]
+    },
+    {
+      "title": "Serwis kotłów kondensacyjnych",
+      "description": "Specjalistyczny serwis nowoczesnych kotłów kondensacyjnych",
+      "features": ["Kalibracja parametrów", "Czyszczenie wymiennika", "Regulacja spalania"]
+    },
+    {
+      "title": "Systemy solarne",
+      "description": "Montaż i serwis systemów solarnych współpracujących z kotłami",
+      "features": ["Optymalizacja wydajności", "Przeglądy sezonowe", "Modernizacja instalacji"]
+    },
+    {
+      "title": "Pompy ciepła i klimatyzacja",
+      "description": "Kompleksowa obsługa pomp ciepła i systemów klimatyzacji",
+      "features": ["Montaż", "Serwisowanie", "Diagnostyka błędów"]
+    }
+  ],
+  "brands": ["Beretta", "Junkers", "Buderus", "Unical", "Vaillant", "Saunier Duval"],
+  "reviews": [
+    {
+      "name": "Jan Kowalski",
+      "date": "15.03.2025",
+      "rating": 5,
+      "text": "Szybki przyjazd, profesjonalna obsługa. Naprawili mój kocioł Beretta w ciągu godziny. Polecam!"
+    },
+    {
+      "name": "Anna Nowak",
+      "date": "02.01.2025",
+      "rating": 5,
+      "text": "Świetna rodzinna firma. Przeprowadzili montaż nowego kotła Junkers, wszystko działa bez zarzutu."
+    },
+    {
+      "name": "Marek Wiśniewski",
+      "date": "22.05.2024",
+      "rating": 5,
+      "text": "Konkretnie, fachowo i bez zbędnych kosztów. Przegląd i naprawa kotła Buderus przebiegła sprawnie."
+    },
+    {
+      "name": "Katarzyna Lewandowska",
+      "date": "10.12.2024",
+      "rating": 5,
+      "text": "Polecam firmę Pol-Gaz. Zawsze dotrzymują słowa, przyjeżdżają punktualnie i znają się na rzeczy."
+    },
+    {
+      "name": "Piotr Zieliński",
+      "date": "05.04.2025",
+      "rating": 5,
+      "text": "Profesjonalne podejście i rozsądne ceny. Serwis mojego kotła Vaillant został wykonany perfekcyjnie."
+    }
+  ]
+}
