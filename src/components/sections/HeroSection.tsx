@@ -68,7 +68,7 @@ export default function HeroSection() {
         <div className="hero-image-section hidden md:block">
           <div className="relative w-full h-full">
             <Image
-              src="/images/hero-team.jpg"
+              src="/images/hero-team.WebP"
               alt="Zespół serwisowy Pol-Gaz"
               fill
               className="object-cover object-center"

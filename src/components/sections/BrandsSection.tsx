@@ -4,37 +4,37 @@ export default function BrandsSection() {
   const brands = [
     {
       name: 'Beretta',
-      logo: '/images/brands/Beretta_logo.png',
+      logo: '/images/brands/Beretta_logo.WebP',
       description: 'Włoskie kotły kondensacyjne',
       url: 'https://beretta.pl/'
     },
     {
       name: 'Junkers',
-      logo: '/images/brands/Junkers_logo.png',
+      logo: '/images/brands/Junkers_logo.WebP',
       description: 'Niemiecka tradycja i innowacja',
       url: 'https://www.bosch-thermotechnology.com/pl/pl/bosch-thermotechnology/'
     },
     {
       name: 'Buderus',
-      logo: '/images/brands/Buderus_logo.png',
+      logo: '/images/brands/Buderus_logo.WebP',
       description: 'Niezawodność od 1731 roku',
       url: 'https://www.buderus.com/pl/pl/'
     },
     {
       name: 'Unical',
-      logo: '/images/brands/Unical_logo.png',
+      logo: '/images/brands/Unical_logo.WebP',
       description: 'Włoska jakość i design',
       url: 'https://www.unical.pl/'
     },
     {
       name: 'Vaillant',
-      logo: '/images/brands/Vaillant_logo.png',
+      logo: '/images/brands/Vaillant_logo.WebP',
       description: 'Ekologiczne rozwiązania',
       url: 'https://www.vaillant.pl/'
     },
     {
       name: 'Saunier Duval',
-      logo: '/images/brands/SaunierDuval_logo.png',
+      logo: '/images/brands/SaunierDuval_logo.WebP',
       description: 'Francuska elegancja',
       url: 'https://www.saunierduval.pl/'
     }
@@ -112,7 +112,7 @@ export default function BrandsSection() {
               className="bg-white rounded-lg p-3 sm:p-4 shadow-lg flex-shrink-0 hover:shadow-xl transition-shadow duration-300 group"
             >
               <Image
-                src="/images/brands/Beretta_logo.png"
+                src="/images/brands/Beretta_logo.WebP"
                 alt="Logo Beretta - przejdź na stronę producenta"
                 width={100}
                 height={60}

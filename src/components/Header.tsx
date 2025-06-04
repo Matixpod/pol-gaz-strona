@@ -1,7 +1,5 @@
 'use client'
-import Link from 'next/link'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
 import { useState, useEffect, useCallback } from 'react'
 
 export default function Header() {
@@ -46,7 +44,7 @@ export default function Header() {
     return () => {
       observer.disconnect()
     }
-  }, [])
+  }, [navLinks]) // Added navLinks to dependency array
 
   // Scroll detection dla navbar blur effect
   useEffect(() => {
@@ -108,7 +106,7 @@ export default function Header() {
                 isScrolled ? 'w-8 h-8 lg:w-12 lg:h-12' : 'w-10 h-10 lg:w-16 lg:h-16'
               }`}>
                 <Image
-                  src="/images/LOGO.png"
+                  src="/images/pol-gaz-logo.WebP"
                   alt="Pol-Gaz Logo"
                   fill
                   className="object-contain hover:scale-105 transition-transform"
@@ -142,7 +140,7 @@ export default function Header() {
 
           {/* Desktop nawigacja z dynamicznym podkreśleniem */}
           <nav className="hidden lg:flex space-x-8">
-            {navLinks.map(({ href, label, id }) => {
+            {navLinks.map(({ label, id }) => { // Removed unused 'href'
               const isActive = activeSection === id
               return (
                 <button

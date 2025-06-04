@@ -8,7 +8,7 @@ export default function ReviewsSection() {
           Opinie naszych klientów z Google
         </h2>
         <p className="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-16">
-          Prawdziwe opinie z Google My Business - sprawdź co mówią o nas klienci z <strong>29-letnim</strong> doświadczeniem
+          Prawdziwe opinie z Google My Business - sprawdź co mówią o nas klienci z <strong>31-letnim</strong> doświadczeniem
         </p>
         
         {/* Widget Shapo */}

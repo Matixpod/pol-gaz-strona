@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Wyłącz SSR dla komponentów z mapami
-  experimental: {
-    esmExternals: 'loose'
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
   }
 }
 
