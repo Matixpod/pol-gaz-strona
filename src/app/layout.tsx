@@ -6,8 +6,8 @@ import Header from '@/components/Header' // lub Header3D
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Pol-Gaz Szczecin - Serwis Kotłów od 1996 | Beretta Junkers Buderus',
-  description: 'Rodzinny serwis kotłów w Szczecinie od 1996 roku. Ambasador firmy Beretta. 29 lat doświadczenia. Tel: 601 418 645',
+  title: 'Pol-Gaz Szczecin - Serwis Kotłów Beretta Junkers Buderus',
+  description: 'Serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta. 31 lat doświadczenia. Tel: 601 418 645',
 }
 
 export default function RootLayout({

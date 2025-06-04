@@ -7,7 +7,7 @@ export default function ContactSection() {
           <h2 className="text-4xl font-bold mb-6">Skontaktuj się z nami</h2>
           <p className="text-xl text-blue-100 mb-12">
             Potrzebujesz serwisu kotła, konsultacji lub wyceny? Skontaktuj się z nami już dziś.
-            Rodzinny serwis z prawie 30-letnim doświadczeniem jest do Twojej dyspozycji.
+            Rodzinny serwis z ponad 30-letnim doświadczeniem jest do Twojej dyspozycji.
           </p>
           
           {/* Dane kontaktowe w środku */}

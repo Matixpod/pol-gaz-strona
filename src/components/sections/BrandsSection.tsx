@@ -124,12 +124,13 @@ export default function BrandsSection() {
             {/* Tekst */}
             <div className="text-blue-900 flex-1 text-center">
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2">
-                Oficjalny Ambasador Beretta
+                Wojciech Podporski - Oficjalny Ambasador marki Beretta
               </h3>
               <p className="text-sm sm:text-base lg:text-lg leading-relaxed mx-auto">
-                Jesteśmy dumni, że jako jeden z niewielu serwisów w Polsce otrzymaliśmy 
-                wyróżnienie i tytuł Ambasadora marki Beretta, co potwierdza najwyższe 
-                standardy naszych usług oraz długoletnią współpracę z producentem.
+                
+                    Z ponad 31-letnim doświadczeniem w branży grzewczej, Wojciech Podporski czterokrotnie otrzymał prestiżowy tytuł Ambasadora marki Beretta. To wyróżnienie przyznawane jest wyłącznie najlepszym specjalistom w kraju i potwierdza najwyższy standard usług, profesjonalizm oraz wieloletnią współpracę z producentem.
+
+                    Jako jeden z nielicznych serwisów w Polsce posiadamy oficjalny status Ambasadora Beretta - gwarancję jakości, rzetelności i pełnego zaufania.
               </p>
             </div>
             

@@ -129,7 +129,7 @@ export default function Header() {
                   <div className={`font-semibold mt-1 leading-tight hidden lg:block ${
                     isScrolled ? 'text-xs' : 'text-xs'
                   }`}>
-                    Najstarszy rodzinny serwis<br />kotłów w Szczecinie
+                    Najstarszy serwis<br />kotłów w Szczecinie
                   </div>
                   <div className="ribbon-left"></div>
                   <div className="ribbon-right"></div>
