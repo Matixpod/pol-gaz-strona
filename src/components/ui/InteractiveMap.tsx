@@ -13,7 +13,7 @@ L.Icon.Default.mergeOptions({
 })
 
 // Współrzędne Szczecina
-const SZCZECIN_COORDS: [number, number] = [53.4285, 14.5528]
+const SZCZECIN_COORDS: [number, number] = [53.47381085616836, 14.535567863893869]
 const SERVICE_RADIUS = 60000 // 60km w metrach
 
 export default function InteractiveMap() {

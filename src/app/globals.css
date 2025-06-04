@@ -592,3 +592,377 @@ html {
     transform: translateY(-20px);
   }
 }
+/* Responsive diagonal split */
+.diagonal-split-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
+  z-index: 2;
+  clip-path: polygon(0 0, 70% 0, 50% 100%, 0 100%);
+}
+
+.right-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .diagonal-split-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .left-section {
+    width: 100%;
+    height: 60vh;
+    min-height: 500px;
+    /* Prosty ukos na mobile */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    z-index: 1;
+  }
+  
+  .right-section {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    min-height: 300px;
+    z-index: 2;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .left-section {
+    clip-path: polygon(0 0, 75% 0, 55% 100%, 0 100%);
+  }
+  
+  .right-section {
+    width: 55%;
+  }
+}
+
+/* Animacje zachowane */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-section {
+  animation: slideInLeft 1s ease-out;
+}
+
+.right-section {
+  animation: slideInRight 1s ease-out 0.3s both;
+}
+
+/* Mobile - wyłącz animacje dla lepszej wydajności */
+@media (max-width: 768px) {
+  .left-section,
+  .right-section {
+    animation: none;
+  }
+}
+
+/* Mobile-first hero container */
+.mobile-hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
+}
+
+.hero-content-section {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  min-height: 60vh;
+}
+
+.hero-image-section {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  min-height: 300px;
+  z-index: 1;
+}
+
+/* Desktop - diagonalny układ */
+@media (min-width: 1024px) {
+  .diagonal-split-container {
+    flex-direction: row;
+    height: 70vh;
+    min-height: 600px;
+    overflow: hidden;
+  }
+  
+  .hero-content-section {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg,#1e3a8a 0%, #183d79 50%, #1e40af 100%);
+    clip-path: polygon(0 0, 70% 0, 50% 100%, 0 100%);
+    min-height: auto;
+  }
+  
+  .hero-image-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 70%;
+    min-height: auto;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .mobile-hero-container {
+    height: 80vh;
+    min-height: 600px;
+  }
+  
+  .hero-content-section {
+    min-height: 50vh;
+  }
+  
+  .hero-image-section {
+    height: 30vh;
+    min-height: 250px;
+  }
+}
+
+/* Małe telefony */
+@media (max-width: 480px) {
+  .hero-content-section {
+    min-height: 70vh;
+    padding: 2rem 0;
+  }
+  
+  .hero-image-section {
+    height: 30vh;
+    min-height: 200px;
+  }
+  
+  .mobile-hero-container h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+
+/* Animacje - tylko na desktop */
+@media (min-width: 1024px) {
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .hero-content-section {
+    animation: slideInLeft 1s ease-out;
+  }
+
+  .hero-image-section {
+    animation: slideInRight 1s ease-out 0.3s both;
+  }
+}
+
+/* Lepsze wyświetlanie tekstu na mobile */
+@media (max-width: 768px) {
+  .hero-content-section .container {
+    text-align: center;
+  }
+  
+  .hero-content-section h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-content-section p {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+/* Hero section - zmniejszona wysokość */
+.mobile-hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 50vh; /* Zmniejszone z 70vh */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1e3a8a 0%, #183d79 50%, #1e40af 100%);
+}
+
+.hero-content-section {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  min-height: 35vh; /* Zmniejszone z 45vh */
+}
+
+.hero-image-section {
+  position: relative;
+  width: 100%;
+  height: 15vh; /* Zmniejszone z 25vh */
+  min-height: 150px; /* Zmniejszone z 200px */
+  z-index: 1;
+}
+
+/* Desktop - diagonalny układ */
+@media (min-width: 1024px) {
+  .diagonal-split-container {
+    flex-direction: row;
+    height: 60vh; /* Zmniejszone z 80vh */
+    min-height: 450px; /* Zmniejszone z 600px */
+    overflow: hidden;
+  }
+  
+  .hero-content-section {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e3a8a 0%, #183d79 50%, #1e40af 100%);
+    clip-path: polygon(0 0, 70% 0, 50% 100%, 0 100%);
+    min-height: auto;
+  }
+  
+  .hero-image-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    min-height: auto;
+  }
+}
+
+/* Tablet - średnia wysokość */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mobile-hero-container {
+    min-height: 55vh; /* Średnia wysokość dla tablet */
+  }
+  
+  .hero-content-section {
+    min-height: 40vh;
+  }
+  
+  .hero-image-section {
+    height: 15vh;
+    min-height: 180px;
+  }
+}
+
+/* Bardzo małe ekrany */
+@media (max-width: 480px) {
+  .mobile-hero-container {
+    min-height: 45vh; /* Jeszcze mniejsza wysokość */
+  }
+  
+  .hero-content-section {
+    min-height: 30vh;
+    padding: 1rem 0;
+  }
+  
+  .hero-image-section {
+    height: 15vh;
+    min-height: 120px;
+  }
+}
+
+
+/* Brand card hover effects */
+.brand-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* External link icon animation */
+.external-link-icon {
+  transition: all 0.3s ease;
+}
+
+.group:hover .external-link-icon {
+  transform: scale(1.1) translate(2px, -2px);
+}
+
+/* Brand card glow effect on hover */
+.brand-card-link:hover {
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+}
+
+/* Smooth color transitions */
+.brand-card-link h3,
+.brand-card-link p {
+  transition: color 0.3s ease;
+}
+
+/* Loading state for external links */
+.brand-card-link:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+
+
+
+
+
+
+

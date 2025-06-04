@@ -2,12 +2,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export default function Header() {
-  const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navLinks = [
     { href: '#home', label: 'Strona główna', id: 'home' },
@@ -17,41 +17,75 @@ export default function Header() {
     { href: '#kontakt', label: 'Kontakt', id: 'kontakt' },
   ]
 
+  // Intersection Observer dla wykrywania aktywnej sekcji
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0% -80% 0%', // Trigger when section is 20% visible from top
+      threshold: 0
+    }
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+
+    // Obserwuj wszystkie sekcje
+    navLinks.forEach(({ id }) => {
+      const element = document.getElementById(id)
+      if (element) {
+        observer.observe(element)
+      }
+    })
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
+
+  // Scroll detection dla navbar blur effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
-      
-      const sections = navLinks.map(link => link.id)
-      const currentSection = sections.find(section => {
-        const element = document.getElementById(section)
-        if (element) {
-          const rect = element.getBoundingClientRect()
-          return rect.top <= 100 && rect.bottom >= 100
-        }
-        return false
-      })
-      
-      if (currentSection) {
-        setActiveSection(currentSection)
-      }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      const headerHeight = 80
-      const elementPosition = element.offsetTop - headerHeight
+      const headerHeight = window.innerWidth < 768 ? 70 : 80
       
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      })
+      // Specjalne traktowanie dla sekcji "home" - scroll do góry
+      if (sectionId === 'home') {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
+      } else {
+        const elementPosition = element.offsetTop - headerHeight
+        
+        // Maksymalna pozycja scrolla - zapobiega drganiu
+        const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight)
+        
+        // Ogranicz pozycję scrolla do dostępnego zakresu
+        const scrollPosition = Math.min(Math.max(0, elementPosition), maxScroll)
+        
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: 'smooth'
+        })
+      }
     }
-  }
+    setIsMobileMenuOpen(false)
+  }, [])
 
   return (
     <header 
@@ -61,20 +95,20 @@ export default function Header() {
           : 'bg-white shadow-sm'
       }`}
     >
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-2 lg:py-3">
         <div className="flex justify-between items-center">
-          {/* Logo jako obraz + wstążka */}
-          <div className="flex items-center space-x-4">
-            {/* Logo - ZMIANA: z tekstu na obraz */}
+          
+          {/* Logo i wstążka - responsive */}
+          <div className="flex items-center space-x-2 lg:space-x-4">
             <button 
               onClick={() => scrollToSection('home')}
               className="flex items-center"
             >
               <div className={`relative transition-all duration-300 ${
-                isScrolled ? 'w-12 h-12' : 'w-16 h-16'
+                isScrolled ? 'w-8 h-8 lg:w-12 lg:h-12' : 'w-10 h-10 lg:w-16 lg:h-16'
               }`}>
                 <Image
-                  src="/images/LOGO.png" // Ścieżka do Twojego logo
+                  src="/images/LOGO.png"
                   alt="Pol-Gaz Logo"
                   fill
                   className="object-contain hover:scale-105 transition-transform"
@@ -83,14 +117,20 @@ export default function Header() {
               </div>
             </button>
 
-            {/* Wstążka z latami doświadczenia */}
-            <div className={`relative transition-all duration-300 ${
+            {/* Wstążka - responsive na scroll */}
+            <div className={`hidden sm:block transition-all duration-300 ${
               isScrolled ? 'scale-90' : 'scale-100'
             }`}>
               <div className="ribbon-container">
-                <div className="ribbon bg-yellow-400 text-blue-900 px-6 py-2 font-bold text-lg relative">
-                  <span className="text-2xl font-black">29 LAT</span>
-                  <div className="text-xs font-semibold mt-1 leading-tight">
+                <div className={`ribbon bg-yellow-400 text-blue-900 font-bold relative ${
+                  isScrolled ? 'px-2 lg:px-4 py-1 text-xs lg:text-sm scrolled' : 'px-3 lg:px-6 py-1 lg:py-2 text-sm lg:text-lg'
+                }`}>
+                  <span className={`font-black ${
+                    isScrolled ? 'text-sm lg:text-lg' : 'text-lg lg:text-2xl'
+                  }`}>31 LAT</span>
+                  <div className={`font-semibold mt-1 leading-tight hidden lg:block ${
+                    isScrolled ? 'text-xs' : 'text-xs'
+                  }`}>
                     Najstarszy rodzinny serwis<br />kotłów w Szczecinie
                   </div>
                   <div className="ribbon-left"></div>
@@ -100,7 +140,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Reszta navbar - bez zmian */}
+          {/* Desktop nawigacja z dynamicznym podkreśleniem */}
           <nav className="hidden lg:flex space-x-8">
             {navLinks.map(({ href, label, id }) => {
               const isActive = activeSection === id
@@ -120,80 +160,73 @@ export default function Header() {
             })}
           </nav>
 
-          <div className="flex items-center space-x-4">
+          {/* Telefon i przycisk - responsive */}
+          <div className="flex items-center space-x-2 lg:space-x-4">
+            {/* Telefon - ukryty na mobile */}
             <div className={`text-right hidden md:block transition-all duration-300 ${
               isScrolled ? 'scale-90' : 'scale-100'
             }`}>
-              <div className="text-2xl font-bold text-blue-900">601 418 645</div>
-              <div className="text-sm text-gray-600">polgazszczecin@wp.pl</div>
+              <div className="text-lg lg:text-2xl font-bold text-blue-900">601 418 645</div>
+              <div className="text-xs lg:text-sm text-gray-600 hidden lg:block">polgazszczecin@wp.pl</div>
             </div>
 
+            {/* ZMIANA: Mobile - numer telefonu zamiast ikony */}
             <a
               href="tel:601418645"
               className={`bg-blue-900 hover:bg-blue-800 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
-                isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-3 text-base'
+                isScrolled ? 'px-2 lg:px-4 py-1 lg:py-2 text-xs lg:text-sm' : 'px-3 lg:px-6 py-2 lg:py-3 text-sm lg:text-base'
               }`}
             >
-              Zadzwoń teraz
+              <span className="hidden sm:inline">Zadzwoń teraz</span>
+              <span className="sm:hidden">601 418 645</span>
             </a>
 
-            <MobileMenu 
-              navLinks={navLinks} 
-              activeSection={activeSection} 
-              scrollToSection={scrollToSection} 
-            />
+            {/* Menu hamburgerowe */}
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden p-2 text-gray-700 hover:text-blue-900 transition-colors"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth="2" 
+                  d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} 
+                />
+              </svg>
+            </button>
           </div>
         </div>
+
+        {/* Mobile menu z aktywnym podkreśleniem */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden bg-white border-t mt-2 py-4 rounded-b-lg shadow-lg">
+            <nav className="space-y-2">
+              {navLinks.map(({ id, label }) => {
+                const isActive = activeSection === id
+                return (
+                  <button
+                    key={id}
+                    onClick={() => scrollToSection(id)}
+                    className={`block w-full text-left py-3 px-4 rounded-lg transition-colors ${
+                      isActive 
+                        ? 'text-blue-900 bg-yellow-50 border-l-4 border-l-yellow-400 font-semibold' 
+                        : 'text-gray-700 hover:text-blue-900 hover:bg-gray-50'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                )
+              })}
+              {/* Telefon w mobile menu */}
+              <div className="px-4 py-3 border-t">
+                <div className="text-lg font-bold text-blue-900">601 418 645</div>
+                <div className="text-sm text-gray-600">polgazszczecin@wp.pl</div>
+              </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
-  )
-}
-
-// Komponent menu mobilnego - bez zmian
-function MobileMenu({ navLinks, activeSection, scrollToSection }: any) {
-  const [isOpen, setIsOpen] = useState(false)
-
-  return (
-    <div className="lg:hidden">
-      <button 
-        onClick={() => setIsOpen(!isOpen)}
-        className="p-2 text-gray-700 hover:text-blue-900 transition-colors"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
-            strokeWidth="2" 
-            d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} 
-          />
-        </svg>
-      </button>
-
-      {isOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white shadow-lg border-t z-50">
-          <nav className="container mx-auto px-4 py-4">
-            {navLinks.map(({ id, label }: any) => {
-              const isActive = activeSection === id
-              return (
-                <button
-                  key={id}
-                  onClick={() => {
-                    scrollToSection(id)
-                    setIsOpen(false)
-                  }}
-                  className={`block w-full text-left py-3 px-4 border-b border-gray-100 last:border-b-0 transition-colors ${
-                    isActive 
-                      ? 'text-blue-900 bg-yellow-50 border-l-4 border-l-yellow-400 font-semibold' 
-                      : 'text-gray-700 hover:text-blue-900 hover:bg-gray-50'
-                  }`}
-                >
-                  {label}
-                </button>
-              )
-            })}
-          </nav>
-        </div>
-      )}
-    </div>
   )
 }
