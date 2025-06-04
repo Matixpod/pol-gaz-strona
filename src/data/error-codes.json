@@ -1,0 +1,909 @@
+{
+  "Junkers": [
+    {
+      "Kod_błędu": "EA",
+      "Opis_błędu": "Brak płomienia, brak sygnału z elektrody jonizacyjnej",
+      "Rozwiązanie": "Sprawdź, czy jest gaz, czy zawór gazowy jest otwarty, czy nie ma przerwy w dostawie gazu. Zresetuj urządzenie. Jeśli problem powraca - serwis."
+    },
+    {
+      "Kod_błędu": "A4",
+      "Opis_błędu": "Problem z ciągiem kominowym, uruchomiony czujnik spalin",
+      "Rozwiązanie": "Przewietrz pomieszczenie, odczekaj 10 minut, uruchom ponownie piecyk. Jeśli błąd powraca - serwis i kontrola przewodu kominowego."
+    },
+    {
+      "Kod_błędu": "A7",
+      "Opis_błędu": "Uszkodzony lub źle podłączony czujnik temperatury wody",
+      "Rozwiązanie": "Skontaktuj się z serwisem - możliwa wymiana lub poprawienie podłączenia czujnika."
+    },
+    {
+      "Kod_błędu": "E1",
+      "Opis_błędu": "Zbyt wysoka temperatura wody (powyżej 85°C)",
+      "Rozwiązanie": "Zmniejsz temperaturę na pokrętle. Jeśli błąd powtarza się - serwis."
+    },
+    {
+      "Kod_błędu": "E2",
+      "Opis_błędu": "Uszkodzony czujnik temperatury zasilania",
+      "Rozwiązanie": "Sprawdź przewody czujnika, ewentualnie wymiana czujnika - serwis."
+    },
+    {
+      "Kod_błędu": "E9",
+      "Opis_błędu": "Zadziałał ogranicznik temperatury obiegu grzewczego",
+      "Rozwiązanie": "Sprawdź pompę, czujnik NTC oraz bezpieczniki. Jeśli nie działa - serwis."
+    },
+    {
+      "Kod_błędu": "F0",
+      "Opis_błędu": "Błąd wewnętrzny płyty głównej",
+      "Rozwiązanie": "Zresetuj urządzenie. Jeśli błąd powraca - wymiana płyty głównej przez serwis."
+    },
+    {
+      "Kod_błędu": "F7",
+      "Opis_błędu": "Wykryto płomień mimo wyłączenia palnika (błąd jonizacji)",
+      "Rozwiązanie": "Zresetuj urządzenie. Jeśli błąd powraca - sprawdzenie elektrody jonizacyjnej przez serwis."
+    },
+    {
+      "Kod_błędu": "C6",
+      "Opis_błędu": "Presostat/wentylator nie działa prawidłowo",
+      "Rozwiązanie": "Sprawdź wentylator, presostat, przewody. Zwykle wymaga interwencji serwisu."
+    },
+    {
+      "Kod_błędu": "CC",
+      "Opis_błędu": "Przerwa w obwodzie czujnika temperatury zewnętrznej",
+      "Rozwiązanie": "Sprawdź czujnik i przewody, ewentualnie wymiana czujnika"
+    },
+        {
+      "Kod_błędu": "200",
+      "Opis_błędu": "Kocioł znajduje się w trybie grzania",
+      "Rozwiązanie": "Stan normalny - brak działania wymaganego"
+    },
+    {
+      "Kod_błędu": "201",
+      "Opis_błędu": "Kocioł znajduje się w trybie przygotowania c.w.u.",
+      "Rozwiązanie": "Stan normalny - brak działania wymaganego"
+    },
+    {
+      "Kod_błędu": "202",
+      "Opis_błędu": "Urządzenie znajduje się w programie optymalizacji załączania: interwał czasowy do ponownego włączenia palnika jeszcze nie został osiągnięty",
+      "Rozwiązanie": "Stan normalny - brak działania wymaganego"
+    },
+    {
+      "Kod_błędu": "203",
+      "Opis_błędu": "Urządzenie znajduje się w trybie gotowości do pracy, brak zapotrzebowania ciepła",
+      "Rozwiązanie": "Stan normalny - brak działania wymaganego"
+    },
+    {
+      "Kod_błędu": "204",
+      "Opis_błędu": "Aktualna temperatura zasilania jest wyższa niż zadana temperatura na zasilaniu. Palnik został wyłączony",
+      "Rozwiązanie": "Stan normalny - brak działania wymaganego"
+    },
+    {
+      "Kod_błędu": "207",
+      "Opis_błędu": "Zbyt niskie ciśnienie robocze",
+      "Rozwiązanie": "Napełnić i odpowietrzyć instalację. W razie potrzeby wymienić czujnik ciśnienia."
+    },
+    {
+      "Kod_błędu": "208",
+      "Opis_błędu": "Kocioł znajduje się w trybie kominiarza",
+      "Rozwiązanie": "Tryb kominiarza jest automatycznie wyłączany po 30 minutach"
+    },
+    {
+      "Kod_błędu": "212",
+      "Opis_błędu": "Za szybki wzrost temperatury na czujniku bezpieczeństwa lub zasilania kotła",
+      "Rozwiązanie": "Otworzyć zawory odcinające"
+    },
+    {
+      "Kod_błędu": "214",
+      "Opis_błędu": "Wentylator jest wyłączany w czasie bezpieczeństwa",
+      "Rozwiązanie": "Sprawdzić urządzenie, ew. wyłączyć je. Sprawdzić napięcie sieciowe."
+    },
+    {
+      "Kod_błędu": "215",
+      "Opis_błędu": "Wentylator pracuje zbyt szybko",
+      "Rozwiązanie": "Wymienić wentylator. Wartość napięcia sieciowego musi być zgodna z wartością zadaną."
+    },
+    {
+      "Kod_błędu": "224",
+      "Opis_błędu": "Zadziałał ogranicznik temperatury spalin lub ogranicznik temperatury bloku cieplnego",
+      "Rozwiązanie": "Sprawdzić ustawienie zaworu w obiegu grzewczym, ew. otworzyć go. Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia. Sprawdzić ogranicznik temperatury bloku cieplnego oraz kabel przyłączeniowy pod kątem przerwania, w razie potrzeby wymienić. Odpowietrzyć urządzenie."
+    },
+    {
+      "Kod_błędu": "227",
+      "Opis_błędu": "Nie wykryto płomienia",
+      "Rozwiązanie": "Sprawdzić, czy zawór gazowy jest otwarty. Sprawdzić ciśnienie gazu na przyłączu. Sprawdzić sygnał jonizacji. Sprawdzić podłączenie do sieci. Sprawdzić elektrody z kablem, w razie potrzeby wymienić. Sprawdzić instalację spalinową, w razie potrzeby oczyścić lub dokonać naprawy."
+    },
+    {
+      "Kod_błędu": "228",
+      "Opis_błędu": "Sygnał płomienia mimo wyłączonego palnika",
+      "Rozwiązanie": "Sprawdzić, czy jest płomień. Sprawdzić elektrody i kabel przyłączeniowy, w razie potrzeby wymienić. Sprawdzić, w razie potrzeby wymienić armaturę gazową. Sprawdzić, ew. wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "229",
+      "Opis_błędu": "Płomień zgasł podczas pracy palnika",
+      "Rozwiązanie": "Sprawdzić główny zawór odcinający dopływ paliwa, ew. otworzyć go. Sprawdzić zawór odcinający urządzenia, ew. otworzyć. Zmierzyć ciśnienie gazu na przyłączu przy znamionowym obciążeniu cieplnym. Sprawdzić elektrodę jonizacyjną i kabel przyłączeniowy, ew. wymienić."
+    },
+    {
+      "Kod_błędu": "232",
+      "Opis_błędu": "Urządzenie grzewcze zablokowane przez zewnętrzny zestyk przełączający",
+      "Rozwiązanie": "Podłączyć wtyczkę zewnętrznego zestyku przełączającego. Zamontować zworkę / sprawdzić pompę kondensatu zgodnie z wytycznymi producenta. Dostosować punkt przełączania zewnętrznego zabezpieczenia temperaturowego do systemu."
+    },
+    {
+      "Kod_błędu": "233",
+      "Opis_błędu": "Usterka wtyczki kodującej lub elektroniki urządzenia",
+      "Rozwiązanie": "Sprawdzić, czy wtyczka kodująca jest zainstalowana. Sprawdzić, ew. wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "234",
+      "Opis_błędu": "Usterka elektryczna armatury gazowej",
+      "Rozwiązanie": "Sprawdzić kabel przyłączeniowy, w razie potrzeby wymienić. Sprawdzić, w razie potrzeby wymienić armaturę gazową."
+    },
+    {
+      "Kod_błędu": "235",
+      "Opis_błędu": "Konflikt wersji elektroniki urządzenia / wtyczki kodującej",
+      "Rozwiązanie": "Sprawdzić wersję oprogramowania elektroniki urządzenia oraz wtyczki kodującej. Wymienić elektronikę urządzenia lub wtyczkę kodującą."
+    },
+    {
+      "Kod_błędu": "237",
+      "Opis_błędu": "Usterka systemowa",
+      "Rozwiązanie": "Wymienić wtyczkę kodującą. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "238",
+      "Opis_błędu": "Elektronika urządzenia jest uszkodzona",
+      "Rozwiązanie": "Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "242",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować sterownik / automat palnikowy. Z powrotem prawidłowo podłączyć przyłącza elektryczne do sterownika / automatu palnikowego. Wymienić sterownik / automat palnikowy."
+    },
+    {
+      "Kod_błędu": "244",
+      "Opis_błędu": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+      "Rozwiązanie": "Zresetować sterownik / automat palnikowy. Z powrotem prawidłowo podłączyć przyłącza elektryczne do sterownika / automatu palnikowego. Wymienić sterownik / automat palnikowy."
+    },
+    {
+      "Kod_błędu": "246",
+      "Opis_błędu": "Błąd wewnętrzny sterownika palnika",
+      "Rozwiązanie": "Zresetować sterownik palnika. Sprawdzić przyłącza elektryczne sterownika palnika. Wymienić sterownik palnika."
+    },
+    {
+      "Kod_błędu": "247",
+      "Opis_błędu": "Błąd wewnętrzny sterownika palnika",
+      "Rozwiązanie": "Zresetować sterownik palnika. Sprawdzić przyłącza elektryczne sterownika palnika. Wymienić sterownik palnika."
+    },
+    {
+      "Kod_błędu": "257",
+      "Opis_błędu": "Błąd wewnętrzny sterownika palnika",
+      "Rozwiązanie": "Zresetować sterownik palnika. Sprawdzić przyłącza elektryczne sterownika palnika. Wymienić sterownik palnika."
+    },
+    {
+      "Kod_błędu": "245",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Sprawdzić przyłącza elektryczne. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "249-254",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Sprawdzić przyłącza elektryczne. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "256",
+      "Opis_błędu": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+      "Rozwiązanie": "Zresetować sterownik / automat palnikowy. Z powrotem prawidłowo podłączyć przyłącza elektryczne do sterownika / automatu palnikowego. Wymienić sterownik / automat palnikowy."
+    },
+    {
+      "Kod_błędu": "258",
+      "Opis_błędu": "Błąd wewnętrzny sterownika",
+      "Rozwiązanie": "Zresetować sterownik. Ponownie prawidłowo podłączyć przyłącza elektryczne do sterownika. Wymienić sterownik."
+    },
+    {
+      "Kod_błędu": "259",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Sprawdzić przyłącza elektryczne. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "262",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Sprawdzić przyłącza elektryczne. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "263",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Sprawdzić przyłącza elektryczne. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "264",
+      "Opis_błędu": "Transport powietrza zatrzymany w fazie pracy",
+      "Rozwiązanie": "Z powrotem prawidłowo podłączyć wtyk, odblokować. Wymienić wentylator. Wartość napięcia sieciowego musi być zgodna z wartością zadaną. Usunąć niedrożności instalacji spalinowej. Ponownie podłączyć czujnik ciśnienia powietrza. Wymienić czujnik ciśnienia powietrza."
+    },
+    {
+      "Kod_błędu": "265",
+      "Opis_błędu": "Zapotrzebowanie na ciepło niższe niż dostarczona energia",
+      "Rozwiązanie": "Sprawdzić ustawienia i system ogrzewania"
+    },
+    {
+      "Kod_błędu": "268",
+      "Opis_błędu": "Tryb testu komponentów",
+      "Rozwiązanie": "Nie dotyczy ze względu na komunikat o stanie"
+    },
+    {
+      "Kod_błędu": "269",
+      "Opis_błędu": "Kontrola płomienia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "270",
+      "Opis_błędu": "Trwa uruchamianie urządzenia grzewczego",
+      "Rozwiązanie": "Stan normalny - odczekać zakończenie uruchamiania"
+    },
+    {
+      "Kod_błędu": "273",
+      "Opis_błędu": "Przerwanie pracy: kontrola bezpieczeństwa po 24 godzinach pracy ciągłej",
+      "Rozwiązanie": "Stan normalny - kontrola bezpieczeństwa"
+    },
+    {
+      "Kod_błędu": "275",
+      "Opis_błędu": "Wykryto testową wtyczkę kodującą",
+      "Rozwiązanie": "Wymienić na właściwą wtyczkę kodującą"
+    },
+    {
+      "Kod_błędu": "281",
+      "Opis_błędu": "Pompa nie pracuje lub suszy się",
+      "Rozwiązanie": "Wymienić pompę. Odpowietrzyć instalację."
+    },
+    {
+      "Kod_błędu": "305",
+      "Opis_błędu": "Kocioł nie może tymczasowo uruchomić się zgodnie z priorytetem c.w.u.",
+      "Rozwiązanie": "Sprawdzić ustawienia priorytetu c.w.u."
+    },
+    {
+      "Kod_błędu": "306",
+      "Opis_błędu": "Po odcięciu dopływu gazu: płomień jest wykrywany",
+      "Rozwiązanie": "Sprawdzić, w razie potrzeby wymienić armaturę gazową. Sprawdzić elektrody i kabel przyłączeniowy, w razie potrzeby wymienić. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "323",
+      "Opis_błędu": "Zakłócenie komunikacji sterownika",
+      "Rozwiązanie": "Sprawdzić połączenia komunikacyjne sterownika"
+    },
+    {
+      "Kod_błędu": "328",
+      "Opis_błędu": "Krótkotrwała przerwa w napięciu sieciowym",
+      "Rozwiązanie": "Sprawdzić instalację elektryczną budynku pod kątem przerwy w dostawie napięcia do urządzenia grzewczego."
+    },
+    {
+      "Kod_błędu": "341",
+      "Opis_błędu": "Zbyt szybki wzrost temperatury urządzenia grzewczego",
+      "Rozwiązanie": "Otworzyć zawory serwisowe. Podłączyć wtyczkę do pompy c.o. Wymienić pompę c.o. Dopasować charakterystykę / stopień pompowania do systemu."
+    },
+    {
+      "Kod_błędu": "342",
+      "Opis_błędu": "Wzrost temperatury w trybie przygotowania c.w.u. za szybki",
+      "Rozwiązanie": "Jeśli ciśnienie wody jest za niskie, uzupełnić stan wody i odpowietrzyć instalację. Otworzyć zawory serwisowe w obiegu ładowania zasobnika. Wymienić zawór przełączający / pompę ładującą zasobnik."
+    },
+    {
+      "Kod_błędu": "350",
+      "Opis_błędu": "Zwarcie czujnika temperatury zasilania",
+      "Rozwiązanie": "Wymienić czujnik temperatury zasilania. Wymienić kabel przyłączeniowy do czujnika temperatury zasilania. Wymienić sterownik / automat palnikowy."
+    },
+    {
+      "Kod_błędu": "351",
+      "Opis_błędu": "Przerwa czujnika temperatury zasilania",
+      "Rozwiązanie": "Podłączyć wtyczkę do czujnika temperatury zasilania. Wymienić czujnik temperatury zasilania. Wymienić kabel przyłączeniowy do czujnika temperatury zasilania. Wymienić sterownik / automat palnikowy."
+    },
+    {
+      "Kod_błędu": "356",
+      "Opis_błędu": "Za niskie napięcie zasilające dla tego urządzenia grzewczego",
+      "Rozwiązanie": "Zapewnić napięcie zasilające o wartości co najmniej 196VAC."
+    },
+    {
+      "Kod_błędu": "357",
+      "Opis_błędu": "Program odpowietrzania",
+      "Rozwiązanie": "Zapewnić napięcie zasilające o wartości co najmniej 196VAC."
+    },
+    {
+      "Kod_błędu": "358",
+      "Opis_błędu": "Zabezpieczenie przed zablokowaniem aktywne",
+      "Rozwiązanie": "Zapewnić napięcie zasilające o wartości co najmniej 196VAC."
+    },
+    {
+      "Kod_błędu": "360",
+      "Opis_błędu": "Nieprawidłowa wtyczka kodująca",
+      "Rozwiązanie": "Sprawdzić wtyczkę kodującą, ew. wymienić ją."
+    },
+    {
+      "Kod_błędu": "362",
+      "Opis_błędu": "Wykryto serwisową wtyczkę kodującą",
+      "Rozwiązanie": "Sprawdzić wtyczkę kodującą, ew. wymienić ją."
+    },
+    {
+      "Kod_błędu": "363",
+      "Opis_błędu": "Usterka systemowa elektroniki urządzenia: błąd podczas testu sygnału jonizacji",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia, ew. wymienić."
+    },
+    {
+      "Kod_błędu": "364",
+      "Opis_błędu": "Zawór elektromagn. EV2 nieszczelny",
+      "Rozwiązanie": "Sprawdzić, w razie potrzeby wymienić armaturę gazową. Sprawdzić elektrody i kabel przyłączeniowy, w razie potrzeby wymienić. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "365",
+      "Opis_błędu": "Zawór elektromagn. EV1 nieszczelny",
+      "Rozwiązanie": "Sprawdzić, w razie potrzeby wymienić armaturę gazową. Sprawdzić elektrody i kabel przyłączeniowy, w razie potrzeby wymienić. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "604",
+      "Opis_błędu": "Usterka systemowa automatu palnikowego",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "810",
+      "Opis_błędu": "Temperatura c.w.u. nie jest zwiększana od 2h",
+      "Rozwiązanie": "Unikać wody na wylocie. Prawidłowo ustawić czujnik temperatury ciepłej wody. Sprawdzić pompę ładującą podgrzewacz pojemnościowy c.w.u. Sprawdzić zawór 3-drogowy. Usunąć wszystkie usterki przewodów. W razie potrzeby odpowietrzyć."
+    },
+    {
+      "Kod_błędu": "815",
+      "Opis_błędu": "Czujnik temperatury sprzęgła hydraulicznego jest uszkodzony",
+      "Rozwiązanie": "Sprawdzić przyłącze czujnika. Sprawdzić, czy czujnik temperatury nie znajduje się w niewłaściwym miejscu lub nie jest uszkodzony."
+    },
+    {
+      "Kod_błędu": "1013",
+      "Opis_błędu": "Osiągnięto maksymalny czas zapłonu",
+      "Rozwiązanie": "Sprawdzić, czy wyświetlona temperatura zasobnika jest wiarygodna. Sprawdzić złącza wtykowe i wiązkę kablową pod kątem styku. Wymienić czujnik zasobnika."
+    },
+    {
+      "Kod_błędu": "1014",
+      "Opis_błędu": "Prąd jonizacji zbyt niski",
+      "Rozwiązanie": "Sprawdzić i wyczyścić elektrodę jonizacyjną. Sprawdzić połączenia elektryczne."
+    },
+    {
+      "Kod_błędu": "1017",
+      "Opis_błędu": "Ciśnienie wody zbyt niskie",
+      "Rozwiązanie": "Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia. Sprawdzić czujnik ciśnienia, ew. wymienić go."
+    },
+    {
+      "Kod_błędu": "1018",
+      "Opis_błędu": "Upłynął termin serwisu",
+      "Rozwiązanie": "Wykonać konserwację."
+    },
+    {
+      "Kod_błędu": "1021",
+      "Opis_błędu": "Czujnik temperatury ciepłej wody uszkodzony",
+      "Rozwiązanie": "Sprawdzić wtyczkę, ew. podłączyć ją prawidłowo. Sprawdzić pozycję montażu czujnika temperatury, ew. zamontować prawidłowo. Sprawdzić czujnik temperatury, ew. wymienić. Sprawdzić kabel przyłączeniowy pod kątem występowania przerwy lub zwarcia, w razie potrzeby wymienić."
+    },
+    {
+      "Kod_błędu": "1022",
+      "Opis_błędu": "Czujnik temperatury c.w.u. uszkodzony",
+      "Rozwiązanie": "Sprawdzić i wymienić czujnik temperatury c.w.u."
+    },
+    {
+      "Kod_błędu": "1023",
+      "Opis_błędu": "Osiągnięto maks. czas pracy włącznie z czasem czuwania",
+      "Rozwiązanie": "Przeprowadzić przegląd."
+    },
+    {
+      "Kod_błędu": "1065",
+      "Opis_błędu": "Czujnik ciśnienia jest uszkodzony lub nie został podłączony",
+      "Rozwiązanie": "Sprawdzić wtyczkę, ew. podłączyć ją prawidłowo. Sprawdzić czujnik ciśnienia, ew. wymienić go. Sprawdzić kabel przyłączeniowy pod kątem występowania przerwy lub zwarcia, w razie potrzeby wymienić."
+    },
+    {
+      "Kod_błędu": "1068",
+      "Opis_błędu": "Czujnik temperatury zewnętrznej lub sonda lambda uszkodzone",
+      "Rozwiązanie": "Rozwiązać problem styku. Wymienić sondę lambda."
+    },
+    {
+      "Kod_błędu": "1073",
+      "Opis_błędu": "Zwarcie czujnika temperatury zasilania",
+      "Rozwiązanie": "Sprawdzić czujnik temperatury zasilania, ew. wymienić go. Sprawdzić kabel przyłączeniowy pod kątem zwarcia, w razie potrzeby wymienić. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "1074",
+      "Opis_błędu": "Brak sygnału czujnika temperatury zasilania",
+      "Rozwiązanie": "Sprawdzić wtyczkę, ew. podłączyć ją prawidłowo. Sprawdzić czujnik temperatury zasilania, ew. wymienić go. Sprawdzić kabel przyłączeniowy pod kątem występowania przerwy, w razie potrzeby wymienić."
+    },
+    {
+      "Kod_błędu": "1075",
+      "Opis_błędu": "Zwarcie ogranicznika temperatury bloku cieplnego",
+      "Rozwiązanie": "Sprawdzić ogranicznik temperatury bloku cieplnego, w razie potrzeby wymienić. Sprawdzić kabel przyłączeniowy pod kątem zwarcia, w razie potrzeby wymienić. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "1076",
+      "Opis_błędu": "Brak sygnału ogranicznika temperatury bloku cieplnego",
+      "Rozwiązanie": "Sprawdzić wtyczkę, ew. podłączyć ją prawidłowo. Sprawdzić ogranicznik temperatury bloku cieplnego, w razie potrzeby wymienić. Sprawdzić kabel przyłączeniowy pod kątem występowania przerwy, w razie potrzeby wymienić."
+    },
+    {
+      "Kod_błędu": "2051",
+      "Opis_błędu": "Błąd wewnętrzny",
+      "Rozwiązanie": "Na 30s przełączyć instalację w stan beznapięciowy. Wymienić SAFe. Powiadomić serwis techniczny."
+    },
+    {
+      "Kod_błędu": "2052",
+      "Opis_błędu": "Przekroczono maks. czas załączania transformatora zapłonowego",
+      "Rozwiązanie": "Sprawdzić usterkę zasilania olejem, w razie potrzeby usunąć. Sprawdzić podzespoły palnika, w razie potrzeby wymienić. Sprawdzić automat palnikowy, w razie potrzeby wymienić."
+    },
+    {
+      "Kod_błędu": "2085",
+      "Opis_błędu": "Wewnętrzna usterka w automacie palnikowym",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2908",
+      "Opis_błędu": "Wewnętrzna usterka w automacie palnikowym",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2909",
+      "Opis_błędu": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+      "Rozwiązanie": "Jeżeli usterka utrzymuje się nadal po wykonaniu resetu, automat palnikowy lub moduł palnika obcego jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2910",
+      "Opis_błędu": "Usterka w instalacji spalinowej (za duży lub za mały opór w strumieniu powietrza)",
+      "Rozwiązanie": "Sprawdzić układ wydechowy. Prawidłowo zamontować rurę spalinową. Usunąć przeszkodę w rurze spalinowej."
+    },
+    {
+      "Kod_błędu": "2911",
+      "Opis_błędu": "Kalibracja nie powiodła się",
+      "Rozwiązanie": "Wymienić wadliwe komponenty."
+    },
+    {
+      "Kod_błędu": "2912",
+      "Opis_błędu": "Brak sygnału płomienia podczas kalibracji",
+      "Rozwiązanie": "Wymienić wadliwe komponenty."
+    },
+    {
+      "Kod_błędu": "2913",
+      "Opis_błędu": "Zbyt niski sygnał płomienia podczas kalibracji",
+      "Rozwiązanie": "Wymienić elektrodę jonizującą."
+    },
+    {
+      "Kod_błędu": "2914",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Jeżeli usterka utrzymuje się nadal po wykonaniu resetu, sterownik urządzenia lub moduł palnika jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2915",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2916",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować urządzenie. Wywołać żądanie ciepła. Zakończyć żądanie ciepła. Jeśli usterka nadal będzie występować, oznacza to, że sterownik palnika jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2917",
+      "Opis_błędu": "Brak sygnału płomienia podczas kontroli regulacji spalania",
+      "Rozwiązanie": "Wyłączyć i ponownie załączyć kocioł. Wywołać żądanie ciepła. Odczekać 5 minut. Jeśli w tym czasie usterka ponownie wystąpi, zresetować urządzenie bez odłączania napięcia zasilającego."
+    },
+    {
+      "Kod_błędu": "2918",
+      "Opis_błędu": "Usterka przewodu spalinowego",
+      "Rozwiązanie": "Wyczyścić syfon i spuścić wodę z urządzenia (po stronie gazu)."
+    },
+    {
+      "Kod_błędu": "2920",
+      "Opis_błędu": "Usterka kontroli płomienia",
+      "Rozwiązanie": "Sprawdzić elektrody i kabel przyłączeniowy, w razie potrzeby wymienić. Sprawdzić, ew. wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "2921",
+      "Opis_błędu": "Urządzenie jest w trybie testowym",
+      "Rozwiązanie": "Zakończyć tryb testowy"
+    },
+    {
+      "Kod_błędu": "2922",
+      "Opis_błędu": "Błąd wewnętrzny sterownika palnika",
+      "Rozwiązanie": "Wymienić sterownik palnika."
+    },
+    {
+      "Kod_błędu": "2923",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, elektronika urządzenia jest uszkodzona i należy ją wymienić. Sprawdzić kabel zaworu gazowego i wtyczkę."
+    },
+    {
+      "Kod_błędu": "2924",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, elektronika urządzenia jest uszkodzona i należy ją wymienić. Sprawdzić kabel zaworu gazowego i wtyczkę."
+    },
+    {
+      "Kod_błędu": "2925",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Sprawdzić, w razie potrzeby wymienić armaturę gazową. Sprawdzić, ew. wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "2926",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Sprawdzić, w razie potrzeby wymienić armaturę gazową. Sprawdzić, ew. wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "2927",
+      "Opis_błędu": "Nie wykryto płomienia podczas zapłonu",
+      "Rozwiązanie": "Sprawdzić główny zawór odcinający dopływ paliwa, ew. otworzyć go. Sprawdzić zawór odcinający urządzenia, ew. otworzyć. Zmierzyć ciśnienie gazu na przyłączu przy znamionowym obciążeniu cieplnym. Sprawdzić elektrodę jonizacyjną i kabel przyłączeniowy, ew. wymienić."
+    },
+    {
+      "Kod_błędu": "2932",
+      "Opis_błędu": "Błąd wewnętrzny",
+      "Rozwiązanie": "Ponownie uruchomić urządzenie. Wyłączyć sterownik palnika."
+    },
+    {
+      "Kod_błędu": "2928",
+      "Opis_błędu": "Wewnętrzna usterka w automacie palnikowym",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2930",
+      "Opis_błędu": "Wewnętrzna usterka w automacie palnikowym",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2931",
+      "Opis_błędu": "Wewnętrzna usterka w automacie palnikowym",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2940",
+      "Opis_błędu": "Wewnętrzna usterka w automacie palnikowym",
+      "Rozwiązanie": "Zresetować urządzenie. Jeśli usterka utrzymuje się po resecie, automat palnikowy jest uszkodzony i należy go wymienić."
+    },
+    {
+      "Kod_błędu": "2941",
+      "Opis_błędu": "Zbyt słaby strumień przepływu w urządzeniu grzewczym",
+      "Rozwiązanie": "Sprawdzić wtyczkę czujnika temperatury zasilania, ew. podłączyć prawidłowo. Sprawdzić czujnik temperatury zasilania, ew. wymienić go. Sprawdzić czy pompa nie jest zablokowana, ew. usunąć blokadę. Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia."
+    },
+    {
+      "Kod_błędu": "2942",
+      "Opis_błędu": "Brak sygnału zwrotnego obrotów od wentylatora",
+      "Rozwiązanie": "Podłączyć wtyczkę regulacji prędkości obrotowej do wentylatora. Podłączyć wtyczkę zasilania elektrycznego do wentylatora. Wymienić kabel przyłączeniowy regulacji prędkości obrotowej między wentylatorem a automatem palnikowym."
+    },
+    {
+      "Kod_błędu": "2943",
+      "Opis_błędu": "Napięcie sieciowe jest zbyt niskie",
+      "Rozwiązanie": "Zapewnić napięcie zasilające o wartości co najmniej 196VAC. Wymienić automat palnikowy (SAFe)."
+    },
+    {
+      "Kod_błędu": "2944",
+      "Opis_błędu": "Przełącznik ciśnienia powietrza otwarty",
+      "Rozwiązanie": "Wyczyścić wbudowany syfon kondensatu. Usunąć niedrożności instalacji spalinowej. Ponownie podłączyć czujnik ciśnienia powietrza. Wymienić czujnik ciśnienia powietrza."
+    },
+    {
+      "Kod_błędu": "2945",
+      "Opis_błędu": "Zbyt wiele krótkich żądań ciepła w krótkim czasie",
+      "Rozwiązanie": "Zresetować urządzenie. Zwiększyć czas zablokowania przed ponownym załączeniem. Upewnić się, że co najmniej jeden zawór termostatyczny jest otwarty. Wymienić uszkodzoną pompę c.o."
+    },
+    {
+      "Kod_błędu": "2946",
+      "Opis_błędu": "Nieprawidłowa wtyczka kodująca",
+      "Rozwiązanie": "Sprawdzić wtyczkę kodującą, ew. wymienić ją."
+    },
+    {
+      "Kod_błędu": "2947",
+      "Opis_błędu": "Zabezpieczenie pompy przed blokadą zostało aktywowane",
+      "Rozwiązanie": "Funkcja zatrzymuje się automatycznie"
+    },
+    {
+      "Kod_błędu": "2948",
+      "Opis_błędu": "Brak sygnału płomienia przy małej wydajności",
+      "Rozwiązanie": "Sprawdzić ustawienia CO2"
+    },
+    {
+      "Kod_błędu": "2949",
+      "Opis_błędu": "Brak sygnału płomienia przy dużej wydajności",
+      "Rozwiązanie": "Sprawdzić uszczelki palnika, ew. wymienić. Zmniejszyć wydajność."
+    },
+    {
+      "Kod_błędu": "2950",
+      "Opis_błędu": "Brak sygnału płomienia po procesie uruchomienia",
+      "Rozwiązanie": "Sprawdzić i ewentualnie skorygować stosunek ilości gazu do powietrza"
+    },
+    {
+      "Kod_błędu": "2951",
+      "Opis_błędu": "Zbyt dużo zerwań płomienia",
+      "Rozwiązanie": "Patrz usterki blokujące, które wywołują blokadę"
+    },
+    {
+      "Kod_błędu": "2952",
+      "Opis_błędu": "Błąd wewnętrzny podczas testu sygnału jonizacji",
+      "Rozwiązanie": "Zresetować sterownik palnika. Wymienić sterownik palnika."
+    },
+    {
+      "Kod_błędu": "2953",
+      "Opis_błędu": "Brak sygnału płomienia przy małej wydajności",
+      "Rozwiązanie": "Jeśli ten błąd występuje częściej, sprawdzić ustawienia CO2"
+    },
+    {
+      "Kod_błędu": "2954",
+      "Opis_błędu": "Brak sygnału płomienia przy dużej wydajności",
+      "Rozwiązanie": "Wymienić uszczelki palnika. Zmniejszyć obciążenie palnika."
+    },
+    {
+      "Kod_błędu": "2955",
+      "Opis_błędu": "Ustawione parametry dla konfiguracji hydraulicznej nie są obsługiwane przez urządzenie grzewcze",
+      "Rozwiązanie": "Sprawdzić konfigurację hydrauliczną, ew. skorygować ją"
+    },
+    {
+      "Kod_błędu": "2956",
+      "Opis_błędu": "Hydrauliczna konfiguracja na urządzeniu grzewczym została aktywowana",
+      "Rozwiązanie": "Stan normalny - brak działania wymaganego"
+    },
+    {
+      "Kod_błędu": "2957",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Sprawdzić przyłącza elektryczne. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "2958",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zresetować elektronikę urządzenia. Sprawdzić przyłącza elektryczne. Wymienić elektronikę urządzenia."
+    },
+    {
+      "Kod_błędu": "2959",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zaktualizować wtyczkę kodującą"
+    },
+    {
+      "Kod_błędu": "2960",
+      "Opis_błędu": "Usterka instalacji elektroniki urządzenia",
+      "Rozwiązanie": "Zaktualizować wtyczkę kodującą"
+    },
+    {
+      "Kod_błędu": "2961",
+      "Opis_błędu": "Brak sygnału z wentylatora",
+      "Rozwiązanie": "Sprawdzić urządzenie, ew. wyłączyć je. Sprawdzić napięcie sieciowe."
+    },
+    {
+      "Kod_błędu": "2962",
+      "Opis_błędu": "Brak sygnału z wentylatora",
+      "Rozwiązanie": "Sprawdzić urządzenie, ew. wyłączyć je. Sprawdzić napięcie sieciowe."
+    },
+    {
+      "Kod_błędu": "2963",
+      "Opis_błędu": "Sygnał z ogranicznika temperatury bloku cieplnego znajduje się poza dopuszczalnym zakresem",
+      "Rozwiązanie": "Sprawdzić ogranicznik temperatury bloku cieplnego, w razie potrzeby wymienić. Sprawdzić czujnik temperatury zasilania, ew. wymienić go. Sprawdzić wtyczkę, ew. podłączyć ją prawidłowo."
+    },
+    {
+      "Kod_błędu": "2964",
+      "Opis_błędu": "Zbyt mały strumień przepływu w bloku cieplnym",
+      "Rozwiązanie": "Sprawdzić pozycję montażu czujnika temperatury zasilania, ew. zamontować prawidłowo. Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia. Sprawdzić pompę. Sprawdzić ustawienie zaworu w obiegu grzewczym, ew. otworzyć go."
+    },
+    {
+      "Kod_błędu": "2965",
+      "Opis_błędu": "Zbyt wysoka temperatura zasilania",
+      "Rozwiązanie": "Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia. Sprawdzić pompę. Sprawdzić ustawienie zaworu w obiegu grzewczym, ew. otworzyć go."
+    },
+    {
+      "Kod_błędu": "2966",
+      "Opis_błędu": "Zbyt szybki wzrost temperatury zasilania w bloku cieplnym",
+      "Rozwiązanie": "Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia. Sprawdzić pompę. Sprawdzić ustawienie zaworu w obiegu grzewczym, ew. otworzyć go."
+    },
+    {
+      "Kod_błędu": "2967",
+      "Opis_błędu": "Różnica temperatur między czujnikiem temperatury zasilania a ogranicznikiem temperatury bloku cieplnego jest zbyt duża",
+      "Rozwiązanie": "Sprawdzić pozycję montażu czujnika temperatury zasilania, ew. zamontować prawidłowo. Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia. Sprawdzić pompę."
+    },
+    {
+      "Kod_błędu": "2968",
+      "Opis_błędu": "Trwa uzupełnianie instalacji",
+      "Rozwiązanie": "Stan normalny - odczekać zakończenie uzupełniania"
+    },
+    {
+      "Kod_błędu": "2969",
+      "Opis_błędu": "Osiągnięto maksymalną liczbę procesów uzupełniania",
+      "Rozwiązanie": "Sprawdzić szczelność instalacji, usunąć nieszczelności"
+    },
+    {
+      "Kod_błędu": "2971",
+      "Opis_błędu": "Zbyt niskie ciśnienie robocze",
+      "Rozwiązanie": "Odpowietrzyć instalację ogrzewczą. Sprawdzić ciśnienie wody, ew. uzupełnić do osiągnięcia zadanego ciśnienia. Sprawdzić czujnik ciśnienia, ew. wymienić go."
+    },
+    {
+      "Kod_błędu": "2972",
+      "Opis_błędu": "Napięcie sieciowe jest zbyt niskie",
+      "Rozwiązanie": "Zapewnić prawidłowe zasilanie elektryczne"
+    },
+    {
+      "Kod_błędu": "2973",
+      "Opis_błędu": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+      "Rozwiązanie": "Wykonać reset. Wymienić automat palnikowy."
+    },
+    {
+      "Kod_błędu": "2974",
+      "Opis_błędu": "Błąd wewnętrzny",
+      "Rozwiązanie": "Ponownie uruchomić urządzenie. Wymienić sterownik palnika."
+    }
+  ],
+    "Buderus": [
+    {
+      "Kod_błędu": "6L 229",
+      "Opis_błędu": "Brak sygnału jonizacji podczas pracy palnika",
+      "Rozwiązanie": "Wyczyść elektrodę jonizacyjną, sprawdź połączenia i stan przewodów, zresetuj kocioł. Jeśli problem powraca, skontaktuj się z serwisem."
+    },
+    {
+      "Kod_błędu": "6A",
+      "Opis_błędu": "Niedostateczny prąd jonizacji podczas zapłonu",
+      "Rozwiązanie": "Sprawdź i oczyść elektrodę jonizacyjną, sprawdź podłączenie przewodów, ewentualnie wymień elektrodę."
+    },
+    {
+      "Kod_błędu": "4A",
+      "Opis_błędu": "Temperatura wody na zasileniu powyżej 105°C",
+      "Rozwiązanie": "Sprawdź ustawienia temperatury, odpowietrz instalację, sprawdź pracę pompy obiegowej."
+    },
+    {
+      "Kod_błędu": "3A",
+      "Opis_błędu": "Awaria zasilania wentylatora",
+      "Rozwiązanie": "Sprawdź przewody zasilające wentylator, sprawdź wentylator, ewentualnie wymiana przez serwis."
+    },
+    {
+      "Kod_błędu": "3Y",
+      "Opis_błędu": "Nieprawidłowa prędkość obrotowa wentylatora",
+      "Rozwiązanie": "Sprawdź wentylator i jego sterowanie, ewentualnie wymień wentylator."
+    },
+    {
+      "Kod_błędu": "IC",
+      "Opis_błędu": "Ogranicznik temperatury bezpieczeństwa spalin (STB) lub termostat palnika wykrył zbyt wysoką temperaturę",
+      "Rozwiązanie": "Sprawdź drożność wymiennika i przewodów spalinowych, sprawdź czujniki temperatury."
+    },
+    {
+      "Kod_błędu": "E0",
+      "Opis_błędu": "Brak napięcia zasilającego",
+      "Rozwiązanie": "Sprawdź podłączenie do sieci, bezpieczniki, przywróć zasilanie."
+    },
+    {
+      "Kod_błędu": "H7",
+      "Opis_błędu": "Problem z zapłonem",
+      "Rozwiązanie": "Sprawdź elektrody zapłonowe, dostępność gazu, spróbuj zresetować urządzenie."
+    },
+    {
+      "Kod_błędu": "EA",
+      "Opis_błędu": "Nieudany zapłon po kilku próbach",
+      "Rozwiązanie": "Sprawdź gaz, elektrody, spróbuj zresetować urządzenie."
+    },
+    {
+      "Kod_błędu": "2F",
+      "Opis_błędu": "Problem z czujnikiem temperatury wody",
+      "Rozwiązanie": "Sprawdź i ewentualnie wymień czujnik temperatury."
+    },
+    {
+      "Kod_błędu": "3L",
+      "Opis_błędu": "Problem z przepływem wody (może oznaczać potrzebę uzupełnienia lub odpowietrzenia systemu)",
+      "Rozwiązanie": "Uzupełnij wodę w instalacji, odpowietrz układ."
+    },
+    {
+      "Kod_błędu": "8Y",
+      "Opis_błędu": "Problemy z ciśnieniem w układzie",
+      "Rozwiązanie": "Uzupełnij wodę w instalacji, sprawdź szczelność układu."
+    }
+  ],
+  "Vaillant": [
+    {
+      "Kod_błędu": "F20",
+      "Opis_błędu": "Zadziałanie ogranicznika temperatury (przegrzanie kotła)",
+      "Rozwiązanie": "Sprawdź przepływ wody, uzupełnij wodę w instalacji, odpowietrz układ, sprawdź pracę pompy i drożność wymiennika."
+    },
+    {
+      "Kod_błędu": "F22",
+      "Opis_błędu": "Brak wody w kotle / zbyt niskie ciśnienie",
+      "Rozwiązanie": "Uzupełnij wodę w instalacji do poziomu ok. 1–1,5 bara, odpowietrz kocioł."
+    },
+    {
+      "Kod_błędu": "F23",
+      "Opis_błędu": "Zbyt duża różnica temperatury",
+      "Rozwiązanie": "Odpowietrz układ, sprawdź pompę i drożność instalacji."
+    },
+    {
+      "Kod_błędu": "F24",
+      "Opis_błędu": "Zbyt szybki wzrost temperatury",
+      "Rozwiązanie": "Sprawdź pracę pompy, drożność wymiennika, odpowietrz instalację."
+    },
+    {
+      "Kod_błędu": "F27",
+      "Opis_błędu": "Wykrycie płomienia przy zamkniętym zaworze gazowym",
+      "Rozwiązanie": "Skontaktuj się z serwisem – możliwa awaria elektroniki lub elektrody."
+    },
+    {
+      "Kod_błędu": "F28",
+      "Opis_błędu": "Brak zapłonu, nie wykryto płomienia",
+      "Rozwiązanie": "Sprawdź dostępność gazu, wyczyść elektrody zapłonowe, sprawdź przewody, zresetuj urządzenie. Jeśli problem powraca – serwis."
+    },
+    {
+      "Kod_błędu": "F29",
+      "Opis_błędu": "Zanik płomienia podczas pracy",
+      "Rozwiązanie": "Sprawdź ciśnienie gazu, wyczyść elektrody, sprawdź przewody, zresetuj urządzenie."
+    },
+    {
+      "Kod_błędu": "F33",
+      "Opis_błędu": "Brak sygnału z presostatu spalin",
+      "Rozwiązanie": "Sprawdź drożność przewodu spalinowego, presostat, wentylator."
+    },
+    {
+      "Kod_błędu": "F35",
+      "Opis_błędu": "Ograniczenie lub brak dopływu powietrza do komory spalania",
+      "Rozwiązanie": "Sprawdź drożność przewodu powietrzno-spalinowego, wymień filtr powietrza."
+    },
+    {
+      "Kod_błędu": "F36",
+      "Opis_błędu": "Wykryty wypływ spalin do pomieszczenia",
+      "Rozwiązanie": "Sprawdź przewód spalinowy, wentylator, presostat."
+    },
+    {
+      "Kod_błędu": "F75",
+      "Opis_błędu": "Brak skoku ciśnienia wody po załączeniu pompy",
+      "Rozwiązanie": "Sprawdź czujnik ciśnienia, pompę, drożność układu."
+    },
+    {
+      "Kod_błędu": "F37",
+      "Opis_błędu": "Za wysokie lub za niskie obroty wentylatora",
+      "Rozwiązanie": "Sprawdź wentylator i jego sterowanie."
+    },
+    {
+      "Kod_błędu": "F53",
+      "Opis_błędu": "Usterka czujnika przepływu",
+      "Rozwiązanie": "Sprawdź czujnik przepływu i przewody."
+    },
+    {
+      "Kod_błędu": "F54",
+      "Opis_błędu": "Usterka ciśnienia gazu",
+      "Rozwiązanie": "Sprawdź ciśnienie gazu, zawór gazowy, skontaktuj się z serwisem."
+    }
+  ],
+  "Beretta": [
+    {
+      "Kod_błędu": "A01",
+      "Opis_błędu": "Brak gazu, brak iskry, brak jonizacji, brak odpływu kondensatu",
+      "Rozwiązanie": "Sprawdź dostępność gazu, wyczyść elektrody zapłonowe i jonizacyjne, sprawdź odpływ kondensatu, zresetuj kocioł"
+    },
+    {
+      "Kod_błędu": "A02",
+      "Opis_błędu": "Zadziałał termostat granicznej temperatury",
+      "Rozwiązanie": "Sprawdź drożność wymiennika ciepła, odpowietrz instalację, sprawdź pracę pompy obiegowej"
+    },
+    {
+      "Kod_błędu": "A03",
+      "Opis_błędu": "Uszkodzony wentylator",
+      "Rozwiązanie": "Sprawdź przewody zasilające wentylator, sprawdź mechaniczne działanie wentylatora, ewentualnie wymiana przez serwis"
+    },
+    {
+      "Kod_błędu": "A04",
+      "Opis_błędu": "Zadziałał presostat wody",
+      "Rozwiązanie": "Sprawdź ciśnienie wody w instalacji (powinno wynosić 1-1,5 bara), uzupełnij wodę w razie potrzeby"
+    },
+    {
+      "Kod_błędu": "A06",
+      "Opis_błędu": "Uszkodzona sonda NTC ciepłej wody użytkowej",
+      "Rozwiązanie": "Sprawdź przewody czujnika NTC, ewentualnie wymień czujnik przez serwis"
+    },
+    {
+      "Kod_błędu": "A07",
+      "Opis_błędu": "Uszkodzona sonda NTC na zasilaniu centralnego ogrzewania",
+      "Rozwiązanie": "Sprawdź połączenia i stan czujnika temperatury na zasilaniu, wymiana przez serwis"
+    },
+    {
+      "Kod_błędu": "A08",
+      "Opis_błędu": "Uszkodzona sonda NTC na powrocie centralnego ogrzewania",
+      "Rozwiązanie": "Sprawdź połączenia i stan czujnika temperatury na powrocie, wymiana przez serwis"
+    },
+    {
+      "Kod_błędu": "A09",
+      "Opis_błędu": "Zadziałała sonda NTC na spalinach / Konieczność konserwacji kotła",
+      "Rozwiązanie": "Sprawdź drożność przewodu spalinowego, wykonaj konserwację kotła. Zerowanie licznika: wciśnij i przytrzymaj przycisk SW1 przez 4 sekundy"
+    },
+    {
+      "Kod_błędu": "A77",
+      "Opis_błędu": "Zadziałał termostat niskiej temperatury",
+      "Rozwiązanie": "Sprawdź temperaturę w pomieszczeniu, sprawdź działanie termostatu"
+    },
+    {
+      "Kod_błędu": "ACO",
+      "Opis_błędu": "Aktywna funkcja kominiarza",
+      "Rozwiązanie": "Funkcja serwisowa - kocioł pracuje z maksymalną/minimalną mocą do analizy spalin"
+    },
+    {
+      "Kod_błędu": "D",
+      "Opis_błędu": "Blokada braku płomienia - koniec prób uruchomienia kotła",
+      "Rozwiązanie": "Sprawdź gaz, elektrody, zresetuj kocioł, skontaktuj się z serwisem jeśli problem powraca"
+    }
+  ]
+
+
+}
+
+
