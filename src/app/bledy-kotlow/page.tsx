@@ -1,6 +1,5 @@
 'use client'
 import { useState, useMemo } from 'react'
-import type { Metadata } from 'next'
 import Link from 'next/link'
 import errorCodes from '@/data/error-codes.json'
 
@@ -139,7 +138,7 @@ export default function BledyKotlowPage() {
               </div>
               {searchTerm && (
                 <div>
-                  <span className="font-semibold">Wyszukiwanie:</span> "{searchTerm}"
+                  <span className="font-semibold">Wyszukiwanie:</span> {searchTerm}
                 </div>
               )}
             </div>

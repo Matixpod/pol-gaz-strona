@@ -4,7 +4,6 @@ import BrandsSection from '@/components/sections/BrandsSection'
 import ServicesSection from '@/components/sections/ServicesSection' 
 import MapSection from '@/components/sections/MapSection'
 import ReviewsSection from '@/components/sections/ReviewsSection'
-import ContactSection from '@/components/sections/ContactSection'
 
 export default function Home() {
   return (

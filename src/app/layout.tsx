@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Pol-Gaz Szczecin - Serwis Kotłów Beretta Junkers Buderus',
-  description: 'Serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta. 31 lat doświadczenia. Tel: 601 418 645',
+  description: 'Wojciech Podporski Serwis kotłów Beretta Junkers Buderus Vaillant Unical Saunier Duval w Szczecinie od 1994 roku. Ambasador firmy Beretta. 31 lat doświadczenia. Tel: 601 418 645',
   
 }
 

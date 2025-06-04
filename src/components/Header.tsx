@@ -53,7 +53,7 @@ export default function Header() {
     return () => {
       observer.disconnect()
     }
-  }, [isHomePage])
+  }, [navLinks])
 
   // Scroll detection
   useEffect(() => {

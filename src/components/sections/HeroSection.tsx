@@ -28,7 +28,7 @@ export default function HeroSection() {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 text-white leading-tight">
                 <span className="text-lg sm:text-xl lg:text-2xl xl:text-3xl block text-blue-200 mb-2">Od 1994 roku</span>
                 Profesjonalny<br />
-                serwis kotłów
+                serwis kotłów 
                 <span className="block text-yellow-400 mt-2">Szczecin i okolice</span>
                 
               </h1>
