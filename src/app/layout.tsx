@@ -59,16 +59,33 @@ export const metadata: Metadata = {
   creator: 'Pol-Gaz Szczecin',
   publisher: 'Pol-Gaz Szczecin',
   
+  // Canonical URL
+  metadataBase: new URL('https://polgaz-szczecin.pl'),
+  alternates: {
+    canonical: '/',
+  },
+  
   // Open Graph
   openGraph: {
     title: 'Pol-Gaz Szczecin - Serwis Kotłów od 1994',
-    description: 'Profesojnalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.',
+    description: 'Profesjonalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.', // Poprawiona literówka
     url: 'https://polgaz-szczecin.pl',
     siteName: 'Pol-Gaz Szczecin',
     locale: 'pl_PL',
     type: 'website',
+    images: [
+      {
+        
+        url: '../../public/images/pol-gaz-logo.WebP', // Dodaj obrazek Open Graph jeśli masz
+        width: 1200,
+        height: 630,
+        alt: 'Pol-Gaz Szczecin - Serwis Kotłów',
+      },
+    ],
   },
-    // Robots
+  
+  
+  // Robots
   robots: {
     index: true,
     follow: true,
@@ -80,12 +97,18 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-    icons: {
+  
+  // Verification - dodaj gdy utworzysz Google Search Console
+  verification: {
+    google: 'google-site-verification=j2TDkWkmC7lfa-89Wt-bjcb-3PupsBBxf1ZmVAwImMY',
+  },
+  
+  icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
+    shortcut: '/favicon-16x16.ico',
     apple: '/apple-touch-icon.png',
     other: [
-      { rel: 'icon', url: '/favicon-32x32.png' },
+      { rel: 'icon', url: '/favicon-32x32.ico' },
       { rel: 'icon', url: '/favicon-192x192.png' },
       { rel: 'icon', url: '/favicon-512x512.png' },
     ],
@@ -97,8 +120,36 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Structured Data JSON-LD
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pol-Gaz Szczecin",
+    "alternateName": "Pol-Gaz",
+    "url": "https://polgaz-szczecin.pl",
+    "telephone": "601-418-645",
+    "description": "Profesjonalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Szczecin",
+      "addressCountry": "PL"
+    },
+    "areaServed": ["Szczecin", "Police", "Goleniów", "Gryfino", "Stargard"],
+    "serviceType": "Serwis kotłów",
+    "founder": "Wojciech Podporski",
+    "foundingDate": "1994"
+  }
+
   return (
     <html lang="pl">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <Header />
         <main>
