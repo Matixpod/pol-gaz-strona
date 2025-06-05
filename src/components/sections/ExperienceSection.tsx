@@ -11,7 +11,7 @@ export default function ExperienceSection() {
           
           <div className="text-center p-4 lg:p-6">
             <div className="text-4xl lg:text-6xl font-bold text-blue-900 mb-2">2</div>
-            <div className="text-sm lg:text-base text-gray-600">Serwisantów<br/>Rodzinny biznes</div>
+            <div className="text-sm lg:text-base text-gray-600">Serwisantów</div>
           </div>
           
           <div className="text-center p-4 lg:p-6">

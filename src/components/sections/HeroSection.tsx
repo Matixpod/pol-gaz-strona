@@ -21,7 +21,6 @@ export default function HeroSection() {
           <div className="container mx-auto px-4 py-6 lg:py-12 h-full flex items-center">
             <div className="max-w-xl w-full text-center lg:text-left">
               <div className="inline-block bg-yellow-400 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-
                 Wojciech Podporski - Ambasador marki Beretta
               </div>
               
@@ -30,7 +29,6 @@ export default function HeroSection() {
                 Profesjonalny<br />
                 serwis kotłów 
                 <span className="block text-yellow-400 mt-2">Szczecin i okolice</span>
-                
               </h1>
               
               <div className="space-y-3 mb-6 lg:mb-8 text-blue-100">
