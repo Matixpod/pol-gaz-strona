@@ -7,8 +7,8 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Pol-Gaz Szczecin - Serwis Kotłów Beretta Junkers Buderus',
-  description: 'Wojciech Podporski Serwis kotłów Beretta Junkers Buderus Vaillant Unical Saunier Duval w Szczecinie. Ambasador firmy Beretta. 31 lat doświadczenia. Tel: 601 418 645',
+  title: 'POL-GAZ Szczecin - Serwis Kotłów Beretta Junkers Buderus',
+  description: 'Wojciech Podporski Serwis kotłów Beretta Junkers Buderus Vaillant Unical Saunier Duval w Szczecinie. Ambasador firmy Beretta. Tel: 601 418 645',
   keywords: [
     // Główne usługi
     'serwis kotłów Szczecin',
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
     'czyszczenie kotłów',
     
     // Inne
-    'Pol-Gaz Szczecin',
+    'POL-GAZ Szczecin',
     'rodzinny serwis kotłów',
     'doświadczony serwisant'
   ].join(', '),
   
-  authors: [{ name: 'Pol-Gaz Szczecin' }],
-  creator: 'Pol-Gaz Szczecin',
-  publisher: 'Pol-Gaz Szczecin',
+  authors: [{ name: 'POL-GAZ Szczecin' }],
+  creator: 'POL-GAZ Szczecin',
+  publisher: 'POL-GAZ Szczecin',
   
   // Canonical URL
   metadataBase: new URL('https://polgaz-szczecin.pl'),
@@ -67,21 +67,12 @@ export const metadata: Metadata = {
   
   // Open Graph
   openGraph: {
-    title: 'Pol-Gaz Szczecin - Serwis Kotłów od 1994',
+    title: 'POL-GAZ Szczecin - Serwis Kotłów od 1994',
     description: 'Profesjonalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.', // Poprawiona literówka
     url: 'https://polgaz-szczecin.pl',
-    siteName: 'Pol-Gaz Szczecin',
+    siteName: 'POL-GAZ Szczecin',
     locale: 'pl_PL',
     type: 'website',
-    images: [
-      {
-        
-        url: '../../public/images/pol-gaz-logo.WebP', // Dodaj obrazek Open Graph jeśli masz
-        width: 1200,
-        height: 630,
-        alt: 'Pol-Gaz Szczecin - Serwis Kotłów',
-      },
-    ],
   },
   
   
@@ -124,8 +115,8 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Pol-Gaz Szczecin",
-    "alternateName": "Pol-Gaz",
+    "name": "POL-GAZ Szczecin",
+    "alternateName": "POL-GAZ",
     "url": "https://polgaz-szczecin.pl",
     "telephone": "601-418-645",
     "description": "Profesjonalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.",
@@ -143,6 +134,8 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head>
+        {/* Ustawienie kodowania znaków */}
+        <meta charSet="UTF-8" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

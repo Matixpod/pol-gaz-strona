@@ -29,7 +29,7 @@ export default function ReviewsSection() {
               <div className="text-gray-600">Zadowolonych klientów</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-900 mb-2">29</div>
+              <div className="text-3xl font-bold text-blue-900 mb-2">31</div>
               <div className="text-gray-600">Lat budowania zaufania</div>
             </div>
           </div>

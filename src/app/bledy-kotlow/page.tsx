@@ -65,7 +65,7 @@ export default function BledyKotlowPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl lg:text-5xl font-bold mb-6">
-              Kody Błędów Kotłów
+              Popularne Kody Błędów Kotłów
             </h1>
             <p className="text-lg lg:text-xl text-blue-100 mb-8">
               Znajdź kod błędu swojego kotła i dowiedz się, jak rozwiązać problem

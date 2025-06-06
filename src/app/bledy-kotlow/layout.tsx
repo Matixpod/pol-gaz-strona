@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kody Błędów Kotłów - Beretta, Junkers, Buderus, Vaillant | Pol-Gaz Szczecin',
+  title: 'Kody Błędów Kotłów - POL-GAZ Szczecin',
   description: 'Znajdź kod błędu swojego kotła i dowiedz się jak go naprawić. Kody błędów Beretta, Junkers, Buderus, Vaillant, Unical, Saunier Duval. Serwis 601 418 645',
   keywords: [
     // Kody błędów ogólne
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   ].join(', '),
   
   openGraph: {
-    title: 'Kody Błędów Kotłów - Pol-Gaz Szczecin',
+    title: 'Kody Błędów Kotłów - POL-GAZ Szczecin',
     description: 'Znajdź kod błędu swojego kotła i dowiedz się jak go naprawić',
     url: 'https://polgaz-szczecin.pl/bledy-kotlow',
   },

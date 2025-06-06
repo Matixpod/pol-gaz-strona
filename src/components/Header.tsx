@@ -17,6 +17,7 @@ export default function Header() {
     { href: '#home', label: 'Strona główna', id: 'home', type: 'anchor' },
     { href: '#marki', label: 'Marki', id: 'marki', type: 'anchor' },
     { href: '#uslugi', label: 'Usługi', id: 'uslugi', type: 'anchor' },
+    { href: '#o-nas', label: 'O nas', id: 'o-nas', type: 'anchor' },
     { href: '#opinie', label: 'Opinie', id: 'opinie', type: 'anchor' },
     { href: '/bledy-kotlow', label: 'Błędy Kotłów', id: 'bledy', type: 'page' },
   ]

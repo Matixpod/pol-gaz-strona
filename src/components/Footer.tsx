@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Pol-Gaz Szczecin</h3>
+            <h3 className="text-lg font-semibold mb-4">POL-GAZ Szczecin</h3>
             <p className="text-gray-300">
               Profesjonalny serwis kotłów gazowych Beretta, Junkers, Buderus
             </p>
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400">
-          <p>&copy; 2025 Pol-Gaz Szczecin. Wszelkie prawa zastrzeżone.</p>
+          <p>&copy; 2025 POL-GAZ Szczecin. Wszelkie prawa zastrzeżone.</p>
         </div>
       </div>
     </footer>
