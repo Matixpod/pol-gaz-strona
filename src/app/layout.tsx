@@ -94,14 +94,21 @@ export const metadata: Metadata = {
     google: 'google-site-verification=j2TDkWkmC7lfa-89Wt-bjcb-3PupsBBxf1ZmVAwImMY',
   },
   
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.ico',
-    apple: '/apple-touch-icon.png',
+icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180' },
+    ],
     other: [
-      { rel: 'icon', url: '/favicon-32x32.ico' },
-      { rel: 'icon', url: '/favicon-192x192.png' },
-      { rel: 'icon', url: '/favicon-512x512.png' },
+      { rel: 'icon', url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { rel: 'icon', url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'icon', url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
+      { rel: 'manifest', url: '/site.webmanifest' },
     ],
   },
 }
