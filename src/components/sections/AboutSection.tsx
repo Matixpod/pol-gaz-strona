@@ -1,13 +1,35 @@
 import Image from 'next/image'
+import Script from 'next/script'
 
 export default function AboutSection() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "HVACBusiness",
+      "name": "POL-GAZ Szczecin Wojciech Podporski",
+      "foundingDate": "1994",
+      "founder": {
+        "@type": "Person",
+        "name": "Wojciech Podporski"
+      },
+      "award": "Oficjalny Ambasador marki Beretta",
+      "description": "Najstarszy i najbardziej doświadczony serwis kotłów gazowych w Szczecinie. Specjalizacja w markach Beretta, Junkers, Buderus, Vaillant, Unical i Saunier Duval."
+    }
+  };
+
   return (
-    <section id="o-nas" className="py-16 lg:py-20 bg-white scroll-offset">
+    <section id="o-nas" className="py-16 lg:py-20 bg-white scroll-offset" aria-labelledby="about-heading">
+      <Script
+        id="about-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       <div className="container mx-auto px-4">
         
         {/* Nagłówek sekcji */}
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-4 lg:mb-6">
+          <h2 id="about-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-4 lg:mb-6">
             O firmie POL-GAZ
           </h2>
           <p className="text-base lg:text-lg text-gray-700 max-w-3xl mx-auto">

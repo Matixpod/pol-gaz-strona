@@ -1,0 +1,1 @@
+# Refaktoryzacja: AboutSection.ts

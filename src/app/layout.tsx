@@ -121,21 +121,108 @@ export default function RootLayout({
   // Structured Data JSON-LD
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "POL-GAZ Szczecin",
-    "alternateName": "POL-GAZ",
-    "url": "https://polgaz-szczecin.pl",
-    "telephone": "601-418-645",
-    "description": "Profesjonalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Szczecin",
-      "addressCountry": "PL"
-    },
-    "areaServed": ["Szczecin", "Police", "Goleniów", "Gryfino", "Stargard"],
-    "serviceType": "Serwis kotłów",
-    "founder": "Wojciech Podporski",
-    "foundingDate": "1994"
+    "@graph": [
+      {
+        "@type": "HVACBusiness",
+        "@id": "https://polgaz-szczecin.pl/#organization",
+        "name": "POL-GAZ Szczecin Wojciech Podporski",
+        "alternateName": "Szczecin Serwis Kotłów Beretta",
+        "url": "https://polgaz-szczecin.pl",
+        "logo": "https://polgaz-szczecin.pl/logo.png",
+        "image": "https://polgaz-szczecin.pl/logo.png",
+        "telephone": "+48601418645",
+        "email": "polgazszczecin@wp.pl",
+        "priceRange": "$$",
+        "description": "Autoryzowany serwis, naprawa i montaż kotłów gazowych w Szczecinie. Ambasador firmy Beretta. Naprawiamy również: Junkers, Buderus, Vaillant.",
+        "foundingDate": "1994",
+        "founder": {
+          "@type": "Person",
+          "name": "Wojciech Podporski",
+          "jobTitle": "Ambasador Beretta / Główny Serwisant"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Szczecin",
+          "addressRegion": "Zachodniopomorskie",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.4285,
+          "longitude": 14.5528
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "09:00",
+            "closes": "15:00"
+          }
+        ],
+        "areaServed": [
+          { "@type": "City", "name": "Szczecin" },
+          { "@type": "City", "name": "Police" },
+          { "@type": "City", "name": "Goleniów" },
+          { "@type": "City", "name": "Gryfino" },
+          { "@type": "City", "name": "Stargard" }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "47"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Usługi serwisowe kotłów HVAC",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Autoryzowany serwis Beretta",
+                "description": "Profesjonalna naprawa i przeglądy kotłów marki Beretta w Szczecinie."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Przeglądy i konserwacja kotłów",
+                "description": "Regularne przeglądy kotłów gazowych gwarantujące bezpieczeństwo."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://polgaz-szczecin.pl/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Jakie marki pieców i kotłów gazowych naprawia POL-GAZ w Szczecinie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "POL-GAZ Szczecin Wojciech Podporski specjalizuje się w serwisie kotłów Beretta (jako Ambasador Marki), a także naprawia urządzenia marek: Junkers, Buderus, Vaillant, Unical i Saunier Duval."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Gdzie dojeżdża serwis kotłów POL-GAZ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Obsługujemy klientów na terenie całego Szczecina, a także w sąsiednich miejscowościach takich jak Police, Goleniów, Gryfino oraz Stargard."
+            }
+          }
+        ]
+      }
+    ]
   }
 
   return (

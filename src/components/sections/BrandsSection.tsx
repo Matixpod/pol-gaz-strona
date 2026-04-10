@@ -5,37 +5,37 @@ export default function BrandsSection() {
     {
       name: 'Beretta',
       logo: '/images/brands/Beretta_logo.WebP',
-      description: 'Włoskie kotły kondensacyjne',
+      description: 'Włoski producent wysokoefektywnych kotłów kondensacyjnych, w tym serii Mythos, Aluxtra i RRT.',
       url: 'https://beretta.pl/'
     },
     {
       name: 'Junkers',
       logo: '/images/brands/Junkers_logo.WebP',
-      description: 'Niemiecka tradycja i innowacja',
+      description: 'Niemiecki producent kotłów gazowych i systemów grzewczych, część koncernu Bosch. Działa od 1895 roku.',
       url: 'https://www.bosch-thermotechnology.com/pl/pl/bosch-thermotechnology/'
     },
     {
       name: 'Buderus',
       logo: '/images/brands/Buderus_logo.WebP',
-      description: 'Niezawodność od 1731 roku',
+      description: 'Niemiecka marka założona w 1731 roku, część grupy Bosch. Specjalizuje się w kotłach kondensacyjnych i systemach solarnych.',
       url: 'https://www.buderus.com/pl/pl/'
     },
     {
       name: 'Unical',
       logo: '/images/brands/Unical_logo.WebP',
-      description: 'Włoska jakość i design',
+      description: 'Włoski producent kotłów gazowych, pomp ciepła i systemów fotowoltaicznych. Działa od 1970 roku.',
       url: 'https://www.unical.pl/'
     },
     {
       name: 'Vaillant',
       logo: '/images/brands/Vaillant_logo.WebP',
-      description: 'Ekologiczne rozwiązania',
+      description: 'Niemiecki koncern założony w 1874 roku. Lider w produkcji ekologicznych kotłów kondensacyjnych i pomp ciepła.',
       url: 'https://www.vaillant.pl/'
     },
     {
       name: 'Saunier Duval',
       logo: '/images/brands/SaunierDuval_logo.WebP',
-      description: 'Francuska elegancja',
+      description: 'Francuski producent kotłów kondensacyjnych i systemów solarnych, część grupy BDR Thermea.',
       url: 'https://www.saunierduval.pl/'
     }
   ]
@@ -46,62 +46,62 @@ export default function BrandsSection() {
         
         {/* Responsive nagłówek */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-blue-900 mb-4 lg:mb-6">
-          Obsługujemy kotły renomowanych marek
+          Serwis kotłów gazowych renomowanych marek w Szczecinie
         </h2>
         <p className="text-sm sm:text-base lg:text-lg text-center text-gray-700 max-w-3xl mx-auto mb-8 lg:mb-16 px-4">
-          Jesteśmy autoryzowanym serwisem najlepszych europejskich producentów 
-          kotłów gazowych i urządzeń grzewczych.
+          Jesteśmy autoryzowanym serwisem marek <strong>Beretta, Junkers, Buderus, Unical, Vaillant i Saunier Duval</strong>. Status oficjalnego Ambasadora marki Beretta potwierdza nasze kwalifikacje i bezpośrednią współpracę z producentem.
         </p>
         
         {/* Responsive grid dla marek z linkami */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8" role="list">
           {brands.map((brand) => (
-            <a
-              key={brand.name}
-              href={brand.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white rounded-lg shadow-lg p-3 sm:p-4 lg:p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer block"
-            >
-              {/* Responsive logo container */}
-              <div className="h-16 sm:h-20 lg:h-24 flex items-center justify-center mb-2 sm:mb-3 lg:mb-4 relative overflow-hidden">
-                <Image
-                  src={brand.logo}
-                  alt={`Logo ${brand.name} - przejdź na stronę producenta`}
-                  width={120}
-                  height={80}
-                  className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                  sizes="(max-width: 640px) 80px, (max-width: 1024px) 100px, 120px"
-                />
-                
-                {/* Ikona zewnętrznego linku - pojawia się przy hover */}
-                <div className="absolute top-1 right-1 bg-blue-900 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+            <li key={brand.name}>
+              <a
+                href={brand.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg shadow-lg p-3 sm:p-4 lg:p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer block"
+              >
+                {/* Responsive logo container */}
+                <div className="h-16 sm:h-20 lg:h-24 flex items-center justify-center mb-2 sm:mb-3 lg:mb-4 relative overflow-hidden">
+                  <Image
+                    src={brand.logo}
+                    alt={`Logo ${brand.name} - przejdź na stronę producenta`}
+                    width={120}
+                    height={80}
+                    className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 100px, 120px"
+                  />
+                  
+                  {/* Ikona zewnętrznego linku - pojawia się przy hover */}
+                  <div className="absolute top-1 right-1 bg-blue-900 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              
-              {/* Responsive typography */}
-              <h3 className="text-sm sm:text-base lg:text-xl font-semibold text-blue-900 mb-1 sm:mb-2 group-hover:text-blue-700 transition-colors">
-                {brand.name}
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-600 leading-tight group-hover:text-gray-800 transition-colors">
-                {brand.description}
-              </p>
-              
-              {/* Tekst zachęcający do kliknięcia */}
-              <div className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-xs text-blue-900 font-medium">
-                  Odwiedź stronę producenta →
-                </span>
-              </div>
-            </a>
+                
+                {/* Responsive typography */}
+                <h3 className="text-sm sm:text-base lg:text-xl font-semibold text-blue-900 mb-1 sm:mb-2 group-hover:text-blue-700 transition-colors">
+                  {brand.name}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-tight group-hover:text-gray-800 transition-colors">
+                  {brand.description}
+                </p>
+                
+                {/* Tekst zachęcający do kliknięcia */}
+                <div className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-xs text-blue-900 font-medium">
+                    Odwiedź stronę producenta →
+                  </span>
+                </div>
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
 
         {/* Responsive sekcja Ambasadora Beretta - też z linkiem */}
-        <div className="mt-8 lg:mt-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl p-4 sm:p-6 lg:p-8 text-center">
+        <section aria-label="Oficjalny Ambasador marki Beretta" className="mt-8 lg:mt-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl p-4 sm:p-6 lg:p-8 text-center">
           <div className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-6">
             
             {/* Logo Beretta z linkiem */}
@@ -110,6 +110,7 @@ export default function BrandsSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white rounded-lg p-3 sm:p-4 shadow-lg flex-shrink-0 hover:shadow-xl transition-shadow duration-300 group"
+              aria-label="Przejdź na oficjalną stronę producenta Beretta"
             >
               <Image
                 src="/images/brands/Beretta_logo.WebP"
@@ -122,22 +123,100 @@ export default function BrandsSection() {
             </a>
             
             {/* Tekst */}
-            <div className="text-blue-900 flex-1 text-center">
+            <div className="text-blue-900 flex-1 text-center lg:text-left">
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2">
+                Specjalizujemy się w serwisie kotłów Beretta
+              </h3>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-4">
                 Wojciech Podporski - Oficjalny Ambasador marki Beretta
               </h3>
               <p className="text-sm sm:text-base lg:text-lg leading-relaxed mx-auto">
+                <strong>Status Ambasadora marki Beretta</strong> to oficjalne wyróżnienie przyznawane przez producenta serwisom o najwyższych kwalifikacjach, potwierdzone wieloletnią współpracą i wynikami.
                 
-                    Z ponad 31-letnim doświadczeniem w branży grzewczej, Wojciech Podporski czterokrotnie otrzymał prestiżowy tytuł Ambasadora marki Beretta. To wyróżnienie przyznawane jest wyłącznie najlepszym specjalistom w kraju i potwierdza najwyższy standard usług, profesjonalizm oraz wieloletnią współpracę z producentem.
+                Z ponad 31-letnim doświadczeniem w branży grzewczej, Wojciech Podporski czterokrotnie otrzymał ten prestiżowy tytuł. To wyróżnienie przyznawane jest wyłącznie najlepszym specjalistom w kraju i potwierdza najwyższy standard usług, profesjonalizm oraz bezpośredni dostęp do szkoleń, narzędzi i części zamiennych producenta.
 
-                    Jako jeden z nielicznych serwisów w Polsce posiadamy oficjalny status Ambasadora Beretta - gwarancję jakości, rzetelności i pełnego zaufania.
+                Jako jeden z nielicznych serwisów w Polsce posiadamy oficjalny status Ambasadora Beretta - gwarancję jakości, rzetelności i pełnego zaufania.
               </p>
             </div>
             
           </div>
-        </div>
+        </section>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Obsługiwane marki kotłów gazowych - serwis Pol-Gaz",
+            "description": "Autoryzowany serwis renomowanych europejskich marek kotłów gazowych: Beretta, Junkers, Buderus, Unical, Vaillant, Saunier Duval.",
+            "numberOfItems": 6,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Brand",
+                  "name": "Beretta",
+                  "description": "Włoskie kotły kondensacyjne",
+                  "url": "https://beretta.pl/"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Brand",
+                  "name": "Junkers",
+                  "description": "Niemiecka tradycja i innowacja",
+                  "url": "https://www.bosch-thermotechnology.com/pl/pl/bosch-thermotechnology/"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Brand",
+                  "name": "Buderus",
+                  "description": "Niezawodność od 1731 roku",
+                  "url": "https://www.buderus.com/pl/pl/"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "Brand",
+                  "name": "Unical",
+                  "description": "Włoska jakość i design",
+                  "url": "https://www.unical.pl/"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "Brand",
+                  "name": "Vaillant",
+                  "description": "Ekologiczne rozwiązania",
+                  "url": "https://www.vaillant.pl/"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "Brand",
+                  "name": "Saunier Duval",
+                  "description": "Francuska elegancja",
+                  "url": "https://www.saunierduval.pl/"
+                }
+              }
+            ]
+          })
+        }}
+      />
     </section>
   )
 }
