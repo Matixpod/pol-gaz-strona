@@ -236,6 +236,9 @@ export default function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
+        {/* Shapo dynamiczny schemat JSON-LD na potrzeby opinii (AEO/GEO) */}
+        <script type="application/ld+json" id="shapo-ratingschema-05ab1699c4"></script>
+        <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
       </head>
       <body className={inter.className}>
         <Header />

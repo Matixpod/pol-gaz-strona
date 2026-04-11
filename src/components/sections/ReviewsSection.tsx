@@ -1,5 +1,3 @@
-import Script from 'next/script'
-
 export default function ReviewsSection() {
   return (
     <section id="opinie" className="py-20 bg-gray-50 scroll-offset">
@@ -12,14 +10,9 @@ export default function ReviewsSection() {
           Zaufały nam tysiące klientów ze Szczecina i okolic. Od 1994 roku budujemy naszą reputację na rzetelności, profesjonalizmie i szybkim czasie reakcji. Sprawdź, co mówią o nas klienci.
         </p>
 
-        {/* Shapo Widget - zaimplementowany asynchronicznie, aby nie blokować renderowania */}
+        {/* Shapo Widget - skrypty przenesione do głównego head aby obsługiwać też gwiazdki pod kątem podstron */}
         <div className="w-full max-w-6xl mx-auto mt-16 min-h-[400px]">
           <div id="shapo-widget-4c3efbbd82f017e5593f"></div>
-          <Script 
-            id="shapo-embed-js" 
-            src="https://cdn.shapo.io/js/embed.js" 
-            strategy="lazyOnload" 
-          />
         </div>
       </div>
     </section>

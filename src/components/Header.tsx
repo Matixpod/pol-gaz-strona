@@ -13,18 +13,18 @@ export default function Header() {
   // Sprawdź czy jesteśmy na stronie głównej
   const isHomePage = pathname === '/'
 
-  const navLinks = [
-    { href: '#home', label: 'Strona główna', id: 'home', type: 'anchor' },
-    { href: '#marki', label: 'Marki', id: 'marki', type: 'anchor' },
-    { href: '#uslugi', label: 'Usługi', id: 'uslugi', type: 'anchor' },
-    { href: '#o-nas', label: 'O nas', id: 'o-nas', type: 'anchor' },
-    { href: '#opinie', label: 'Opinie', id: 'opinie', type: 'anchor' },
-    { href: '/bledy-kotlow', label: 'Błędy Kotłów', id: 'bledy', type: 'page' },
-  ]
-
   // Intersection Observer tylko na stronie głównej
   useEffect(() => {
     if (!isHomePage) return
+
+    const navLinks = [
+      { href: '#home', label: 'Strona główna', id: 'home', type: 'anchor' },
+      { href: '#marki', label: 'Marki', id: 'marki', type: 'anchor' },
+      { href: '#uslugi', label: 'Usługi', id: 'uslugi', type: 'anchor' },
+      { href: '#o-nas', label: 'O nas', id: 'o-nas', type: 'anchor' },
+      { href: '#opinie', label: 'Opinie', id: 'opinie', type: 'anchor' },
+      { href: '/bledy-kotlow', label: 'Błędy Kotłów', id: 'bledy', type: 'page' },
+    ]
 
     const observerOptions = {
       root: null,
@@ -54,7 +54,7 @@ export default function Header() {
     return () => {
       observer.disconnect()
     }
-  }, [isHomePage, navLinks])
+  }, [isHomePage])
 
   // Scroll detection
   useEffect(() => {
@@ -101,6 +101,15 @@ export default function Header() {
       }
     }
   }, [isHomePage])
+
+  const navLinks = [
+    { href: '#home', label: 'Strona główna', id: 'home', type: 'anchor' },
+    { href: '#marki', label: 'Marki', id: 'marki', type: 'anchor' },
+    { href: '#uslugi', label: 'Usługi', id: 'uslugi', type: 'anchor' },
+    { href: '#o-nas', label: 'O nas', id: 'o-nas', type: 'anchor' },
+    { href: '#opinie', label: 'Opinie', id: 'opinie', type: 'anchor' },
+    { href: '/bledy-kotlow', label: 'Błędy Kotłów', id: 'bledy', type: 'page' },
+  ]
 
   return (
     <header 

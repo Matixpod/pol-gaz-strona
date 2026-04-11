@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function ContactSection() {
   return (
     <section id="kontakt" aria-label="Dane kontaktowe serwisu kotłów POL-GAZ" className="py-20 bg-blue-900 text-white scroll-offset">
@@ -7,7 +9,7 @@ export default function ContactSection() {
           <h2 className="text-4xl font-bold mb-6">Kontakt do serwisu kotłów POL-GAZ w Szczecinie</h2>
           <p className="text-xl text-blue-100 mb-12">
             <strong>Pol-Gaz</strong> to rodzinny, autoryzowany serwis kotłów gazowych działający w <strong>Szczecinie od 1994 roku</strong>. Specjalizujemy się w serwisie i naprawie pieców gazowych, w tym marki <strong>Beretta</strong>. Oferujemy przeglądy techniczne, naprawy awaryjne oraz konsultacje. Obsługujemy klientów indywidualnych w Szczecinie i okolicach. Wojciech Podporski, prowadzący serwis, jest <strong>Ambasadorem marki Beretta</strong>, co gwarantuje ekspercką wiedzę techniczną.
-            <a href="/#uslugi" className="text-yellow-300 underline hover:text-yellow-200 ml-1">Zobacz szczegóły naszych usług serwisowych</a>.
+            <Link href="/#uslugi" className="text-yellow-300 underline hover:text-yellow-200 ml-1">Zobacz szczegóły naszych usług serwisowych</Link>.
           </p>
           
           {/* Dane kontaktowe w środku */}
