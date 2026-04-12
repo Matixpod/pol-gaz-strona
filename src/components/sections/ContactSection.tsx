@@ -87,34 +87,6 @@ export default function ContactSection() {
 
         </div>
       </div>
-      {/* JSON-LD dla danych kontaktowych */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ContactPoint",
-            "contactType": "customer service",
-            "telephone": "+48 601 418 645",
-            "email": "polgazszczecin@wp.pl",
-            "availableLanguage": "Polish",
-            "areaServed": "PL",
-            "hoursAvailable": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-              ],
-              "opens": "08:00",
-              "closes": "18:00"
-            },
-            "description": "Serwis kotłów gazowych w Szczecinie. Kontakt telefoniczny i mailowy w sprawach serwisu, napraw awaryjnych i przeglądów technicznych."
-          })
-        }}
-      />
     </section>
   )
 }

@@ -68,11 +68,19 @@ export const metadata: Metadata = {
   // Open Graph
   openGraph: {
     title: 'POL-GAZ Szczecin - Serwis Kotłów od 1994',
-    description: 'Profesjonalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.', // Poprawiona literówka
+    description: 'Profesjonalny serwis kotłów w Szczecinie od 1994 roku. Ambasador firmy Beretta.',
     url: 'https://polgaz-szczecin.pl',
     siteName: 'POL-GAZ Szczecin',
     locale: 'pl_PL',
     type: 'website',
+    images: [
+      {
+        url: '/images/pol-gaz-logo.WebP',
+        width: 1200,
+        height: 630,
+        alt: 'POL-GAZ Szczecin - Serwis Kotłów Gazowych',
+      },
+    ],
   },
   
   
@@ -129,7 +137,7 @@ export default function RootLayout({
         "alternateName": "Szczecin Serwis Kotłów Beretta",
         "url": "https://polgaz-szczecin.pl",
         "logo": "https://polgaz-szczecin.pl/logo.png",
-        "image": "https://polgaz-szczecin.pl/logo.png",
+        "image": "https://polgaz-szczecin.pl/images/hero-team.WebP",
         "telephone": "+48601418645",
         "email": "polgazszczecin@wp.pl",
         "priceRange": "$$",
@@ -201,6 +209,19 @@ export default function RootLayout({
         }
       },
       {
+        "@type": "WebSite",
+        "@id": "https://polgaz-szczecin.pl/#website",
+        "url": "https://polgaz-szczecin.pl",
+        "name": "POL-GAZ Szczecin",
+        "publisher": { "@id": "https://polgaz-szczecin.pl/#organization" }
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://polgaz-szczecin.pl/#about",
+        "url": "https://polgaz-szczecin.pl/#o-nas",
+        "mainEntity": { "@id": "https://polgaz-szczecin.pl/#organization" }
+      },
+      {
         "@type": "FAQPage",
         "@id": "https://polgaz-szczecin.pl/#faq",
         "mainEntity": [
@@ -217,7 +238,63 @@ export default function RootLayout({
             "name": "Gdzie dojeżdża serwis kotłów POL-GAZ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Obsługujemy klientów na terenie całego Szczecina, a także w sąsiednich miejscowościach takich jak Police, Goleniów, Gryfino oraz Stargard."
+              "text": "Obsługujemy klientów na terenie całego Szczecina, a także w sąsiednich miejscowościach takich jak Police, Goleniów, Gryfino oraz Stargard (do 60km od centrum Szczecina)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak długo czekam na przyjazd serwisanta w przypadku nagłej awarii?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Na terenie Szczecina staramy się reagować natychmiast, a czas oczekiwania na przyjazd serwisanta podczas nagłej awarii wynosi średnio od 1 do 3 godzin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy wykonujecie roczne przeglądy techniczne kotłów?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak, regularne, coroczne przeglądy techniczne są absolutną koniecznością dla zachowania gwarancji, bezpieczeństwa domowników i niskiego zużycia gazu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Od jak dawna działacie na rynku zachodniopomorskim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zajmujemy się kotłami od 1994 roku. Posiadamy ponad 30-letnie doświadczenie. Założyciel, Wojciech Podporski, przez ten czas zrealizował ponad 37 000 udanych napraw i wizyt kontrolnych."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy wykonujecie również montaż i wymianę pieców gazowych?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak, oprócz serwisu prowadzimy również profesjonalny montaż nowych pieców gazowych oraz wymianę wysłużonych urządzeń na nowoczesne, energooszczędne kotły."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jakie są godziny pracy serwisu Pol-Gaz w Szczecinie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Serwis Pol-Gaz w Szczecinie jest dostępny od poniedziałku do piątku w godzinach 8:00 - 18:00. W soboty przyjmujemy zlecenia na umówione wizyty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Na jakim numerze telefonu mogę zgłosić awarię kotła gazowego w Szczecinie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Awarię kotła gazowego w Szczecinie i okolicach można zgłosić pod numerem telefonu 601 418 645."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ile kosztuje przegląd kotła gazowego w Szczecinie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Koszt przeglądu okresowego kotła gazowego w Szczecinie zaczyna się od około 150 zł netto. Cena zależy od modelu kotła i zakresu prac."
             }
           }
         ]

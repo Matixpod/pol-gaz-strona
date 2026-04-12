@@ -56,10 +56,22 @@ export const metadata: Metadata = {
     'pomoc techniczna kotły'
   ].join(', '),
   
+  alternates: {
+    canonical: '/bledy-kotlow/',
+  },
+  
   openGraph: {
     title: 'Kody Błędów Kotłów - POL-GAZ Szczecin',
     description: 'Znajdź kod błędu swojego kotła i dowiedz się jak go naprawić',
-    url: 'https://polgaz-szczecin.pl/bledy-kotlow',
+    url: 'https://polgaz-szczecin.pl/bledy-kotlow/',
+    images: [
+      {
+        url: '/images/hero-team.WebP',
+        width: 1200,
+        height: 630,
+        alt: 'Kody Błędów Kotłów - POL-GAZ Szczecin',
+      },
+    ],
   },
 }
 

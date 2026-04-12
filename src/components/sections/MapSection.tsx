@@ -80,58 +80,6 @@ export default function MapSection() {
           </div>
         </div>
       </div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Serwis kotłów gazowych w Szczecinie i okolicach",
-            "description": "Świadczymy usługi serwisu, naprawy i przeglądów kotłów gazowych w Szczecinie i promieniu 60km od miasta. Obszar ten obejmuje m.in. Police, Goleniów, Gryfino, Stargard, Myślibórz i Chojnę. Średni czas dojazdu serwisanta do klientów w tym regionie wynosi do 90 minut.",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Pol-Gaz",
-              "url": "https://www.pol-gaz.com",
-              "telephone": "+48601418645",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Szczecin",
-                "addressCountry": "PL"
-              },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  "opens": "08:00",
-                  "closes": "18:00"
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": "Saturday",
-                  "opens": "00:00",
-                  "closes": "00:00",
-                  "description": "Na umówione zlecenia"
-                }
-              ]
-            },
-            "areaServed": {
-              "@type": "GeoCircle",
-              "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "53.4289",
-                "longitude": "14.5530"
-              },
-              "geoRadius": "60000"
-            },
-            "serviceType": [
-              "Serwis kotłów gazowych",
-              "Naprawa pieców gazowych",
-              "Przeglądy techniczne kotłów"
-            ],
-            "brand": "Beretta"
-          })
-        }}
-      />
     </section>
   )
 }

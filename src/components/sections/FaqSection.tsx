@@ -58,16 +58,13 @@ export default function FaqSection() {
             <div 
               key={index} 
               className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
-              itemScope 
-              itemProp="mainEntity" 
-              itemType="https://schema.org/Question"
             >
               <button
                 className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors"
                 onClick={() => toggleFaq(index)}
                 aria-expanded={openIndex === index}
               >
-                <span className="font-bold text-blue-900 text-lg pr-8" itemProp="name">
+                <span className="font-bold text-blue-900 text-lg pr-8">
                   {faq.question}
                 </span>
                 <span 
@@ -81,11 +78,8 @@ export default function FaqSection() {
               
               <div 
                 className={`transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
-                itemScope 
-                itemProp="acceptedAnswer" 
-                itemType="https://schema.org/Answer"
               >
-                <div className="px-6 pb-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2" itemProp="text">
+                <div className="px-6 pb-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2">
                   <span className="block pt-4">{faq.answer}</span>
                 </div>
               </div>

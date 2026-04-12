@@ -91,49 +91,6 @@ export default function HeroSection() {
           
         </div>
       </main>
-
-      {/* JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Pol-Gaz",
-            "url": "https://www.pol-gaz.com",
-            "telephone": "+48601418645",
-            "description": "Profesjonalny serwis kotłów gazowych w Szczecinie i okolicach od 1994 roku. Specjalizacja w naprawie i przeglądach pieców gazowych, w tym marki Beretta. Szybka pomoc w nagłych awariach.",
-            "image": "https://www.pol-gaz.com/images/hero-team.WebP",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Szczecin",
-              "addressCountry": "PL"
-            },
-            "areaServed": {
-              "@type": "City",
-              "name": "Szczecin i okolice"
-            },
-            "founder": {
-              "@type": "Person",
-              "name": "Wojciech Podporski",
-              "jobTitle": "Ambasador marki Beretta"
-            },
-            "foundingDate": "1994",
-            "makesOffer": [
-              {
-                "@type": "Service",
-                "name": "Serwis kotłów gazowych",
-                "description": "Profesjonalna naprawa i przeglądy kotłów gazowych."
-              },
-              {
-                "@type": "Service",
-                "name": "Szybka pomoc awaryjna",
-                "description": "Interwencja w przypadku nagłych awarii pieców gazowych."
-              }
-            ]
-          })
-        }}
-      />
     </>
   )
 }
