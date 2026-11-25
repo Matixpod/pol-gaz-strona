@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/o-firmie/',
     '/kontakt/',
     '/polityka-prywatnosci/',
+    '/o-stronie/',
   ]
   return sciezki.map((s) => ({ url: `${firma.url}${s}`, lastModified: dataAktualizacji }))
 }

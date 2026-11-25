@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { firma, miejscowosci } from '@/data/firma'
+import { firma, miejscowosci, wykonawca } from '@/data/firma'
 import { uslugi } from '@/data/uslugi'
 import { marki, etykietaSerwisu } from '@/data/marki'
 
@@ -87,13 +87,26 @@ export default function Footer() {
                 Polityka prywatności
               </Link>
             </li>
+            <li>
+              <Link href="/o-stronie/" className="inline-block py-2 hover:underline">
+                O tej stronie
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/15">
-        <p className="kontener py-5 text-sm">
-          © {new Date().getFullYear()} {firma.nazwa}
-        </p>
+        <div className="kontener flex flex-wrap justify-between gap-x-6 gap-y-2 py-5 text-sm">
+          <p>
+            © {new Date().getFullYear()} {firma.nazwa}
+          </p>
+          <p>
+            Projekt i wykonanie:{' '}
+            <a href={wykonawca.url} className="underline underline-offset-4">
+              {wykonawca.nazwa}
+            </a>
+          </p>
+        </div>
       </div>
 
       {/* Pasek telefonu na telefonach */}

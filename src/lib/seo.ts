@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { firma, miejscowosci, ambasadorLata, dataAktualizacji } from '@/data/firma'
+import { firma, miejscowosci, ambasadorLata, dataAktualizacji, wykonawca } from '@/data/firma'
 
 const abs = (sciezka: string) => `${firma.url}${sciezka}`
 
@@ -35,6 +35,7 @@ export function schemaWitryny() {
     name: firma.krotka,
     inLanguage: 'pl-PL',
     publisher: { '@id': ID_FIRMY },
+    creator: { '@type': 'ProfessionalService', '@id': wykonawca.id, name: wykonawca.nazwa, url: wykonawca.url },
   }
 }
 

@@ -32,7 +32,15 @@ export const firma = {
   shapoWidgetId: 'shapo-widget-4c3efbbd82f017e5593f',
 } as const
 
-export const lataNaRynku = () => new Date().getFullYear() - firma.rokZalozenia
+// Wykonawca strony (podpis w stopce, /o-stronie/, creator w węźle WebSite). Właściciel zgodził się na podpis.
+// Linki do onsait.pl są tylko dwa: w stopce i w treści /o-stronie/. Nie dodawać kolejnych.
+export const wykonawca = {
+  nazwa: 'OnSait',
+  url: 'https://onsait.pl',
+  id: 'https://onsait.pl/#business',
+} as const
+
+export const lataNaRynku =() => new Date().getFullYear() - firma.rokZalozenia
 
 // „32 lata”, „35 lat”: odmiana zależna od liczby.
 export const lataSlownie = () => {
