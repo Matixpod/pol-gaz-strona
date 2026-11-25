@@ -1,29 +1,18 @@
 import type { Metadata, Viewport } from 'next'
-import { Barlow_Semi_Condensed, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google'
+import './fonts.css'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { firma } from '@/data/firma'
 
-const barlow = Barlow_Semi_Condensed({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['600', '700'],
-  variable: '--font-barlow',
-  display: 'swap',
-})
-const plex = IBM_Plex_Sans({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600'],
-  variable: '--font-plex',
-  display: 'swap',
-})
-const plexMono = IBM_Plex_Mono({
-  subsets: ['latin'],
-  weight: ['500'],
-  variable: '--font-plex-mono',
-  display: 'swap',
-  preload: false,
-})
+// Czcionki są w public/fonts (definicje w fonts.css). Wczytujemy z wyprzedzeniem te z tekstu nad zgięciem;
+// polskie znaki są w plikach latin-ext.
+const czcionkiNaStart = [
+  'ibm-plex-sans-400-600-latin',
+  'ibm-plex-sans-400-600-latin-ext',
+  'barlow-semi-condensed-700-latin',
+  'barlow-semi-condensed-700-latin-ext',
+]
 
 export const metadata: Metadata = {
   metadataBase: new URL(firma.url),
@@ -38,7 +27,12 @@ export const viewport: Viewport = { themeColor: '#12245b' }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pl" className={`${barlow.variable} ${plex.variable} ${plexMono.variable}`}>
+    <html lang="pl">
+      <head>
+        {czcionkiNaStart.map((c) => (
+          <link key={c} rel="preload" href={`/fonts/${c}.woff2`} as="font" type="font/woff2" crossOrigin="anonymous" />
+        ))}
+      </head>
       <body className="font-sans antialiased">
         <a href="#tresc" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:p-3">
           Przejdź do treści

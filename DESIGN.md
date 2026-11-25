@@ -85,7 +85,7 @@ Dlaczego A:
 - IBM Plex Sans ma czytelne cyfry tabelaryczne (telefon, ceny, kody) i wyraźne polskie ogonki.
 - IBM Plex Mono 500 tylko dla kodów błędów (`F28`, `EA`). To kody z wyświetlacza kotła, więc krój o stałej szerokości niesie tu informację.
 
-Wczytywanie: `next/font/google`, `subsets: ['latin', 'latin-ext']`, `display: 'swap'`, tylko użyte wagi. IBM Plex Mono wczytywać wyłącznie w `/bledy-kotlow/`.
+Wczytywanie: pliki woff2 z `public/fonts` (definicje w `src/app/fonts.css`), podzbiory latin i latin-ext, `font-display: swap`, tylko użyte wagi. IBM Plex Mono wczytywać wyłącznie w `/bledy-kotlow/`.
 
 Skala (px):
 

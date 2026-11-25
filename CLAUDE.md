@@ -54,7 +54,7 @@ Nieużywane, bo niepotwierdzone: „ponad 37 000 napraw”, „2 serwisantów”
 - Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS 4. Bez dodatkowych bibliotek.
 - Hosting docelowy: Vercel. Adresy ze skośnikiem na końcu (`trailingSlash: true`).
 - Nagłówki bezpieczeństwa i `X-Robots-Tag` dla `/protokol` są w `next.config.ts`.
-- Czcionki przez `next/font/google`: Barlow Semi Condensed (nagłówki, telefon), IBM Plex Sans (tekst), IBM Plex Mono (kody błędów).
+- Czcionki z własnego serwera (`public/fonts`, definicje w `src/app/fonts.css`): Barlow Semi Condensed (nagłówki, telefon), IBM Plex Sans (tekst), IBM Plex Mono (kody błędów). Bez `next/font/google`, bo build na Vercelu wysypywał się przy pobieraniu czcionek z Google.
 - Opinie: widżet Shapo doczytywany po przewinięciu do sekcji (`src/components/Opinie.tsx`).
 - Strona działa bez JavaScriptu poza wyszukiwarką kodów i widżetem opinii. Menu mobilne to `<details>`, listy rozwijane w nagłówku otwiera `:hover` i `:focus-within`. JavaScript dokłada w menu tylko oznaczenie bieżącej strony (`src/components/LinkMenu.tsx`).
 
