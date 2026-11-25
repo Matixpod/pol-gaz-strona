@@ -1,0 +1,1540 @@
+[
+  {
+    "marka": "Junkers",
+    "kod": "EA",
+    "opis": "Brak płomienia, brak sygnału z elektrody jonizacyjnej",
+    "rozwiazanie": "Kocioł nie wykrył płomienia przy próbie zapłonu. Sprawdź, czy zawór gazu jest otwarty i czy nie ma przerwy w dostawie gazu, a potem wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza elektrodę zapłonową i jonizacyjną, ciśnienie gazu, armaturę gazową oraz drożność odprowadzenia spalin.",
+    "zrodlo": "https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf",
+    "uwagi": "Kotły: instrukcja Junkers CerapurAcu (6 720 640 686, wersja węgierska) – „płomień nie został rozpoznany”. Piecyki: instrukcja Junkers-Bosch Hydro 4200 WRD ..-4KB (6721843852, PL) – „Nie wykryto płomienia” (https://katalog-respol.ik.pl/pliki/BOSCH%20TERMOTECHNIKA/o491582v51_6721843852.pdf)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "A4",
+    "opis": "Problem z ciągiem kominowym, uruchomiony czujnik spalin",
+    "rozwiazanie": "Czujnik spalin wykrył, że spaliny nie odpływają prawidłowo do komina, i wyłączył piecyk. Przewietrz pomieszczenie, odczekaj około 10 minut i uruchom piecyk ponownie; jeśli kod wraca, nie używaj urządzenia i wezwij serwis oraz kominiarza.",
+    "serwis": "Serwisant sprawdza czujnik spalin i odprowadzenie spalin, a ciąg w przewodzie kominowym ocenia kominiarz.",
+    "zrodlo": "https://katalog-respol.ik.pl/pliki/BOSCH%20TERMOTECHNIKA/o491582v51_6721843852.pdf",
+    "uwagi": "Znaczenie dla gazowych podgrzewaczy wody (Hydro 4200 WRD 9/11/14-4KB): „Zadziałał czujnik temperatury spalin”; instrukcja zaleca ponowne załączenie po 10 minutach. Dla kotłów Junkers kodu nie potwierdzono."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "A7",
+    "opis": "Uszkodzony lub źle podłączony czujnik temperatury wody",
+    "rozwiazanie": "Urządzenie nie dostaje prawidłowego odczytu z czujnika temperatury ciepłej wody. To usterka czujnika lub jego połączenia, której nie usuniesz samodzielnie; wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik temperatury ciepłej wody i jego przewód, poprawia połączenie albo wymienia czujnik.",
+    "zrodlo": "https://katalog-respol.ik.pl/pliki/BOSCH%20TERMOTECHNIKA/o491582v51_6721843852.pdf",
+    "uwagi": "Piecyki (Hydro 4200): „Czujnik temperatury ciepłej wody uszkodzony”. To samo znaczenie w kotle CerapurAcu (https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "E1",
+    "opis": "Zbyt wysoka temperatura wody (powyżej 85°C)",
+    "rozwiazanie": "Czujnik zgłosił przegrzanie ciepłej wody i piecyk się wyłączył. Odczekaj, aż urządzenie ostygnie, i wykonaj jeden reset (wyłącz i ponownie włącz piecyk); jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik temperatury ciepłej wody, przepływ wody przez wymiennik i stopień zakamienienia wymiennika.",
+    "zrodlo": "https://katalog-respol.ik.pl/pliki/BOSCH%20TERMOTECHNIKA/o491582v51_6721843852.pdf",
+    "uwagi": "Źródło (Hydro 4200) podaje: „Czujnik temperatury ciepłej wody zgłasza przegrzanie”. Progu 85°C z opisu nie znalazłem w źródle – do potwierdzenia lub usunięcia z opisu."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "E2",
+    "opis": "Uszkodzony czujnik temperatury zasilania",
+    "rozwiazanie": "Kocioł nie dostaje prawidłowego odczytu z czujnika temperatury zasilania i dla bezpieczeństwa nie grzeje. Tej usterki nie usuniesz samodzielnie; wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik temperatury zasilania i jego przewód pod kątem przerwy lub zwarcia, a uszkodzony czujnik wymienia.",
+    "zrodlo": "https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf",
+    "uwagi": "Kocioł CerapurAcu (instrukcja po węgiersku): uszkodzony czujnik temperatury zasilania. Dotyczy kotłów; w tabeli piecyka Hydro 4200 kodu E2 nie ma."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "E9",
+    "opis": "Zadziałał ogranicznik temperatury obiegu grzewczego",
+    "rozwiazanie": "Kocioł przegrzał się i zadziałał ogranicznik temperatury. Odczytaj ciśnienie na manometrze, odczekaj, aż kocioł ostygnie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie i odpowietrzenie instalacji, pracę pompy, ogranicznik temperatury oraz czujnik temperatury zasilania.",
+    "zrodlo": "https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf",
+    "uwagi": "CerapurAcu: zadziałał ogranicznik temperatury wymiennika lub ogranicznik temperatury spalin. W piecyku Hydro 4200: „Zadziałał ogranicznik temperatury lub urządzenie do kontroli stanu płomienia palnika” (https://katalog-respol.ik.pl/pliki/BOSCH%20TERMOTECHNIKA/o491582v51_6721843852.pdf)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "F0",
+    "opis": "Błąd wewnętrzny płyty głównej",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd elektroniki urządzenia. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza połączenia elektryczne i wtyki płyty głównej, a gdy błąd wraca, wymienia płytę.",
+    "zrodlo": "https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf",
+    "uwagi": "Rozbieżność między urządzeniami: w kotle CerapurAcu F0 to „usterka wewnętrzna” (zgodnie z opisem), a w piecyku Hydro 4200 F0 oznacza włączenie zasilania (wyłącznik główny lub wymiana baterii) przy otwartym zaworze wody (https://katalog-respol.ik.pl/pliki/BOSCH%20TERMOTECHNIKA/o491582v51_6721843852.pdf)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "F7",
+    "opis": "Wykryto płomień mimo wyłączenia palnika (błąd jonizacji)",
+    "rozwiazanie": "Urządzenie wykrywa sygnał płomienia, chociaż palnik jest wyłączony. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza elektrody i ich przewody, szczelność armatury gazowej, odpływ kondensatu oraz elektronikę urządzenia.",
+    "zrodlo": "https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf",
+    "uwagi": "CerapurAcu: płomień wykrywany mimo wyłączenia urządzenia. Piecyk Hydro 4200: „Mimo przerwania zasilania elektrycznego urządzenia płomień jest wykrywany” (https://katalog-respol.ik.pl/pliki/BOSCH%20TERMOTECHNIKA/o491582v51_6721843852.pdf)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "C6",
+    "opis": "Presostat/wentylator nie działa prawidłowo",
+    "rozwiazanie": "Kocioł nie potwierdził prawidłowej pracy wentylatora spalin lub czujnika ciśnienia powietrza. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator, presostat z wężykami, przewody elektryczne oraz drożność przewodu powietrzno-spalinowego.",
+    "zrodlo": "https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf",
+    "uwagi": "CerapurAcu: wentylator nie uruchamia się. W starszych kotłach Ceraclass kod łączony jest z presostatem (presostat nie zamyka się) – tego wariantu nie potwierdziłem w dokumencie producenta z czytelnym kodem."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "CC",
+    "opis": "Przerwa w obwodzie czujnika temperatury zewnętrznej",
+    "rozwiazanie": "Kocioł nie widzi czujnika temperatury zewnętrznej, więc regulacja pogodowa nie działa poprawnie. Samodzielnie nic tu nie naprawisz; wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik temperatury zewnętrznej i jego przewód pod kątem przerwy, a uszkodzony czujnik wymienia.",
+    "zrodlo": "https://www.fokabt.hu/shop_ordered/19907/pic/Junkers/Junkers-kondenzacios-kazanok/cerapuracu/junkers-cerapuracu-hibakodok.pdf",
+    "uwagi": "CerapurAcu: urządzenie nie rozpoznało czujnika temperatury zewnętrznej (sprawdzenie czujnika i przewodu pod kątem przerwy)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "200",
+    "opis": "Kocioł znajduje się w trybie grzania",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: kocioł grzeje wodę do ogrzewania. Nie musisz nic robić.",
+    "serwis": "Serwisant nie jest potrzebny; ten kod odczytuje się w menu informacyjnym kotła jako bieżący stan pracy.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "201",
+    "opis": "Kocioł znajduje się w trybie przygotowania c.w.u.",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: kocioł podgrzewa ciepłą wodę użytkową. Nie musisz nic robić.",
+    "serwis": "Serwisant nie jest potrzebny; ten kod odczytuje się w menu informacyjnym kotła jako bieżący stan pracy.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "202",
+    "opis": "Urządzenie znajduje się w programie optymalizacji załączania: interwał czasowy do ponownego włączenia palnika jeszcze nie został osiągnięty",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: kocioł odczekuje ustawiony czas przed ponownym włączeniem palnika, żeby nie włączać się zbyt często. Nie musisz nic robić; serwis wezwij tylko wtedy, gdy w domu robi się zimno.",
+    "serwis": "Serwisant przy częstym taktowaniu kotła sprawdza ustawienie blokady czasowej palnika i dopasowanie mocy kotła do instalacji.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "203",
+    "opis": "Urządzenie znajduje się w trybie gotowości do pracy, brak zapotrzebowania ciepła",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: kocioł jest gotowy do pracy i czeka, aż pojawi się zapotrzebowanie na ciepło. Nie musisz nic robić.",
+    "serwis": "Serwisant nie jest potrzebny; ten kod odczytuje się w menu informacyjnym kotła jako bieżący stan pracy.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "204",
+    "opis": "Aktualna temperatura zasilania jest wyższa niż zadana temperatura na zasilaniu. Palnik został wyłączony",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: woda w kotle jest cieplejsza niż temperatura zadana, więc palnik został wyłączony. Nie musisz nic robić; kocioł włączy się sam, gdy woda ostygnie.",
+    "serwis": "Serwisant przy częstym wyłączaniu się palnika sprawdza przepływ wody w instalacji i ustawienia mocy grzewczej kotła.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "207",
+    "opis": "Zbyt niskie ciśnienie robocze",
+    "rozwiazanie": "Ciśnienie wody w instalacji grzewczej jest za niskie. Odczytaj ciśnienie na manometrze i uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła; jeśli ciśnienie znów spada albo kod nie znika, wezwij serwis.",
+    "serwis": "Serwisant napełnia i odpowietrza instalację, szuka przyczyny ubytku wody, sprawdza naczynie przeponowe i czujnik ciśnienia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers. W tabeli bez klasy usterki; na wyświetlaczu kotła pokazywane jako niskie ciśnienie."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "208",
+    "opis": "Kocioł znajduje się w trybie kominiarza",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: kocioł pracuje w trybie kominiarza, używanym do pomiaru spalin. Tryb wyłącza się samoczynnie po 30 minutach, więc nie musisz nic robić.",
+    "serwis": "Serwisant włącza tryb kominiarza podczas przeglądu, żeby wykonać pomiar spalin przy stałej mocy kotła.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "212",
+    "opis": "Za szybki wzrost temperatury na czujniku bezpieczeństwa lub zasilania kotła",
+    "rozwiazanie": "Temperatura w kotle rośnie zbyt szybko, najczęściej dlatego, że woda nie krąży swobodnie w instalacji. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, czy zawory odcinające są otwarte, kontroluje pracę pompy, odpowietrzenie instalacji i przepływ przez wymiennik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "214",
+    "opis": "Wentylator jest wyłączany w czasie bezpieczeństwa",
+    "rozwiazanie": "Wentylator kotła został wyłączony w trakcie czasu bezpieczeństwa i kocioł przerwał uruchamianie. Sprawdź, czy kocioł ma zasilanie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator z przewodem i wtykiem oraz napięcie sieciowe, a uszkodzony wentylator wymienia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "215",
+    "opis": "Wentylator pracuje zbyt szybko",
+    "rozwiazanie": "Wentylator kotła pracuje z nieprawidłową, zbyt wysoką prędkością. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza napięcie sieciowe i wentylator z przewodem sterującym, a uszkodzony wentylator wymienia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "224",
+    "opis": "Zadziałał ogranicznik temperatury spalin lub ogranicznik temperatury bloku cieplnego",
+    "rozwiazanie": "Kocioł przegrzał się i zadziałał ogranicznik temperatury. Odczytaj ciśnienie na manometrze, odczekaj, aż kocioł ostygnie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie wody i odpowietrzenie kotła, otwarcie zaworów w obiegu grzewczym, pracę pompy oraz ogranicznik temperatury z przewodem.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers. Kod występuje jako usterka przemijająca (klasa B), a gdy trwa dłużej, jako blokująca (klasa V)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "227",
+    "opis": "Nie wykryto płomienia",
+    "rozwiazanie": "Kocioł próbował się zapalić, ale nie wykrył płomienia. Sprawdź, czy zawór gazu jest otwarty i czy kocioł ma zasilanie, a potem wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie gazu na przyłączu, sygnał jonizacji, elektrody z przewodem oraz instalację spalinową.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers. Po 5. nieudanej próbie zapłonu usterka przemijająca (B) zmienia się w blokującą (V), wymagającą resetu."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "228",
+    "opis": "Sygnał płomienia mimo wyłączonego palnika",
+    "rozwiazanie": "Kocioł wykrywa sygnał płomienia, chociaż palnik jest wyłączony. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza elektrody z przewodem przyłączeniowym, armaturę gazową i elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "229",
+    "opis": "Płomień zgasł podczas pracy palnika",
+    "rozwiazanie": "Płomień zgasł w trakcie pracy palnika. Sprawdź, czy zawór gazu jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant mierzy ciśnienie gazu na przyłączu przy pełnym obciążeniu, sprawdza elektrodę jonizacyjną z przewodem i odprowadzenie spalin.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "232",
+    "opis": "Urządzenie grzewcze zablokowane przez zewnętrzny zestyk przełączający",
+    "rozwiazanie": "Kocioł został zatrzymany przez zewnętrzne zabezpieczenie podłączone do kotła, na przykład pompę kondensatu albo ogranicznik temperatury ogrzewania podłogowego. Samodzielnie nic tu nie naprawisz; jeśli kod nie znika, wezwij serwis.",
+    "serwis": "Serwisant sprawdza zewnętrzny zestyk przełączający i jego podłączenie, pompę kondensatu oraz nastawę zewnętrznego zabezpieczenia temperaturowego.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "233",
+    "opis": "Usterka wtyczki kodującej lub elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę wtyczki kodującej lub elektroniki kotła. Wymaga wizyty serwisu; samodzielnie możesz najwyżej wykonać jeden reset przyciskiem na panelu.",
+    "serwis": "Serwisant sprawdza, czy wtyczka kodująca jest prawidłowo osadzona, a w razie potrzeby wymienia ją lub elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "234",
+    "opis": "Usterka elektryczna armatury gazowej",
+    "rozwiazanie": "Kocioł wykrył usterkę elektryczną armatury gazowej i nie uruchomi palnika. Tej usterki nie usuniesz samodzielnie; wezwij serwis.",
+    "serwis": "Serwisant sprawdza przewód przyłączeniowy armatury gazowej i samą armaturę, a uszkodzony element wymienia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "235",
+    "opis": "Konflikt wersji elektroniki urządzenia / wtyczki kodującej",
+    "rozwiazanie": "Wersja elektroniki kotła nie pasuje do wtyczki kodującej; kod pojawia się zwykle po wymianie jednej z tych części. Wymaga wizyty serwisu.",
+    "serwis": "Serwisant porównuje wersję oprogramowania elektroniki z wtyczką kodującą i wymienia element, który nie pasuje.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "237",
+    "opis": "Usterka systemowa",
+    "rozwiazanie": "Kod oznacza usterkę systemową elektroniki kotła. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant wymienia wtyczkę kodującą, a jeśli usterka nie ustępuje, elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "238",
+    "opis": "Elektronika urządzenia jest uszkodzona",
+    "rozwiazanie": "Kod oznacza uszkodzenie elektroniki kotła. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, potrzebna jest wizyta serwisu.",
+    "serwis": "Serwisant potwierdza uszkodzenie i wymienia elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "242",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przyłącza elektryczne sterownika (automatu palnikowego), wykonuje reset, a gdy usterka wraca, wymienia sterownik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "244",
+    "opis": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przyłącza elektryczne sterownika (automatu palnikowego), wykonuje reset, a gdy usterka wraca, wymienia sterownik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "246",
+    "opis": "Błąd wewnętrzny sterownika palnika",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika palnika, którego nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przyłącza elektryczne sterownika palnika, wykonuje reset, a gdy błąd wraca, wymienia sterownik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "247",
+    "opis": "Błąd wewnętrzny sterownika palnika",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika palnika, którego nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przyłącza elektryczne sterownika palnika, wykonuje reset, a gdy błąd wraca, wymienia sterownik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "257",
+    "opis": "Błąd wewnętrzny sterownika palnika",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika palnika, którego nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przyłącza elektryczne sterownika palnika, wykonuje reset, a gdy błąd wraca, wymienia sterownik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "245",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza połączenia elektryczne elektroniki kotła, wykonuje reset, a gdy usterka wraca, wymienia elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "249-254",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza połączenia elektryczne elektroniki kotła, wykonuje reset, a gdy usterka wraca, wymienia elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "256",
+    "opis": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przyłącza elektryczne sterownika (automatu palnikowego), wykonuje reset, a gdy usterka wraca, wymienia sterownik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "258",
+    "opis": "Błąd wewnętrzny sterownika",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika kotła, którego nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przyłącza elektryczne sterownika, wykonuje reset, a gdy błąd wraca, wymienia sterownik.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "259",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza połączenia elektryczne elektroniki kotła, wykonuje reset, a gdy usterka wraca, wymienia elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "262",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza połączenia elektryczne elektroniki kotła, wykonuje reset, a gdy usterka wraca, wymienia elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "263",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza połączenia elektryczne elektroniki kotła, wykonuje reset, a gdy usterka wraca, wymienia elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "264",
+    "opis": "Transport powietrza zatrzymany w fazie pracy",
+    "rozwiazanie": "Wentylator przestał tłoczyć powietrze w czasie pracy palnika i kocioł się wyłączył. Sprawdź, czy kocioł ma zasilanie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator i jego wtyk, napięcie sieciowe, drożność instalacji spalinowej oraz czujnik ciśnienia powietrza.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "265",
+    "opis": "Zapotrzebowanie na ciepło niższe niż dostarczona energia",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: dom potrzebuje mniej ciepła, niż kocioł wytwarza na najniższej mocy, więc palnik pracuje z przerwami. Nie musisz nic robić; serwis wezwij, jeśli kocioł włącza się i wyłącza bardzo często.",
+    "serwis": "Serwisant sprawdza ustawienia mocy i regulacji oraz dopasowanie kotła do instalacji grzewczej.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers. W tabeli klasa BC i brak środka zaradczego, czyli stan pracy, a nie usterka do usunięcia."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "268",
+    "opis": "Tryb testu komponentów",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: w kotle uruchomiono test podzespołów, z którego korzysta serwisant. Jeśli komunikat nie znika, a nikt nie pracuje przy kotle, wezwij serwis.",
+    "serwis": "Serwisant używa testu podzespołów do sprawdzenia pompy, wentylatora, zaworu przełączającego i zapłonu, a po pracy wyłącza test.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers. W tabeli: „Nie dotyczy ze względu na komunikat o stanie”."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "269",
+    "opis": "Kontrola płomienia",
+    "rozwiazanie": "Kocioł zgłasza błąd układu kontroli płomienia. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant wykonuje reset elektroniki i sprawdza układ zapłonu, a gdy usterka wraca, wymienia elektronikę urządzenia.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "270",
+    "opis": "Trwa uruchamianie urządzenia grzewczego",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: kocioł właśnie się uruchamia. Odczekaj, aż uruchamianie się zakończy; serwis wezwij tylko wtedy, gdy komunikat nie znika i kocioł nie zaczyna grzać.",
+    "serwis": "Serwisant nie jest potrzebny, dopóki kocioł po uruchomieniu przechodzi do normalnej pracy.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers. W tabeli klasa BC i brak środka zaradczego."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "273",
+    "opis": "Przerwanie pracy: kontrola bezpieczeństwa po 24 godzinach pracy ciągłej",
+    "rozwiazanie": "To komunikat o stanie pracy, nie usterka: po 24 godzinach ciągłej pracy kocioł na chwilę wyłącza palnik i wykonuje kontrolę bezpieczeństwa. Nie musisz nic robić; kocioł wznowi pracę samoczynnie.",
+    "serwis": "Serwisant nie jest potrzebny; krótka przerwa na kontrolę bezpieczeństwa jest przewidziana przez producenta.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o379590v52_6720886269.pdf",
+    "uwagi": "Potwierdzone w tabeli wskazań roboczych i usterek instrukcji montażu i konserwacji Buderus Logamax plus GB022 (6720886269, PL), czyli kotła grupy Bosch z tą samą elektroniką EMS; nie w dokumencie z logo Junkers."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "275",
+    "opis": "Wykryto testową wtyczkę kodującą",
+    "rozwiazanie": "To wskazanie stanu pracy, a nie usterka: elektronika kotła rozpoznała testową wtyczkę kodującą. Samodzielnie nic się z tym nie robi; jeśli wskazanie nie znika albo kocioł nie grzeje, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, jaka wtyczka kodująca jest zamontowana w kotle, i w razie potrzeby zakłada właściwą.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "W tabeli Bosch klasa O (wskaźnik stanu pracy), bez zalecanych czynności; wejściowe „Wymienić na właściwą wtyczkę kodującą” nie pochodzi z tej tabeli."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "281",
+    "opis": "Pompa nie pracuje lub pracuje na sucho",
+    "rozwiazanie": "Pompa obiegowa w kotle jest zablokowana albo pracuje bez wody. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie wody, odpowietrza instalację i pompę, a uszkodzoną pompę wymienia.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Poprawiono opis: „suszy się” to błąd tłumaczenia w instrukcji Bosch (Condens 2300i W). Instrukcja Condens 9000i opisuje ten kod jako „Pompa układu grzewczego nie wytwarza ciśnienia” (https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o323188v52_6720861559.pdf)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "305",
+    "opis": "Kocioł nie może tymczasowo uruchomić się zgodnie z priorytetem c.w.u.",
+    "rozwiazanie": "To komunikat stanu, a nie usterka: po podgrzaniu ciepłej wody kocioł chwilowo nie włącza ogrzewania i sam wraca do pracy. Wezwij serwis dopiero wtedy, gdy grzejniki długo pozostają zimne.",
+    "serwis": "Serwisant nie ma przy tym komunikacie nic do naprawy; gdy ogrzewanie długo nie rusza, sprawdza ustawienia przygotowania ciepłej wody.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa BC, instrukcja nie podaje czynności naprawczych; wejściowe „Sprawdzić ustawienia priorytetu c.w.u.” nie pochodzi z tabeli. W Condens 9000i ten kod opisano jako podtrzymanie ciepła kotła dwufunkcyjnego."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "306",
+    "opis": "Po odcięciu dopływu gazu: płomień jest wykrywany",
+    "rozwiazanie": "Kocioł wykrył płomień po zamknięciu dopływu gazu do palnika i zablokował się ze względów bezpieczeństwa. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, nie ponawiaj prób i wezwij serwis.",
+    "serwis": "Serwisant sprawdza armaturę gazową, elektrody z przewodem przyłączeniowym oraz elektronikę kotła i wymienia uszkodzony element.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "323",
+    "opis": "Zakłócenie komunikacji sterownika",
+    "rozwiazanie": "Sterownik kotła stracił łączność z regulatorem lub modułem instalacji. Sprawdź, czy kocioł ma zasilanie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod nie znika, wezwij serwis.",
+    "serwis": "Serwisant sprawdza połączenia komunikacyjne między sterownikiem kotła, regulatorem i modułami.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Instrukcja Condens 2300i W nie podaje czynności naprawczych. Condens 9000i opisuje kod jako przerwaną komunikację magistrali BUS (sprawdzenie kabla BUS)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "328",
+    "opis": "Krótkotrwała przerwa w napięciu sieciowym",
+    "rozwiazanie": "Kocioł zarejestrował krótką przerwę w zasilaniu elektrycznym i zablokował się. Sprawdź, czy kocioł ma zasilanie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod się powtarza, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, czy w instalacji elektrycznej budynku nie dochodzi do przerw w dostawie napięcia do kotła.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "341",
+    "opis": "Zbyt szybki wzrost temperatury urządzenia grzewczego",
+    "rozwiazanie": "Woda w kotle nagrzewa się zbyt szybko, zwykle z powodu słabego przepływu w obiegu grzewczym; kocioł wyłącza się na chwilę i sam wznawia pracę. Odczytaj ciśnienie na manometrze, a jeśli kod wraca lub grzejniki pozostają zimne, wezwij serwis.",
+    "serwis": "Serwisant sprawdza otwarcie zaworów serwisowych, podłączenie i pracę pompy c.o. oraz dopasowuje jej charakterystykę do instalacji.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "342",
+    "opis": "Wzrost temperatury w trybie przygotowania c.w.u. za szybki",
+    "rozwiazanie": "Podczas podgrzewania ciepłej wody temperatura w kotle rośnie zbyt szybko, co wskazuje na słaby przepływ w obiegu zasobnika. Odczytaj ciśnienie na manometrze; jeśli kod wraca lub brakuje ciepłej wody, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie i odpowietrzenie instalacji, zawory serwisowe w obiegu ładowania zasobnika oraz zawór przełączający i pompę ładującą.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "350",
+    "opis": "Zwarcie czujnika temperatury zasilania",
+    "rozwiazanie": "Czujnik temperatury zasilania podaje błędny sygnał (zwarcie), więc kocioł przestaje grzać do czasu ustąpienia usterki. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, potrzebna jest wizyta serwisu.",
+    "serwis": "Serwisant sprawdza czujnik temperatury zasilania i jego przewód, wymienia uszkodzony element, a w ostateczności sterownik lub automat palnikowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "351",
+    "opis": "Przerwa czujnika temperatury zasilania",
+    "rozwiazanie": "Kocioł nie otrzymuje sygnału z czujnika temperatury zasilania (przerwa w obwodzie), więc przestaje grzać do czasu ustąpienia usterki. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, potrzebna jest wizyta serwisu.",
+    "serwis": "Serwisant sprawdza podłączenie czujnika temperatury zasilania, sam czujnik i jego przewód, wymienia uszkodzony element, a w ostateczności sterownik lub automat palnikowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "356",
+    "opis": "Za niskie napięcie zasilające dla tego urządzenia grzewczego",
+    "rozwiazanie": "Napięcie w sieci elektrycznej jest za niskie, żeby kocioł mógł pracować; kocioł sam wznowi pracę, gdy napięcie wróci do normy. Sprawdź, czy kocioł ma zasilanie, a jeśli kod się utrzymuje lub powtarza, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, czy napięcie zasilania kotła wynosi co najmniej 196 V AC.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "357",
+    "opis": "Program odpowietrzania",
+    "rozwiazanie": "To komunikat stanu, a nie usterka: kocioł wykonuje program odpowietrzania, który kończy się samoczynnie. Wezwij serwis tylko wtedy, gdy komunikat nie znika, a kocioł nie grzeje.",
+    "serwis": "Serwisant nie ma przy tym komunikacie nic do naprawy; gdy program odpowietrzania się nie kończy, sprawdza ustawienia serwisowe i odpowietrzenie instalacji.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa BC (stan pracy). Tabela Bosch dla Condens 2300i W podaje przy tym kodzie „Zapewnić napięcie zasilające co najmniej 196 V AC” – to najpewniej wiersz powielony z kodu 356; instrukcja Condens 9000i nie podaje dla „Trybu odpowietrzania” żadnych czynności. Pominięto zalecenie o napięciu."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "358",
+    "opis": "Zabezpieczenie przed zablokowaniem aktywne",
+    "rozwiazanie": "To komunikat stanu, a nie usterka: kocioł na chwilę uruchamia pompę i zawór przełączający, żeby nie zablokowały się po dłuższym postoju. Nic nie trzeba robić; serwis jest potrzebny tylko wtedy, gdy kocioł mimo to nie grzeje.",
+    "serwis": "Serwisant sprawdza pracę pompy i zaworu przełączającego, jeśli komunikat nie znika.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa BC (stan pracy). Tabela Bosch dla Condens 2300i W podaje przy tym kodzie „Zapewnić napięcie zasilające co najmniej 196 V AC” – to najpewniej wiersz powielony z kodu 356; instrukcja Condens 9000i opisuje kod jako zabezpieczenie przed zablokowaniem pompy i zaworu 3-drogowego, bez czynności. Pominięto zalecenie o napięciu."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "360",
+    "opis": "Nieprawidłowa wtyczka kodująca",
+    "rozwiazanie": "Wtyczka kodująca w kotle nie pasuje do urządzenia albo nie jest poprawnie rozpoznawana. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza wtyczkę kodującą i w razie potrzeby wymienia ją na właściwą.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "362",
+    "opis": "Wykryto serwisową wtyczkę kodującą",
+    "rozwiazanie": "W kotle wykryto wtyczkę kodującą przeznaczoną do prac serwisowych, a nie do normalnej pracy. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza wtyczkę kodującą i w razie potrzeby wymienia ją na właściwą.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "363",
+    "opis": "Usterka systemowa elektroniki urządzenia: błąd podczas testu sygnału jonizacji",
+    "rozwiazanie": "Elektronika kotła zgłosiła błąd podczas wewnętrznego testu układu kontroli płomienia. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje elektronikę kotła, a gdy usterka się utrzymuje, wymienia ją.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "364",
+    "opis": "Zawór elektromagn. EV2 nieszczelny",
+    "rozwiazanie": "Kocioł wykrył nieszczelność jednego z zaworów elektromagnetycznych armatury gazowej (EV2) i zablokował się. Ten kod wymaga wizyty serwisu – nie próbuj wielokrotnie uruchamiać kotła.",
+    "serwis": "Serwisant sprawdza armaturę gazową, elektrody z przewodem przyłączeniowym oraz elektronikę kotła i wymienia uszkodzony element.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Condens 9000i opisuje kody 364/365 jako „Płomień jest wykrywany po odcięciu dopływu gazu”."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "365",
+    "opis": "Zawór elektromagn. EV1 nieszczelny",
+    "rozwiazanie": "Kocioł wykrył nieszczelność jednego z zaworów elektromagnetycznych armatury gazowej (EV1) i zablokował się. Ten kod wymaga wizyty serwisu – nie próbuj wielokrotnie uruchamiać kotła.",
+    "serwis": "Serwisant sprawdza armaturę gazową, elektrody z przewodem przyłączeniowym oraz elektronikę kotła i wymienia uszkodzony element.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Condens 9000i opisuje kody 364/365 jako „Płomień jest wykrywany po odcięciu dopływu gazu”."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "604",
+    "opis": "Usterka systemowa automatu palnikowego",
+    "rozwiazanie": "Automat palnikowy, czyli elektronika sterująca palnikiem, zgłosił błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje kocioł, a gdy usterka się utrzymuje, wymienia uszkodzony automat palnikowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "810",
+    "opis": "Temperatura c.w.u. nie jest zwiększana od 2h",
+    "rozwiazanie": "Kocioł od dwóch godzin grzeje zasobnik, a temperatura ciepłej wody nie rośnie; zdarza się to także przy bardzo długim, ciągłym poborze wody. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli woda nadal się nie nagrzewa, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ustawienie czujnika temperatury ciepłej wody, zasilanie i pracę pompy ładującej zasobnik oraz zaworu 3-drogowego, a w razie potrzeby odpowietrza obieg.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "815",
+    "opis": "Czujnik temperatury sprzęgła hydraulicznego jest uszkodzony",
+    "rozwiazanie": "Kocioł nie dostaje prawidłowego sygnału z czujnika temperatury na sprzęgle hydraulicznym; to usterka, która nie blokuje kotła, ale zaburza regulację ogrzewania. Samodzielnie nie da się jej usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza podłączenie czujnika sprzęgła hydraulicznego, miejsce jego montażu i sam czujnik.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1013",
+    "opis": "Wskaźnik serwisowy: upłynął ustawiony okres do przeglądu",
+    "rozwiazanie": "To wskaźnik serwisowy, a nie awaria: upłynął ustawiony w kotle okres, po którym potrzebny jest przegląd. Kocioł pracuje dalej; umów przegląd w serwisie.",
+    "serwis": "Serwisant wykonuje przegląd kotła i kasuje wskaźnik serwisowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Sprzeczność w źródle: tabela usterek Condens 2300i W podaje „Osiągnięto maksymalny czas zapłonu” z zaleceniami dotyczącymi czujnika zasobnika (klasa R, niepowodująca blokady), ale ta sama instrukcja w opisie funkcji serwisowych mówi, że po upływie ustawionego okresu pojawia się „wskaźnik serwisowy 1013, informujący o koniecznym przeglądzie”. Instrukcja Condens 9000i: „Interwał czasowy między przeglądami jest osiągnięty. Przeprowadzić inspekcję” (https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o323188v52_6720861559.pdf). Przyjęto znaczenie przeglądowe; do potwierdzenia przez właściciela."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1014",
+    "opis": "Prąd jonizacji zbyt niski",
+    "rozwiazanie": "Kocioł słabo wykrywa płomień palnika (niski prąd jonizacji); to ostrzeżenie, przy którym kocioł zwykle jeszcze pracuje. Sprawdź, czy zawór gazu przy kotle jest otwarty, a jeśli kod się utrzymuje lub wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza elektrodę jonizacyjną, jej połączenia elektryczne i prąd jonizacji.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Tabela Bosch nie podaje dla tego kodu czynności naprawczych; wejściowe zalecenie o czyszczeniu elektrody pochodzi z innego źródła."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1017",
+    "opis": "Ciśnienie wody zbyt niskie",
+    "rozwiazanie": "Ciśnienie wody w instalacji grzewczej jest zbyt niskie. Odczytaj ciśnienie na manometrze i uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła; jeśli ciśnienie znów spada albo kod nie znika, wezwij serwis.",
+    "serwis": "Serwisant uzupełnia wodę do zadanego ciśnienia, szuka przyczyny ubytku i sprawdza czujnik ciśnienia.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1018",
+    "opis": "Upłynął termin serwisu",
+    "rozwiazanie": "To komunikat konserwacyjny, a nie usterka: minął ustawiony w kotle termin serwisu. Kocioł pracuje dalej; umów przegląd w serwisie.",
+    "serwis": "Serwisant wykonuje konserwację kotła i kasuje komunikat o terminie serwisu.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1021",
+    "opis": "Czujnik temperatury ciepłej wody uszkodzony",
+    "rozwiazanie": "Kocioł nie dostaje prawidłowego sygnału z czujnika temperatury ciepłej wody, więc może jej nie podgrzewać lub podgrzewać nieprawidłowo. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza wtyczkę, miejsce montażu i przewód czujnika temperatury ciepłej wody, a uszkodzony czujnik lub elektronikę kotła wymienia.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1022",
+    "opis": "Czujnik temperatury c.w.u. uszkodzony",
+    "rozwiazanie": "Kocioł nie dostaje prawidłowego sygnału z czujnika temperatury ciepłej wody, więc może jej nie podgrzewać lub podgrzewać nieprawidłowo. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik temperatury ciepłej wody i wymienia go, jeśli jest uszkodzony.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Tabela Bosch nie podaje dla tego kodu czynności naprawczych."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1023",
+    "opis": "Osiągnięto maks. czas pracy włącznie z czasem czuwania",
+    "rozwiazanie": "To wskaźnik serwisowy, a nie awaria: kocioł osiągnął ustawiony czas pracy (łącznie z czuwaniem), po którym potrzebny jest przegląd. Kocioł pracuje dalej; umów przegląd w serwisie.",
+    "serwis": "Serwisant wykonuje przegląd kotła i kasuje wskaźnik serwisowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1065",
+    "opis": "Czujnik ciśnienia jest uszkodzony lub nie został podłączony",
+    "rozwiazanie": "Kocioł nie otrzymuje prawidłowego sygnału z czujnika ciśnienia wody. Odczytaj ciśnienie na manometrze, żeby wiedzieć, czy wody w instalacji nie brakuje, i wezwij serwis – tej usterki nie usuwa się samodzielnie.",
+    "serwis": "Serwisant sprawdza wtyczkę i przewód czujnika ciśnienia, a uszkodzony czujnik lub elektronikę kotła wymienia.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1068",
+    "opis": "Czujnik temperatury zewnętrznej lub sonda lambda uszkodzone",
+    "rozwiazanie": "Kocioł nie dostaje prawidłowego sygnału z czujnika temperatury zewnętrznej albo z sondy lambda; zwykle pracuje dalej, ale gorzej dopasowuje ogrzewanie. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant usuwa problem ze stykiem w obwodzie czujnika, a uszkodzoną sondę lambda wymienia.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1073",
+    "opis": "Zwarcie czujnika temperatury zasilania",
+    "rozwiazanie": "Czujnik temperatury zasilania podaje błędny sygnał (zwarcie), więc kocioł nie może prawidłowo sterować ogrzewaniem. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik temperatury zasilania i jego przewód pod kątem zwarcia, wymienia uszkodzony element, a w ostateczności elektronikę kotła.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1074",
+    "opis": "Brak sygnału czujnika temperatury zasilania",
+    "rozwiazanie": "Kocioł nie otrzymuje sygnału z czujnika temperatury zasilania, więc nie może prawidłowo sterować ogrzewaniem. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza wtyczkę, czujnik temperatury zasilania i jego przewód pod kątem przerwy, wymienia uszkodzony element, a w ostateczności elektronikę kotła.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1075",
+    "opis": "Zwarcie ogranicznika temperatury bloku cieplnego",
+    "rozwiazanie": "Ogranicznik temperatury bloku cieplnego, który chroni kocioł przed przegrzaniem, podaje błędny sygnał (zwarcie). Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza ogranicznik temperatury bloku cieplnego i jego przewód pod kątem zwarcia, wymienia uszkodzony element, a w ostateczności elektronikę kotła.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "1076",
+    "opis": "Brak sygnału ogranicznika temperatury bloku cieplnego",
+    "rozwiazanie": "Kocioł nie otrzymuje sygnału z ogranicznika temperatury bloku cieplnego, który chroni go przed przegrzaniem. Samodzielnie nie da się tego usunąć – wezwij serwis.",
+    "serwis": "Serwisant sprawdza wtyczkę, ogranicznik temperatury bloku cieplnego i jego przewód pod kątem przerwy, wymienia uszkodzony element, a w ostateczności elektronikę kotła.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2051",
+    "opis": "Błąd wewnętrzny",
+    "rozwiazanie": "Automat palnikowy zgłosił błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant odłącza kocioł od napięcia na 30 sekund, a gdy usterka się utrzymuje, wymienia automat palnikowy SAFe.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2052",
+    "opis": "Przekroczono maks. czas załączania transformatora zapłonowego",
+    "rozwiazanie": "Palnik nie zapalił się w dopuszczalnym czasie pracy transformatora zapłonowego. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza zasilanie paliwem, podzespoły palnika i automat palnikowy, a uszkodzone elementy wymienia.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Kod opisany w tabeli Bosch z zaleceniem sprawdzenia zasilania olejem i odesłaniem do kodu 6L/548 – dotyczy palników olejowych z automatem SAFe; w kotle gazowym raczej nie wystąpi."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2085",
+    "opis": "Wewnętrzna usterka w automacie palnikowym",
+    "rozwiazanie": "Automat palnikowy, czyli elektronika sterująca palnikiem, zgłosił błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje kocioł, a gdy usterka się utrzymuje, wymienia uszkodzony automat palnikowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2908",
+    "opis": "Wewnętrzna usterka w automacie palnikowym",
+    "rozwiazanie": "Automat palnikowy, czyli elektronika sterująca palnikiem, zgłosił błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje kocioł, a gdy usterka się utrzymuje, wymienia uszkodzony automat palnikowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2909",
+    "opis": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+    "rozwiazanie": "Elektronika kotła zgłosiła błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje kocioł, a gdy usterka się utrzymuje, wymienia uszkodzony automat palnikowy lub moduł palnika obcego.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2910",
+    "opis": "Usterka w instalacji spalinowej (za duży lub za mały opór w strumieniu powietrza)",
+    "rozwiazanie": "Kocioł wykrył nieprawidłowy opór w układzie powietrzno-spalinowym, na przykład przez przeszkodę w przewodzie spalinowym. Przewietrz pomieszczenie i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, nie ponawiaj prób i wezwij serwis.",
+    "serwis": "Serwisant sprawdza układ odprowadzenia spalin, poprawia montaż rury spalinowej i usuwa przeszkodę w przewodzie.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2911",
+    "opis": "Kalibracja nie powiodła się",
+    "rozwiazanie": "Kocioł nie zdołał przeprowadzić automatycznej kalibracji spalania. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant ustala, który podzespół układu spalania uniemożliwia kalibrację, i wymienia wadliwy element.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2912",
+    "opis": "Brak sygnału płomienia podczas kalibracji",
+    "rozwiazanie": "Podczas automatycznej kalibracji spalania kocioł nie wykrył płomienia. Sprawdź, czy zawór gazu przy kotle jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant ustala, który podzespół układu spalania powoduje brak sygnału płomienia, i wymienia wadliwy element.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2913",
+    "opis": "Zbyt niski sygnał płomienia podczas kalibracji",
+    "rozwiazanie": "Podczas automatycznej kalibracji spalania sygnał płomienia był zbyt słaby. Sprawdź, czy zawór gazu przy kotle jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza układ kontroli płomienia i wymienia elektrodę jonizacyjną.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2914",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Elektronika kotła zgłosiła błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje kocioł, a gdy usterka się utrzymuje, wymienia uszkodzony sterownik urządzenia lub moduł palnika.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2915",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Elektronika kotła zgłosiła błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje kocioł, a gdy usterka się utrzymuje, wymienia uszkodzony automat palnikowy.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2916",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Elektronika kotła zgłosiła błąd wewnętrzny. Wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant resetuje kocioł, wywołuje i kończy żądanie ciepła, a gdy usterka się utrzymuje, wymienia uszkodzony sterownik palnika.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2917",
+    "opis": "Brak sygnału płomienia podczas kontroli regulacji spalania",
+    "rozwiazanie": "Podczas kontroli regulacji spalania kocioł nie wykrył płomienia. Sprawdź, czy zawór gazu przy kotle jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant wyłącza i ponownie załącza kocioł, wywołuje żądanie ciepła i po kalibracji obwodów jonizacyjnych ocenia, czy sterownik palnika wymaga wymiany.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2918",
+    "opis": "Usterka przewodu spalinowego",
+    "rozwiazanie": "Kocioł wykrył nieprawidłowość w odprowadzeniu spalin, której przyczyną bywa niedrożny syfon kondensatu. Przewietrz pomieszczenie i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant czyści syfon kondensatu i usuwa wodę z części spalinowej kotła.",
+    "zrodlo": "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2920",
+    "opis": "Usterka kontroli płomienia",
+    "rozwiazanie": "Kocioł wykrył nieprawidłowość w układzie kontroli płomienia. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza elektrody i ich przewód przyłączeniowy, a jeśli są sprawne, elektronikę kotła.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2921",
+    "opis": "Urządzenie jest w trybie testowym",
+    "rozwiazanie": "To komunikat informacyjny, a nie usterka: kocioł pracuje w trybie testowym, którego serwisant używa podczas przeglądu. Jeśli komunikat nie znika, a nikt nie uruchamiał testu, zadzwoń do serwisu.",
+    "serwis": "Serwisant kończy tryb testowy po zakończeniu pomiarów i przywraca normalną pracę kotła.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Komunikat stanu (tryb testowy), nie usterka."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2922",
+    "opis": "Błąd wewnętrzny sterownika palnika",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika palnika, którego nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant diagnozuje sterownik palnika i w razie potwierdzenia uszkodzenia wymienia go.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2923",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przewód i wtyczkę zaworu gazowego, a jeśli usterka wraca po resecie, wymienia elektronikę kotła.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2924",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza przewód i wtyczkę zaworu gazowego, a jeśli usterka wraca po resecie, wymienia elektronikę kotła.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2925",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza armaturę gazową i elektronikę kotła, a uszkodzony element wymienia.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2926",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza armaturę gazową i elektronikę kotła, a uszkodzony element wymienia.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2927",
+    "opis": "Nie wykryto płomienia podczas zapłonu",
+    "rozwiazanie": "Kocioł próbował się zapalić, ale nie wykrył płomienia. Sprawdź, czy zawór gazu przy kotle i zawór główny są otwarte, a potem wykonaj jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant mierzy ciśnienie gazu na przyłączu i prąd jonizacji, sprawdza elektrodę jonizacyjną, przewód zapłonowy, armaturę gazową, nastawy palnika oraz instalację spalinową i doprowadzenie powietrza.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Rozbieżność między instrukcjami: polska instrukcja Condens 2300i W podaje „Nie wykryto płomienia podczas zapłonu”, angielska instrukcja Condens 8300i W „Flame extinguished during burner operation”. Zostawiono opis z polskiej instrukcji. Klasa B (przemijająca)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2932",
+    "opis": "Błąd wewnętrzny",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika, którego nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant uruchamia kocioł ponownie, a jeśli błąd się powtarza, diagnozuje sterownik palnika.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2928",
+    "opis": "Wewnętrzna usterka w automacie palnikowym",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę automatu palnikowego, czyli układu sterującego palnikiem. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, czy usterka wraca po resecie, i w takim przypadku wymienia automat palnikowy.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2930",
+    "opis": "Wewnętrzna usterka w automacie palnikowym",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę automatu palnikowego, czyli układu sterującego palnikiem. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, czy usterka wraca po resecie, i w takim przypadku wymienia automat palnikowy.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2931",
+    "opis": "Wewnętrzna usterka w automacie palnikowym",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę automatu palnikowego, czyli układu sterującego palnikiem. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, czy usterka wraca po resecie, i w takim przypadku wymienia automat palnikowy.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2940",
+    "opis": "Wewnętrzna usterka w automacie palnikowym",
+    "rozwiazanie": "Kod oznacza wewnętrzną usterkę automatu palnikowego, czyli układu sterującego palnikiem. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza, czy usterka wraca po resecie, i w takim przypadku wymienia automat palnikowy.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2941",
+    "opis": "Zbyt słaby strumień przepływu w urządzeniu grzewczym",
+    "rozwiazanie": "Przez kocioł przepływa za mało wody, więc palnik nie może bezpiecznie pracować. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli ciśnienie jest poza zakresem z instrukcji obsługi albo kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik temperatury zasilania i jego wtyczkę, pompę pod kątem zablokowania i jej ustawienia oraz ciśnienie wody w instalacji.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2942",
+    "opis": "Brak sygnału zwrotnego obrotów od wentylatora",
+    "rozwiazanie": "Sterownik nie dostaje informacji o obrotach wentylatora, więc kocioł nie uruchomi palnika. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wtyczki zasilania i regulacji obrotów wentylatora oraz przewód między wentylatorem a automatem palnikowym.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2943",
+    "opis": "Napięcie sieciowe jest zbyt niskie",
+    "rozwiazanie": "Kocioł zarejestrował zbyt niskie napięcie w sieci elektrycznej. Sprawdź, czy kocioł ma zasilanie, i poczekaj, aż napięcie wróci do normy; jeśli kod pojawia się często albo nie znika, wezwij serwis.",
+    "serwis": "Serwisant mierzy napięcie zasilania kotła (wymagane co najmniej 196 V), a przy prawidłowym napięciu sprawdza automat palnikowy.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2944",
+    "opis": "Przełącznik ciśnienia powietrza otwarty",
+    "rozwiazanie": "Czujnik ciśnienia powietrza nie potwierdził prawidłowego ciągu, co zwykle wiąże się z odprowadzeniem spalin lub kondensatu. Przewietrz pomieszczenie i wykonaj jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant czyści syfon kondensatu, usuwa niedrożności instalacji spalinowej oraz sprawdza podłączenie czujnika ciśnienia powietrza i wężyka ciśnieniowego.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2945",
+    "opis": "Zbyt wiele krótkich żądań ciepła w krótkim czasie",
+    "rozwiazanie": "Kocioł włączał się i wyłączał zbyt wiele razy w krótkim czasie, bo instalacja nie odbierała ciepła. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant wydłuża czas blokady przed ponownym załączeniem palnika, sprawdza odbiór ciepła w instalacji oraz pracę pompy c.o. i zaworu trójdrogowego.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2946",
+    "opis": "Nieprawidłowa wtyczka kodująca",
+    "rozwiazanie": "Kocioł nie rozpoznaje wtyczki kodującej, czyli elementu, który określa jego typ i moc. Tej usterki nie da się usunąć samodzielnie, potrzebna jest wizyta serwisu.",
+    "serwis": "Serwisant sprawdza wtyczkę kodującą i w razie potrzeby wymienia ją na właściwą dla danego kotła.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2947",
+    "opis": "Zabezpieczenie pompy przed blokadą zostało aktywowane",
+    "rozwiazanie": "To komunikat informacyjny, a nie usterka: kocioł na chwilę uruchomił pompę, żeby nie zablokowała się po dłuższym postoju. Funkcja kończy się sama i nie wymaga żadnego działania.",
+    "serwis": "Serwisant nie ma tu nic do naprawy; pompę sprawdza dopiero wtedy, gdy komunikatowi towarzyszą inne kody lub brak ogrzewania.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Komunikat stanu (klasa R), nie usterka."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2948",
+    "opis": "Brak sygnału płomienia przy małej wydajności",
+    "rozwiazanie": "To usterka przemijająca: kocioł stracił sygnał płomienia podczas pracy z małą mocą i po przedmuchaniu sam ponawia rozruch. Sprawdź, czy zawór gazu jest otwarty; jeśli kod się powtarza albo kocioł zablokuje się z kodem 2951, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ustawienie CO2, czyli proporcję gazu do powietrza przy mocy minimalnej.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa usterki B (przemijająca): po przedmuchaniu kocioł sam ponawia rozruch; powtarzające się zerwania płomienia kończą się blokadą 2951."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2949",
+    "opis": "Brak sygnału płomienia przy dużej wydajności",
+    "rozwiazanie": "To usterka przemijająca: kocioł stracił sygnał płomienia podczas pracy z dużą mocą i po przedmuchaniu sam ponawia rozruch. Sprawdź, czy zawór gazu jest otwarty; jeśli kod się powtarza albo kocioł zablokuje się z kodem 2951, wezwij serwis.",
+    "serwis": "Serwisant sprawdza uszczelki palnika i w razie potrzeby ogranicza moc maksymalną kotła.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa usterki B (przemijająca): po przedmuchaniu kocioł sam ponawia rozruch; powtarzające się zerwania płomienia kończą się blokadą 2951."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2950",
+    "opis": "Brak sygnału płomienia po procesie uruchomienia",
+    "rozwiazanie": "To usterka przemijająca: kocioł stracił sygnał płomienia tuż po uruchomieniu palnika i po przedmuchaniu sam ponawia rozruch. Sprawdź, czy zawór gazu jest otwarty; jeśli kod się powtarza albo kocioł zablokuje się z kodem 2951, wezwij serwis.",
+    "serwis": "Serwisant sprawdza i koryguje stosunek ilości gazu do powietrza.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa usterki B (przemijająca): po przedmuchaniu kocioł sam ponawia rozruch; powtarzające się zerwania płomienia kończą się blokadą 2951."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2951",
+    "opis": "Zbyt dużo zerwań płomienia",
+    "rozwiazanie": "Płomień zgasł podczas pracy palnika zbyt wiele razy i kocioł zablokował się dla bezpieczeństwa; najczęściej stoi za tym zasilanie gazem, regulacja spalania albo odprowadzenie spalin. Sprawdź, czy zawór gazu jest otwarty i czy kocioł ma zasilanie, a potem wykonaj jeden reset przyciskiem na panelu; jeśli kod wróci, nie resetuj ponownie i wezwij serwis.",
+    "serwis": "Serwisant odczytuje z historii usterek kody, które poprzedziły blokadę (2948, 2949, 2950, 2953, 2954), mierzy ciśnienie gazu, sprawdza elektrodę jonizacyjną, ustawienie CO2, uszczelki palnika oraz drożność instalacji spalinowej.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa usterki V (blokująca trwale, wymaga resetu). Instrukcja odsyła tu do usterek przemijających, które wywołują blokadę: 2948, 2949, 2950, 2953, 2954. Znaczenie zgodne z instrukcją Condens 8300i W („Loss of flame too many times”)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2952",
+    "opis": "Błąd wewnętrzny podczas testu sygnału jonizacji",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika palnika podczas testu sygnału płomienia. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant resetuje sterownik palnika, a jeśli błąd się powtarza, wymienia go.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2953",
+    "opis": "Brak sygnału płomienia przy małej wydajności",
+    "rozwiazanie": "To usterka przemijająca: kocioł stracił sygnał płomienia podczas pracy z małą mocą i po przedmuchaniu sam ponawia rozruch. Sprawdź, czy zawór gazu jest otwarty; jeśli kod się powtarza albo kocioł zablokuje się z kodem 2951, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ustawienie CO2 przy mocy minimalnej, zwłaszcza gdy błąd się powtarza.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa usterki B (przemijająca): po przedmuchaniu kocioł sam ponawia rozruch; powtarzające się zerwania płomienia kończą się blokadą 2951."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2954",
+    "opis": "Brak sygnału płomienia przy dużej wydajności",
+    "rozwiazanie": "To usterka przemijająca: kocioł stracił sygnał płomienia podczas pracy z dużą mocą i po przedmuchaniu sam ponawia rozruch. Sprawdź, czy zawór gazu jest otwarty; jeśli kod się powtarza albo kocioł zablokuje się z kodem 2951, wezwij serwis.",
+    "serwis": "Serwisant wymienia uszczelki palnika i w razie potrzeby zmniejsza obciążenie palnika.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa usterki B (przemijająca): po przedmuchaniu kocioł sam ponawia rozruch; powtarzające się zerwania płomienia kończą się blokadą 2951."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2955",
+    "opis": "Ustawione parametry dla konfiguracji hydraulicznej nie są obsługiwane przez urządzenie grzewcze",
+    "rozwiazanie": "Ustawienia układu hydraulicznego zapisane w sterowniku nie pasują do tego kotła. To sprawa konfiguracji serwisowej, więc potrzebna jest wizyta serwisu.",
+    "serwis": "Serwisant sprawdza konfigurację hydrauliczną w menu serwisowym i ustawia parametry obsługiwane przez kocioł.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2956",
+    "opis": "Hydrauliczna konfiguracja na urządzeniu grzewczym została aktywowana",
+    "rozwiazanie": "To komunikat informacyjny, a nie usterka: w kotle została aktywowana konfiguracja hydrauliczna. Nie wymaga żadnego działania; zadzwoń do serwisu tylko wtedy, gdy kocioł jednocześnie nie grzeje.",
+    "serwis": "Serwisant nie ma tu nic do naprawy; komunikat potwierdza ustawienie wykonane przy uruchomieniu kotła.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Komunikat stanu (klasa O), nie usterka."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2957",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant resetuje elektronikę kotła, sprawdza przyłącza elektryczne, a przy powtarzającej się usterce wymienia elektronikę.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2958",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła, której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant resetuje elektronikę kotła, sprawdza przyłącza elektryczne, a przy powtarzającej się usterce wymienia elektronikę.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2959",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła związaną z wtyczką kodującą, czyli elementem określającym typ kotła. Tej usterki nie da się usunąć samodzielnie, potrzebna jest wizyta serwisu.",
+    "serwis": "Serwisant aktualizuje lub wymienia wtyczkę kodującą.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2960",
+    "opis": "Usterka instalacji elektroniki urządzenia",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła związaną z wtyczką kodującą, czyli elementem określającym typ kotła. Tej usterki nie da się usunąć samodzielnie, potrzebna jest wizyta serwisu.",
+    "serwis": "Serwisant aktualizuje lub wymienia wtyczkę kodującą.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2961",
+    "opis": "Brak sygnału z wentylatora",
+    "rozwiazanie": "Sterownik nie dostaje sygnału o obrotach wentylatora, więc kocioł blokuje się i nie grzeje. Sprawdź, czy kocioł ma zasilanie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis, bo przyczyna leży zwykle w wentylatorze, jego podłączeniu albo w napięciu zasilania.",
+    "serwis": "Serwisant sprawdza napięcie sieciowe, wentylator i jego przewód przyłączeniowy, a uszkodzony element wymienia.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Klasa usterki V (blokująca trwale). Znaczenie zgodne z instrukcją Condens 8300i W („No fan signal available”; zalecenie: sprawdzić wentylator, przewód przyłączeniowy i napięcie sieciowe)."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2962",
+    "opis": "Brak sygnału z wentylatora",
+    "rozwiazanie": "Sterownik nie dostaje sygnału o obrotach wentylatora, więc kocioł nie uruchomi palnika. Sprawdź, czy kocioł ma zasilanie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza napięcie sieciowe, wentylator i jego przewód przyłączeniowy, a uszkodzony element wymienia.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2963",
+    "opis": "Sygnał z ogranicznika temperatury bloku cieplnego znajduje się poza dopuszczalnym zakresem",
+    "rozwiazanie": "Zabezpieczenie temperaturowe wymiennika (bloku cieplnego) podaje wartość spoza dopuszczalnego zakresu. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ogranicznik temperatury bloku cieplnego, czujnik temperatury zasilania i ich wtyczki, a uszkodzony element wymienia.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Instrukcja Condens 8300i W opisuje ten kod jako uszkodzenie czujnika wymiennika lub obu czujników (zasilania i wymiennika); sens zbliżony, opis zostawiono według polskiej instrukcji Condens 2300i W."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2964",
+    "opis": "Zbyt mały strumień przepływu w bloku cieplnym",
+    "rozwiazanie": "Przez wymiennik kotła przepływa za mało wody, więc palnik wyłącza się, żeby się nie przegrzać. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli ciśnienie jest poza zakresem z instrukcji obsługi albo kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza zamocowanie czujnika temperatury zasilania, ciśnienie wody, pompę oraz zawory w obiegu grzewczym.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2965",
+    "opis": "Zbyt wysoka temperatura zasilania",
+    "rozwiazanie": "Woda wychodząca z kotła osiągnęła zbyt wysoką temperaturę, zwykle dlatego, że instalacja nie odbiera ciepła. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli ciśnienie jest poza zakresem z instrukcji obsługi albo kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie wody, pracę pompy i zawory w obiegu grzewczym.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2966",
+    "opis": "Zbyt szybki wzrost temperatury zasilania w bloku cieplnym",
+    "rozwiazanie": "Temperatura w wymienniku rośnie zbyt szybko, co wskazuje na słaby przepływ wody przez kocioł. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli ciśnienie jest poza zakresem z instrukcji obsługi albo kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie wody, pracę pompy i zawory w obiegu grzewczym.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2967",
+    "opis": "Różnica temperatur między czujnikiem temperatury zasilania a ogranicznikiem temperatury bloku cieplnego jest zbyt duża",
+    "rozwiazanie": "Dwa czujniki temperatury w kotle pokazują zbyt różne wartości, co zwykle oznacza słaby przepływ wody przez wymiennik. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli ciśnienie jest poza zakresem z instrukcji obsługi albo kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza zamocowanie czujnika temperatury zasilania, ciśnienie wody i pracę pompy.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2968",
+    "opis": "Trwa uzupełnianie instalacji",
+    "rozwiazanie": "To komunikat informacyjny, a nie usterka: kocioł z automatycznym uzupełnianiem właśnie dopuszcza wodę do instalacji. Poczekaj, aż skończy; zadzwoń do serwisu, jeśli komunikat pojawia się często.",
+    "serwis": "Serwisant nie ma tu nic do naprawy, chyba że uzupełnianie powtarza się często; wtedy szuka ubytku wody w instalacji.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf",
+    "uwagi": "Komunikat stanu, nie usterka; dotyczy kotłów z automatycznym uzupełnianiem wody."
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2969",
+    "opis": "Osiągnięto maksymalną liczbę procesów uzupełniania",
+    "rozwiazanie": "Kocioł uzupełniał wodę tyle razy, że dalsze automatyczne dopuszczanie zostało zablokowane, co wskazuje na ubytek wody w instalacji. Odczytaj ciśnienie na manometrze i wezwij serwis.",
+    "serwis": "Serwisant szuka przyczyny ubytku wody: sprawdza szczelność instalacji i kotła oraz usuwa nieszczelności.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2971",
+    "opis": "Zbyt niskie ciśnienie robocze",
+    "rozwiazanie": "Ciśnienie wody w instalacji spadło poniżej wartości potrzebnej do pracy kotła. Odczytaj ciśnienie na manometrze i uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła; jeśli ciśnienie znów spada albo kod nie znika, wezwij serwis.",
+    "serwis": "Serwisant odpowietrza instalację, uzupełnia wodę do zadanego ciśnienia, sprawdza czujnik ciśnienia i szuka przyczyny ubytku.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2972",
+    "opis": "Napięcie sieciowe jest zbyt niskie",
+    "rozwiazanie": "Kocioł zarejestrował zbyt niskie napięcie w sieci elektrycznej. Sprawdź, czy kocioł ma zasilanie, i poczekaj, aż napięcie wróci do normy; jeśli kod pojawia się często albo nie znika, wezwij serwis.",
+    "serwis": "Serwisant mierzy napięcie zasilania kotła i sprawdza jego podłączenie elektryczne.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2973",
+    "opis": "Usterka układu elektronicznego urządzenia / sterownika podstawowego",
+    "rozwiazanie": "Kod oznacza usterkę elektroniki kotła (sterownika podstawowego), której nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant wykonuje reset, a jeśli usterka się powtarza, wymienia automat palnikowy.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Junkers",
+    "kod": "2974",
+    "opis": "Błąd wewnętrzny",
+    "rozwiazanie": "Kod oznacza wewnętrzny błąd sterownika, którego nie da się usunąć samodzielnie. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wróci, wezwij serwis.",
+    "serwis": "Serwisant uruchamia kocioł ponownie, a jeśli błąd się powtarza, wymienia sterownik palnika.",
+    "zrodlo": "https://www.bosch-industrial.com/ocsmedia/optimized/full/o368944v52_6720881877.pdf"
+  },
+  {
+    "marka": "Buderus",
+    "kod": "6L 229",
+    "opis": "Brak sygnału jonizacji podczas pracy palnika",
+    "rozwiazanie": "Płomień zgasł w trakcie pracy palnika, a kocioł sam ponawia zapłon, więc pojedynczy kod nie musi oznaczać awarii. Sprawdź, czy zawór gazu jest otwarty, a jeśli kocioł się zablokował, wykonaj jeden reset przyciskiem na panelu; wezwij serwis, gdy kod wraca albo kocioł po resecie nie rusza.",
+    "serwis": "Serwisant sprawdza elektrody z przewodem, ciśnienie gazu na przyłączu, armaturę gazową, odpływ syfonu kondensatu oraz instalację powietrzno-spalinową.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o353049v52_6720872192.pdf",
+    "uwagi": "Instrukcja Logamax plus GB172i: 6L 229 to usterka przemijająca (klasa B) – palnik uruchamia się na nowo, a po nieudanym zapłonie pojawia się usterka blokująca 227 (6A/EA)."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "6A",
+    "opis": "Nie wykryto płomienia po próbie zapłonu (6A 227)",
+    "rozwiazanie": "Kocioł próbował się zapalić, ale nie wykrył płomienia; po czwartej nieudanej próbie blokuje się na stałe. Sprawdź, czy zawór gazu jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie gazu na przyłączu, elektrody z przewodem, stosunek gazu do powietrza, armaturę gazową, odpływ syfonu kondensatu i instalację spalinową.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o353049v52_6720872192.pdf",
+    "uwagi": "Zmieniono opis: instrukcje Buderus (GB172i, GB162 V2) opisują 6A 227 jako „Nie wykryto płomienia”, a nie „niedostateczny prąd jonizacji”."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "4A",
+    "opis": "Temperatura wody na zasileniu powyżej 105°C",
+    "rozwiazanie": "Kocioł wyłączył się z powodu zbyt wysokiej temperatury wody na zasilaniu. Odczytaj ciśnienie na manometrze i po ostygnięciu kotła wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie w instalacji, pracę pompy obiegowej, czujnik temperatury zasilania oraz przepływ wody przez wymiennik.",
+    "zrodlo": null,
+    "uwagi": "Kodu 4A nie ma w sprawdzonych instrukcjach (GB172i, GB172T, GB162 V2, GB022); występuje w starszych seriach, znaczenia nie udało się potwierdzić."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "3A",
+    "opis": "Awaria wentylatora – transport powietrza zatrzymany w czasie pracy (3A 264)",
+    "rozwiazanie": "Wentylator palnika przestał podawać powietrze w czasie pracy, więc kocioł przerwał grzanie. To usterka przemijająca i kocioł może ruszyć sam; jeśli kod wraca albo kocioł stoi, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator pod kątem zabrudzenia i zablokowania oraz jego przewód z wtyczką.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o353049v52_6720872192.pdf",
+    "uwagi": "Doprecyzowano opis: w instrukcji GB172i 3A 264 to „Awaria wentylatora”, w GB172T „Transport powietrza zatrzymany w fazie pracy”; źródła nie mówią o zasilaniu wentylatora."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "3Y",
+    "opis": "Wentylator pracuje zbyt szybko (3Y 215)",
+    "rozwiazanie": "Wentylator palnika pracuje z niewłaściwą prędkością i kocioł się zablokował. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator z przewodem i wtyczką oraz drożność instalacji spalinowej.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o353049v52_6720872192.pdf",
+    "uwagi": "Doprecyzowano opis według GB172i/GB172T (3Y 215 „Wentylator za szybki”). W Logamax plus GB062 kod 3Y oznacza co innego: presostat różnicy ciśnień nie rozwiera się przy wyłączonym wentylatorze."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "IC",
+    "opis": "Ogranicznik temperatury bezpieczeństwa spalin (STB) lub termostat palnika wykrył zbyt wysoką temperaturę",
+    "rozwiazanie": "Zabezpieczenie wykryło zbyt wysoką temperaturę spalin lub palnika i wyłączyło kocioł. Ten kod wymaga wizyty serwisu; nie uruchamiaj kotła wielokrotnie.",
+    "serwis": "Serwisant sprawdza czujnik temperatury spalin, wymiennik i odprowadzenie spalin oraz przepływ wody przez kocioł.",
+    "zrodlo": null,
+    "uwagi": "Nie znaleziono w instrukcjach Buderus. Zapis „IC” to prawdopodobnie kod „1C” (jedynka odczytana jako litera I); znaczenie niepotwierdzone."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "E0",
+    "opis": "Brak napięcia zasilającego",
+    "rozwiazanie": "Kod wskazuje na problem z zasilaniem lub elektroniką kotła. Sprawdź, czy kocioł ma zasilanie, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza zasilanie elektryczne kotła, bezpieczniki i płytę sterującą.",
+    "zrodlo": null,
+    "uwagi": "Kodu E0 nie ma w sprawdzonych instrukcjach Buderus; znaczenie z listy wejściowej niepotwierdzone."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "H7",
+    "opis": "Zbyt niskie ciśnienie wody w instalacji (wskazanie H 07)",
+    "rozwiazanie": "To ostrzeżenie o zbyt niskim ciśnieniu wody, a nie usterka zapłonu. Odczytaj ciśnienie na manometrze i uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła; jeśli ciśnienie znów spada, wezwij serwis.",
+    "serwis": "Serwisant szuka przyczyny ubytku wody: sprawdza szczelność instalacji, naczynie przeponowe i zawór bezpieczeństwa.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o229132v47_6720813793.pdf",
+    "uwagi": "Zmieniono opis: lista wejściowa podawała „Problem z zapłonem”, a instrukcja obsługi Logamax plus GB162 V2 (wersja słowacka, tab. 9) opisuje H 07 jako zbyt niskie ciśnienie wody. Na wyświetlaczu kod ma postać H 07."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "EA",
+    "opis": "Nieudany zapłon po kilku próbach",
+    "rozwiazanie": "Kocioł nie wykrył płomienia mimo ponawianych prób zapłonu i zablokował się. Sprawdź, czy zawór gazu jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie gazu, elektrody z przewodem, armaturę gazową, odpływ kondensatu i instalację spalinową.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o353049v52_6720872192.pdf",
+    "uwagi": "Instrukcja GB172i wymienia „usterkę blokującą EA 227” jako następstwo nieudanej próby zapłonu po kodzie 6L 229; w nowszych kotłach ta sama usterka ma oznaczenie 6A 227. Pełnego wiersza tabeli dla EA nie znaleziono."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "2F",
+    "opis": "Czujniki temperatury w kotle wskazują różniące się wartości (2F 260 / 2F 345)",
+    "rozwiazanie": "Czujniki temperatury w kotle pokazują niezgodne wartości, zwykle przy słabym przepływie wody. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujniki temperatury, pracę pompy i przepływ wody przez kocioł.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o229132v47_6720813793.pdf",
+    "uwagi": "Doprecyzowano opis według instrukcji obsługi GB162 V2 (tab. 9: czujniki w kotle zmierzyły odmienną temperaturę). Kod dodatkowy zależy od modelu (w innych seriach np. 271)."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "3L",
+    "opis": "Wentylator wyłączany w czasie bezpieczeństwa (3L 214)",
+    "rozwiazanie": "Kod dotyczy wentylatora palnika, a nie wody w instalacji, i blokuje kocioł. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator pod kątem zabrudzenia i zablokowania oraz jego przewód z wtyczką.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o353049v52_6720872192.pdf",
+    "uwagi": "Zmieniono opis: lista wejściowa podawała problem z przepływem wody, a instrukcje GB172i, GB172T i GB022 opisują 214 jako „Wentylator jest wyłączany w czasie bezpieczeństwa”."
+  },
+  {
+    "marka": "Buderus",
+    "kod": "8Y",
+    "opis": "Kocioł zablokowany przez zabezpieczenie temperaturowe lub zewnętrzny styk przełączający (8Y 232)",
+    "rozwiazanie": "Kocioł został zatrzymany przez zabezpieczenie temperaturowe albo zewnętrzny styk, na przykład termostat ogrzewania podłogowego lub pompę kondensatu. Kocioł wraca do pracy sam, gdy przyczyna ustąpi; jeśli kod nie znika, wezwij serwis.",
+    "serwis": "Serwisant sprawdza zewnętrzne zabezpieczenie temperaturowe i jego nastawy, styk przełączający z okablowaniem oraz pompę i odprowadzenie kondensatu.",
+    "zrodlo": "https://www.buderus.com/ocsmedia/optimized/full/o353049v52_6720872192.pdf",
+    "uwagi": "Zmieniono opis: lista wejściowa podawała „problemy z ciśnieniem”, a instrukcje GB172i/GB172T opisują 8Y 232 jako zadziałanie zabezpieczenia temperaturowego TB 1, otwarty zewnętrzny kontakt (np. termostat podłogówki) lub awarię pompy kondensatu."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F20",
+    "opis": "Zadziałanie ogranicznika temperatury (przegrzanie kotła)",
+    "rozwiazanie": "Zadziałał ogranicznik temperatury, bo kocioł się przegrzał. Odczytaj ciśnienie na manometrze i po ostygnięciu kotła wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujniki temperatury zasilania i powrotu, przepływ wody, pompę i odpowietrzenie kotła.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/"
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F22",
+    "opis": "Brak wody w kotle / zbyt niskie ciśnienie",
+    "rozwiazanie": "W kotle jest za mało wody albo ciśnienie spadło poniżej wartości wymaganej do pracy. Odczytaj ciśnienie na manometrze lub wyświetlaczu i uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła; jeśli ciśnienie znów spada albo kod nie znika, wezwij serwis.",
+    "serwis": "Serwisant szuka przyczyny ubytku wody, sprawdza naczynie przeponowe, zawór bezpieczeństwa, czujnik ciśnienia i pompę.",
+    "zrodlo": "https://www.vaillant.pl/instrukcje-obs-ugi-2/kot-y-niekondensacyjne/io-atmo-turbo-plus-115324.pdf",
+    "uwagi": "Instrukcja obsługi atmoTEC plus / turboTEC plus: F.22 to praca bez wody; w zimnej instalacji ciśnienie powinno wynosić 1,0–2,0 bar, wodę dolewa się poniżej 0,8 bar."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F23",
+    "opis": "Zbyt duża różnica temperatury między zasilaniem a powrotem",
+    "rozwiazanie": "Różnica temperatury między zasilaniem a powrotem jest zbyt duża, co oznacza za słaby przepływ wody przez kocioł albo za mało wody. Odczytaj ciśnienie na manometrze, w razie niskiego ciśnienia uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła i wykonaj jeden reset; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza pompę, ilość wody i powietrze w obiegu, filtr w bloku hydraulicznym oraz czujniki temperatury zasilania i powrotu.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/",
+    "uwagi": "Doprecyzowano opis (zasilanie/powrót). Polska instrukcja atmoTEC/turboTEC plus wiąże F.23 i F.24 z brakiem wody w instalacji."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F24",
+    "opis": "Zbyt szybki wzrost temperatury",
+    "rozwiazanie": "Temperatura w kotle rośnie zbyt szybko, zwykle przez za słaby przepływ wody albo za mało wody. Odczytaj ciśnienie na manometrze, w razie niskiego ciśnienia uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła i wykonaj jeden reset; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza pompę, ciśnienie i powietrze w instalacji, zawory odcinające oraz przepływ przez wymiennik.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/"
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F27",
+    "opis": "Wykrycie płomienia przy zamkniętym zaworze gazowym",
+    "rozwiazanie": "Kocioł wykrywa sygnał płomienia, mimo że palnik jest wyłączony. Ten kod wymaga wizyty serwisu; nie resetuj kotła wielokrotnie.",
+    "serwis": "Serwisant sprawdza elektrodę kontroli płomienia, szczelność zaworu gazowego i płytę elektroniki.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/"
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F28",
+    "opis": "Brak zapłonu, nie wykryto płomienia",
+    "rozwiazanie": "Kocioł próbował się zapalić, ale nie wykrył płomienia i przeszedł w stan zakłócenia. Sprawdź, czy zawór gazu jest otwarty i czy działają inne urządzenia gazowe, a potem wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie gazu, armaturę gazową, elektrodę zapłonową i jonizacyjną, układ zapłonowy, odpływ kondensatu oraz układ powietrzno-spalinowy.",
+    "zrodlo": "https://www.vaillant.pl/instrukcje-obs-ugi-2/kot-y-niekondensacyjne/io-atmo-turbo-plus-115324.pdf",
+    "uwagi": "Instrukcja obsługi atmoTEC plus / turboTEC plus: F.28 lub F.29 pojawia się po 3 nieudanych próbach zapłonu; usterkę kasuje się przyciskiem, a po nieskutecznych próbach kasowania producent każe wezwać serwis. Znaczenie zgodne z listą Vaillant UK."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F29",
+    "opis": "Zanik płomienia podczas pracy i nieudana próba ponownego zapłonu",
+    "rozwiazanie": "Płomień zgasł w trakcie pracy kotła, a ponowna próba zapłonu się nie powiodła. Sprawdź, czy zawór gazu jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciągłość dopływu i ciśnienie gazu, armaturę gazową, elektrodę jonizacyjną oraz to, czy spaliny nie wracają do powietrza do spalania.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/",
+    "uwagi": "Doprecyzowano opis według listy Vaillant („ignition following a flame loss during operation was unsuccessful”)."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F33",
+    "opis": "Brak sygnału z presostatu spalin",
+    "rozwiazanie": "Kocioł turboTEC wykrył nieprawidłowe działanie układu odprowadzenia spalin i wyłączył się. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza presostat powietrza z wężykami, wentylator oraz drożność przewodu powietrzno-spalinowego.",
+    "zrodlo": "https://www.vaillant.pl/instrukcje-obs-ugi-2/kot-y-niekondensacyjne/io-atmo-turbo-plus-115324.pdf",
+    "uwagi": "Polska instrukcja obsługi potwierdza F.33 jako usterkę układu spalinowego w kotłach turboTEC plus, bez wskazania presostatu; szczegół „presostat” pochodzi z listy wejściowej i serwisów zewnętrznych."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F35",
+    "opis": "Usterka układu powietrzno-spalinowego – niedrożny przewód powietrza lub spalin",
+    "rozwiazanie": "Kocioł wykrył niedrożność w układzie doprowadzenia powietrza i odprowadzenia spalin. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza drożność przewodu powietrzno-spalinowego i jego wylotu na zewnątrz.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/",
+    "uwagi": "Doprecyzowano opis według listy Vaillant („The air/flue pipe is blocked”)."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F36",
+    "opis": "Wykryty wypływ spalin do pomieszczenia",
+    "rozwiazanie": "Kocioł atmoTEC wykrył, że spaliny nie są prawidłowo odprowadzane i cofają się do pomieszczenia, więc się wyłączył. Otwórz okno i przewietrz pomieszczenie, nie zasłaniaj kratek wentylacyjnych; jeśli kod pojawia się ponownie, wyłącz kocioł i wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciąg kominowy, czujnik spalin, drożność przewodu spalinowego oraz dopływ powietrza do pomieszczenia.",
+    "zrodlo": "https://www.vaillant.pl/instrukcje-obs-ugi-2/kot-y-niekondensacyjne/io-atmo-turbo-plus-115324.pdf",
+    "uwagi": "Dotyczy kotłów z otwartą komorą spalania: instrukcja atmoTEC plus podaje F.36 jako wyłączenie przez czujnik spalin przy niewłaściwym działaniu układu spalinowego."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F75",
+    "opis": "Brak skoku ciśnienia wody po załączeniu pompy",
+    "rozwiazanie": "Po włączeniu pompy kocioł nie zarejestrował wystarczającego skoku ciśnienia wody. Odczytaj ciśnienie na manometrze i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza czujnik ciśnienia wody, pompę, powietrze w kotle i naczynie przeponowe.",
+    "zrodlo": "https://manualslib.com/manual/1529976/Vaillant-Ecotec-Pro-24.html?page=37",
+    "uwagi": "Instrukcja ecoTEC pro: „Fault: Pump/water shortage – insufficient pressure jump detected when starting the pump”."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F37",
+    "opis": "Za wysokie lub za niskie obroty wentylatora",
+    "rozwiazanie": "Wentylator pracuje z niewłaściwą prędkością obrotową. Możesz wykonać jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator, jego wiązkę przewodów i płytę elektroniki.",
+    "zrodlo": null,
+    "uwagi": "Kodu F.37 nie ma na liście Vaillant UK ani w sprawdzonych instrukcjach; znaczenie z listy wejściowej niepotwierdzone."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F53",
+    "opis": "Usterka regulacji spalania",
+    "rozwiazanie": "Kocioł zgłasza nieprawidłowość regulacji spalania, często związaną z dopływem gazu. Sprawdź, czy zawór gazu jest otwarty, i wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie gazu na wejściu, armaturę gazową i czujnik przepływu masowego.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/",
+    "uwagi": "Zmieniono opis: lista Vaillant UK podaje F.53 jako „Combustion regulation fault”, a usterkę czujnika przepływu masowego przypisuje kodowi F.52. Część serwisów opisuje F.53 jako nieprawidłowy przepływ przez armaturę gazową – znaczenie zależy od generacji ecoTEC."
+  },
+  {
+    "marka": "Vaillant",
+    "kod": "F54",
+    "opis": "Usterka zasilania gazem – brak lub zbyt niskie ciśnienie gazu (występuje razem z F.28/F.29)",
+    "rozwiazanie": "Kocioł wykrył brak gazu lub zbyt niskie ciśnienie gazu na wejściu. Sprawdź, czy zawór gazu jest otwarty i czy działają inne urządzenia gazowe, a potem wykonaj jeden reset przyciskiem na panelu; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant mierzy ciśnienie gazu na wejściu i sprawdza armaturę gazową.",
+    "zrodlo": "https://www.vaillant.co.uk/service/boiler-fault-codes/",
+    "uwagi": "Doprecyzowano opis według listy Vaillant („Fault in the gas supply (in combination with F.28/F.29)”)."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A01",
+    "opis": "Blokada braku płomienia – kocioł nie wykrył płomienia (brak gazu, iskry lub jonizacji, a w kotłach kondensacyjnych także zatkany odpływ kondensatu)",
+    "rozwiazanie": "Kocioł nie wykrył płomienia i przeszedł w blokadę. Sprawdź, czy zawór gazu jest otwarty, i wykonaj jeden reset zgodnie z instrukcją obsługi kotła (przycisk RESET lub pokrętło trybu); jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie gazu, elektrodę zapłonowo-jonizacyjną, zawór gazowy, odpływ kondensatu i odprowadzenie spalin.",
+    "zrodlo": "https://ik.pl/pliki/BERETTA/Instrukcja_obs%C5%82ugi_CIAO-AT-C_export.pdf",
+    "uwagi": "Doprecyzowano opis: instrukcja Ciao AT podaje A01 jako „Alarm blokady płomienia”, serie Green jako blokadę modułu kontroli płomienia (ACF). Przyczyny z listy wejściowej zostawiono jako możliwe, nie jako znaczenie kodu."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A02",
+    "opis": "Zadziałał termostat granicznej temperatury",
+    "rozwiazanie": "Zadziałał termostat granicznej temperatury, bo kocioł się przegrzał. Odczytaj ciśnienie na manometrze i po ostygnięciu kotła wykonaj jeden reset; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza pompę obiegową, przepływ wody przez wymiennik i termostat graniczny.",
+    "zrodlo": "https://ik.pl/pliki/BERETTA/Instrukcja_obs%C5%82ugi_CIAO-AT-C_export.pdf",
+    "uwagi": "W serii Ciao AT kod A02 obejmuje też termostat spalin („Wartość graniczna termostatu/termostatu spalin”)."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A03",
+    "opis": "Usterka wentylatora lub niedrożny wlot powietrza / wylot spalin (zależnie od serii)",
+    "rozwiazanie": "Kod dotyczy wentylatora albo drożności doprowadzenia powietrza i odprowadzenia spalin. Możesz wykonać jeden reset zgodnie z instrukcją obsługi kotła; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza wentylator i jego obroty oraz drożność przewodu powietrzno-spalinowego.",
+    "zrodlo": "https://ik.pl/pliki/BERETTA/Instrukcja_obs%C5%82ugi_CIAO-AT-C_export.pdf",
+    "uwagi": "Znaczenie zależy od serii: Quadra Green / Mynute Green – alarm obrotów wentylatora („tacho fan alarm”), Ciao AT – „Zatkany wlot powietrza/wylot spalin”. Opis rozszerzono o oba warianty."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A04",
+    "opis": "Zadziałał presostat wody – zbyt niskie ciśnienie wody w instalacji",
+    "rozwiazanie": "Ciśnienie wody w instalacji jest za niskie. Odczytaj ciśnienie na manometrze i uzupełnij wodę w instalacji zgodnie z instrukcją obsługi kotła; jeśli ciśnienie często spada, wezwij serwis.",
+    "serwis": "Serwisant szuka przyczyny ubytku wody, sprawdza naczynie przeponowe, zawór bezpieczeństwa i presostat wody.",
+    "zrodlo": "https://ik.pl/pliki/BERETTA/Instrukcja_obs%C5%82ugi_CIAO-AT-C_export.pdf",
+    "uwagi": "Instrukcje Beretta (Ciao AT, Quadra Green) każą przy A04 uzupełnić ciśnienie do 1–1,5 bar, a przy częstych spadkach wezwać serwis. W Ciao AT kod obejmuje też poziom kondensatu."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A06",
+    "opis": "Uszkodzona sonda NTC ciepłej wody użytkowej",
+    "rozwiazanie": "Kocioł zgłasza usterkę czujnika temperatury ciepłej wody użytkowej. Kocioł zwykle pracuje dalej, ale temperatura ciepłej wody może być niestabilna; wezwij serwis.",
+    "serwis": "Serwisant sprawdza sondę NTC ciepłej wody użytkowej i w razie potrzeby ją wymienia.",
+    "zrodlo": "https://ik.pl/pliki/BERETTA/Instrukcja_obs%C5%82ugi_CIAO-AT-C_export.pdf"
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A07",
+    "opis": "Uszkodzona sonda NTC na zasilaniu centralnego ogrzewania",
+    "rozwiazanie": "Kocioł zgłasza usterkę czujnika temperatury na zasilaniu centralnego ogrzewania. Ten kod wymaga wizyty serwisu.",
+    "serwis": "Serwisant sprawdza sondę NTC na zasilaniu i w razie potrzeby ją wymienia.",
+    "zrodlo": "https://ik.pl/pliki/BERETTA/Instrukcja_obs%C5%82ugi_CIAO-AT-C_export.pdf",
+    "uwagi": "W seriach Green kod A07 obejmuje też przekroczenie temperatury na zasilaniu i alarm różnicy temperatur zasilanie/powrót."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A08",
+    "opis": "Uszkodzona sonda NTC na powrocie centralnego ogrzewania",
+    "rozwiazanie": "Kocioł zgłasza usterkę czujnika temperatury na powrocie centralnego ogrzewania. Ten kod wymaga wizyty serwisu.",
+    "serwis": "Serwisant sprawdza sondę NTC na powrocie i w razie potrzeby ją wymienia.",
+    "zrodlo": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+    "uwagi": "Kod występuje w kotłach kondensacyjnych (Mynute Green, Quadra Green); obejmuje też przekroczenie temperatury na powrocie."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A09",
+    "opis": "Usterka lub przekroczenie temperatury sondy NTC spalin albo sygnał konieczności czyszczenia wymiennika głównego",
+    "rozwiazanie": "Kod oznacza usterkę sondy spalin albo przypomnienie o czyszczeniu wymiennika; w tym drugim przypadku kocioł pracuje dalej. Możesz wykonać jeden reset zgodnie z instrukcją obsługi kotła, a jeśli kod zostaje, wezwij serwis.",
+    "serwis": "Serwisant sprawdza sondę spalin, czyści wymiennik główny i po przeglądzie kasuje licznik godzin pracy.",
+    "zrodlo": "https://manualslib.mx/manual/306926/Beretta-Quadra-Green-25-C-S-I.html?page=26",
+    "uwagi": "Doprecyzowano opis według instrukcji Quadra Green / Mynute Green. Usunięto z porady procedurę kasowania licznika (wymaga zdjęcia obudowy – czynność serwisowa)."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "A77",
+    "opis": "Zadziałał termostat instalacji niskotemperaturowej (np. ogrzewania podłogowego)",
+    "rozwiazanie": "Zadziałał termostat chroniący instalację niskotemperaturową, na przykład ogrzewanie podłogowe, przed zbyt gorącą wodą. Usterka kasuje się sama i kocioł wraca do pracy; jeśli nie rusza albo kod się powtarza, wezwij serwis.",
+    "serwis": "Serwisant sprawdza termostat instalacji niskotemperaturowej, nastawę temperatury zasilania i układ mieszający ogrzewania podłogowego.",
+    "zrodlo": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+    "uwagi": "Doprecyzowano opis: w instrukcji to „Low temperature system thermostat alarm”, czyli termostat instalacji niskotemperaturowej, a nie czujnik niskiej temperatury w pomieszczeniu. Parowanie kodu z opisem odczytano z kolejności wierszy tabeli (ekstrakcja tekstu), potwierdza je wynik wyszukiwania dla Quadra Green."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "ACO",
+    "opis": "Aktywna funkcja kominiarza",
+    "rozwiazanie": "To nie jest usterka, tylko informacja, że włączona jest funkcja kominiarza, czyli tryb serwisowy do pomiaru spalin. Jeśli nie włączał jej serwisant, a komunikat nie znika, wezwij serwis.",
+    "serwis": "Serwisant korzysta z tej funkcji podczas analizy spalin i regulacji kotła.",
+    "zrodlo": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+    "uwagi": "Komunikat stanu, nie alarm. Parowanie ACO – „Chimney sweep” odczytano z kolejności wierszy tabeli w instrukcji Mynute Green E."
+  },
+  {
+    "marka": "Beretta",
+    "kod": "D",
+    "opis": "Blokada braku płomienia - koniec prób uruchomienia kotła",
+    "rozwiazanie": "Kocioł wyczerpał próby zapłonu i nie wykrył płomienia. Sprawdź, czy zawór gazu jest otwarty, i wykonaj jeden reset zgodnie z instrukcją obsługi kotła; jeśli kod wraca, wezwij serwis.",
+    "serwis": "Serwisant sprawdza ciśnienie gazu, elektrodę zapłonowo-jonizacyjną i zawór gazowy.",
+    "zrodlo": null,
+    "uwagi": "Kodu „D” nie znaleziono w sprawdzonych instrukcjach Beretta (Ciao AT, Quadra Green, Mynute Green, Mynute X); nie wiadomo, której serii dotyczy."
+  }
+]

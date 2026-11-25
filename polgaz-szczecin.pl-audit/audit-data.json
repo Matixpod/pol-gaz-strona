@@ -1,0 +1,316 @@
+{
+  "summary": {
+    "health_score": 73,
+    "business_type": "Local Service (service-area business, HVAC / gas boiler service)",
+    "top_findings": [
+      "Druga działająca witryna firmy pol-gaz.szczecin.pl z innym adresem i zakresem usług",
+      "Certyfikat na zdjęciu dotyczy tylko marki Beretta i miał roczną ważność od czerwca 2025",
+      "Porady przy kodach błędów kierują klienta do wnętrza kotła; surowe teksty z bazy na stronach kodów",
+      "Deklaracja 'do 60 km' sprzeczna z tabelą (Chojna 62 km, Myślibórz 68 km)",
+      "Profil Google niepodpięty i niezweryfikowany; brak opinii w HTML"
+    ],
+    "quick_wins": [
+      "Odsłonić pozycję 'Kontakt' w menu na telefonie",
+      "Zarezerwować 330/362 px na widżet opinii (CLS)",
+      "fetchPriority=high na zdjęciu hero",
+      "Węzeł WebSite w grafie każdej strony",
+      "Jeden znacznik robots i własny tytuł na stronie 404"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 88,
+      "what_works": [
+        "29 adresów zwraca 200 z własnym canonicalem",
+        "Mapa witryny zgodna z listą stron",
+        "Brak martwych linków i stron osieroconych",
+        "Treść w surowym HTML",
+        "/protokol/ z noindex, poza mapą"
+      ],
+      "findings": [
+        {
+          "title": "Sprzeczne znaczniki robots na stronie 404",
+          "severity": "Medium",
+          "description": "Strona 404 zwraca noindex oraz index, follow i ma tytuł strony głównej.",
+          "recommendation": "Poprawić metadane w src/app/not-found.tsx."
+        },
+        {
+          "title": "Brak przekierowania www",
+          "severity": "Medium",
+          "description": "Na live www zwraca 200; lokalny build nie ma reguły hosta.",
+          "recommendation": "Ustawić przekierowanie www na adres główny w Vercel."
+        },
+        {
+          "title": "Jeden lastmod dla wszystkich adresów",
+          "severity": "Low",
+          "description": "Wszystkie 29 wpisów mapy ma datę 2026-11-24.",
+          "recommendation": "Wprowadzić datę aktualizacji per strona."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 58,
+      "what_works": [
+        "Pierwsze akapity usług i marek z nazwą firmy i miastem",
+        "Spójne fakty o firmie",
+        "Numer 992 na wszystkich stronach kodów"
+      ],
+      "findings": [
+        {
+          "title": "Certyfikat na zdjęciu nie pokrywa deklaracji",
+          "severity": "High",
+          "description": "Zdjęcie pokazuje certyfikat Beretta do 50 kW z czerwca 2025, ważny rok; strona podpisuje nim autoryzację 6 marek.",
+          "recommendation": "Uzyskać aktualne dokumenty od właściciela; dopasować podpis do treści zdjęcia."
+        },
+        {
+          "title": "Porady serwisowe kierowane do klienta",
+          "severity": "High",
+          "description": "Ok. 40 wierszy listy kodów poleca czynności wewnątrz kotła; strony kodów pokazują surowe teksty z bazy.",
+          "recommendation": "Przepisać na opis czynności serwisanta."
+        },
+        {
+          "title": "Kod A4 kończy się poleceniem ponownego uruchomienia",
+          "severity": "High",
+          "description": "Strona kodu czujnika spalin nie odsyła w krokach do serwisu.",
+          "recommendation": "Dopisać krok o kominiarzu i serwisie przy powtórce."
+        },
+        {
+          "title": "'Do 60 km' sprzeczne z tabelą",
+          "severity": "High",
+          "description": "Chojna 62 km, Myślibórz 68 km.",
+          "recommendation": "Decyzja właściciela; ujednolicić firma.ts."
+        },
+        {
+          "title": "Plakietki autoryzacji na stronie pomp ciepła",
+          "severity": "High",
+          "description": "Marki pomp i uprawnienia niepotwierdzone.",
+          "recommendation": "Usunąć plakietki z tej strony."
+        },
+        {
+          "title": "Strony marek Unical i Saunier Duval niemal identyczne",
+          "severity": "Medium",
+          "description": "92-96% wspólnego tekstu.",
+          "recommendation": "Dodać własną treść po potwierdzeniu faktów."
+        },
+        {
+          "title": "Brak cen",
+          "severity": "Medium",
+          "description": "Każda strona usługi odsyła do telefonu.",
+          "recommendation": "Wpisać ceny od właściciela."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 78,
+      "what_works": [
+        "Tytuły do 60 znaków, opisy do 155",
+        "Fraza główna w adresie, tytule, H1 i treści",
+        "Co najmniej 3 linki przychodzące na stronę"
+      ],
+      "findings": [
+        {
+          "title": "Nierozstrzygnięta intencja serwis/naprawa",
+          "severity": "Medium",
+          "description": "Porównanie wyników: 6 wspólnych z 10, niska wiarygodność narzędzia.",
+          "recommendation": "Sprawdzić ręcznie w Google; przy 7/10 połączyć cel."
+        },
+        {
+          "title": "Niska klikalność frazy Beretta",
+          "severity": "Medium",
+          "description": "614 wyświetleń, pozycja 8,8, 1 kliknięcie; przyczyna nieustalona.",
+          "recommendation": "Zmierzyć po wdrożeniu nowego tytułu."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 78,
+      "what_works": [
+        "28 bloków JSON-LD poprawnych",
+        "Brak aggregateRating, HowTo, FAQPage",
+        "Dane zgodne z treścią"
+      ],
+      "findings": [
+        {
+          "title": "Brak węzła WebSite poza stroną główną",
+          "severity": "High",
+          "description": "26 stron odwołuje się do #witryna, którego na nich nie ma.",
+          "recommendation": "Dodać schemaWitryny() do każdego grafu."
+        },
+        {
+          "title": "Szczątkowe AboutPage i ContactPage",
+          "severity": "Medium",
+          "description": "Tylko @type i url.",
+          "recommendation": "Użyć wspólnego helpera strony z parametrem typu."
+        },
+        {
+          "title": "Okruszki w danych różnią się od widocznych",
+          "severity": "Medium",
+          "description": "'Błąd A4 Junkers' wobec 'Junkers A4' na 12 stronach.",
+          "recommendation": "Ujednolicić nazwy."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 90,
+      "what_works": [
+        "Podstrony 100/100 w Lighthouse (telefon)",
+        "TBT 0-10 ms",
+        "Obrazy serwowane jako WebP"
+      ],
+      "findings": [
+        {
+          "title": "Przesunięcie układu przez widżet opinii",
+          "severity": "High",
+          "description": "CLS 0,103 i 0,197 na telefonie po przewinięciu (Playwright).",
+          "recommendation": "Zarezerwować 330/362 px w Opinie.tsx."
+        },
+        {
+          "title": "LCP strony głównej na telefonie",
+          "severity": "Medium",
+          "description": "2,8-3,1 s w symulacji wolnej sieci.",
+          "recommendation": "fetchPriority=high na zdjęciu hero."
+        },
+        {
+          "title": "Czcionki bez wstępnego ładowania",
+          "severity": "Medium",
+          "description": "7 plików, 131 KB.",
+          "recommendation": "Preload czcionki nagłówków."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 59,
+      "what_works": [
+        "robots.txt dopuszcza wszystkie roboty",
+        "Autor i data widoczne",
+        "Jednoznaczne dane firmy"
+      ],
+      "findings": [
+        {
+          "title": "Brak cen do zacytowania",
+          "severity": "High",
+          "description": "Pytania o koszt nie mają fragmentu.",
+          "recommendation": "Ceny od właściciela w tabeli."
+        },
+        {
+          "title": "Brak sameAs i zewnętrznego potwierdzenia tytułu",
+          "severity": "High",
+          "description": "Profil Google i Facebook nieznane.",
+          "recommendation": "Uzupełnić po podaniu adresów."
+        },
+        {
+          "title": "Krótkie odpowiedzi na stronach kodów",
+          "severity": "Medium",
+          "description": "11 z 12 ma 12-30 słów bez nazwy firmy.",
+          "recommendation": "Wydłużyć do 40-60 słów."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 40,
+      "what_works": [
+        "Alt opisowy na zdjęciu statuetek",
+        "Logotypy z wymiarami"
+      ],
+      "findings": [
+        {
+          "title": "Jedno prawdziwe zdjęcie w witrynie",
+          "severity": "High",
+          "description": "Brak zdjęć z pracy i właściciela.",
+          "recommendation": "Zdjęcia od właściciela."
+        }
+      ]
+    },
+    {
+      "name": "Local SEO",
+      "score": 49,
+      "what_works": [
+        "Spójne dane firmy na wszystkich stronach",
+        "Schema odpowiednia dla firmy bez lokalu"
+      ],
+      "findings": [
+        {
+          "title": "Druga działająca witryna pol-gaz.szczecin.pl",
+          "severity": "Critical",
+          "description": "Ten sam telefon, adres Chłodna 114, oferta klimatyzacji i solarów.",
+          "recommendation": "Przekierować 301 albo wyłączyć."
+        },
+        {
+          "title": "Profil Google niezweryfikowany",
+          "severity": "Critical",
+          "description": "Brak dostępu automatu; adres profilu nieznany.",
+          "recommendation": "Przejąć lub założyć profil; wpisać adres do firma.ts."
+        },
+        {
+          "title": "Rozbieżne wpisy w pkt.pl i wyszukiwarce Beretta",
+          "severity": "High",
+          "description": "Różne nazwy, adres Chłodna 114, stara domena.",
+          "recommendation": "Poprawić wpisy."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Przed wdrożeniem",
+        "items": [
+          "Przekierować lub wyłączyć pol-gaz.szczecin.pl",
+          "Aktualne dokumenty autoryzacji; poprawić podpis zdjęcia",
+          "Przepisać porady przy kodach błędów; poprawić kod A4",
+          "Rozstrzygnąć promień 60 km",
+          "Eksport linków z Search Console"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Tydzień 1",
+        "items": [
+          "Menu na telefonie",
+          "Rezerwacja miejsca na widżet opinii",
+          "Węzeł WebSite",
+          "Plakietki na stronie pomp ciepła",
+          "Serie Beretty i wzmianki o solarach",
+          "Pierwszy akapit stron kodów",
+          "Profil Google",
+          "Przekierowanie www",
+          "Wpisy pkt.pl i Beretta"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Miesiąc 1",
+        "items": [
+          "Ceny",
+          "Własna treść stron Unical i Saunier Duval",
+          "Opinie w HTML",
+          "Bloki odpowiedzi 40-60 słów",
+          "Cele dotykowe 44 px",
+          "Decyzja serwis/naprawa po sprawdzeniu w Google"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Stale",
+        "items": [
+          "29 adresów w indeksie po 2 tygodniach",
+          "CLS i LCP z danych użytkowników po 4 tygodniach",
+          "Wyświetlenia stron marek i usług po 6-10 tygodniach",
+          "Pozycja /bledy-kotlow/ i kliknięcia na '2951 junkers'"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

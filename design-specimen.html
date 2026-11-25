@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>POL-GAZ – próbnik czcionek i kolorów</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..110,400..800&family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@400;700&family=Sofia+Sans+Semi+Condensed:wght@600;700;800&family=Sofia+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --granat: #12245b;
+    --granat-ciemny: #0b1738;
+    --zolty: #ffc61a;
+    --zolty-ciemny: #e9b000;
+    --tlo: #ffffff;
+    --tlo-alt: #f2f4f8;
+    --tekst: #131a2b;
+    --tekst-2: #4b5672;
+    --linia: #d7dce7;
+    --awaria: #c2301c;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--tlo-alt); color: var(--tekst); font: 16px/1.6 "IBM Plex Sans", sans-serif; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px 64px; }
+  .intro h1 { font: 700 28px/1.2 "Barlow Semi Condensed", sans-serif; margin: 0 0 8px; color: var(--granat); }
+  .intro p { margin: 0 0 32px; color: var(--tekst-2); max-width: 70ch; }
+
+  .wariant { background: var(--tlo); border: 1px solid var(--linia); border-radius: 8px; margin-bottom: 32px; overflow: hidden; }
+  .wariant > header { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding: 12px 24px; border-bottom: 1px solid var(--linia); font-size: 14px; color: var(--tekst-2); }
+  .wariant > header strong { color: var(--tekst); font-size: 16px; }
+  .hero { background: var(--granat); color: #fff; padding: 40px 24px 36px; }
+  .plakietka { display: inline-block; background: var(--zolty); color: var(--granat-ciemny); padding: 4px 10px; border-radius: 4px; font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+  .hero h2 { margin: 0 0 12px; font-size: clamp(34px, 5.2vw, 56px); line-height: 1.05; max-width: 24ch; }
+  .hero p { margin: 0 0 24px; max-width: 58ch; color: #d5dcf0; font-size: 18px; }
+  .rzad { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+  .tel { display: inline-block; background: var(--zolty); color: var(--granat-ciemny); text-decoration: none; padding: 12px 20px; border-radius: 4px; font-size: 26px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .link { color: #fff; font-weight: 500; text-underline-offset: 4px; }
+  .tresc { padding: 28px 24px 32px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; }
+  .tresc h3 { margin: 0 0 8px; font-size: 26px; line-height: 1.15; color: var(--granat); }
+  .tresc p { margin: 0 0 12px; max-width: 62ch; }
+  .kod { display: flex; gap: 16px; align-items: flex-start; border: 1px solid var(--linia); border-radius: 8px; padding: 16px; }
+  .kod b { font: 500 22px/1 "IBM Plex Mono", monospace; background: var(--granat-ciemny); color: var(--zolty); padding: 10px 12px; border-radius: 4px; }
+  .kod span { font-size: 14px; color: var(--tekst-2); }
+  .kod strong { display: block; color: var(--tekst); font-size: 16px; }
+  @media (max-width: 720px) { .tresc { grid-template-columns: 1fr; } }
+
+  /* A: Barlow Semi Condensed + IBM Plex Sans */
+  .a .hero h2, .a .tresc h3 { font-family: "Barlow Semi Condensed", sans-serif; font-weight: 700; }
+  .a .tel { font-family: "Barlow Semi Condensed", sans-serif; font-weight: 700; font-size: 30px; }
+  .a { font-family: "IBM Plex Sans", sans-serif; }
+  /* B: Sofia Sans Semi Condensed + Sofia Sans */
+  .b .hero h2, .b .tresc h3 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 800; }
+  .b .tel { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 800; font-size: 30px; }
+  .b { font-family: "Sofia Sans", sans-serif; font-size: 17px; }
+  /* C: Archivo (jedna rodzina, oś szerokości) */
+  .c .hero h2, .c .tresc h3 { font-family: "Archivo", sans-serif; font-weight: 750; font-stretch: 80%; }
+  .c .tel { font-family: "Archivo", sans-serif; font-weight: 750; font-stretch: 80%; }
+  .c { font-family: "Archivo", sans-serif; font-stretch: 100%; }
+  /* Obecnie: Inter */
+  .teraz .hero h2, .teraz .tresc h3, .teraz .tel, .teraz { font-family: "Inter", sans-serif; }
+  .teraz .hero h2, .teraz .tresc h3, .teraz .tel { font-weight: 700; }
+
+  .paleta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; padding: 24px; }
+  .probka { border: 1px solid var(--linia); border-radius: 8px; overflow: hidden; font-size: 14px; }
+  .probka i { display: block; height: 64px; }
+  .probka div { padding: 8px 12px; }
+  .probka code { color: var(--tekst-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="intro">
+    <h1>POL-GAZ – próbnik czcionek i kolorów</h1>
+    <p>Trzy propozycje typografii na prawdziwych tekstach strony, na dole obecny Inter dla porównania. Kolory są płaskie, bez gradientów. Rekomendacja i uzasadnienie: DESIGN.md.</p>
+  </div>
+
+  <section class="wariant a">
+    <header><strong>A (rekomendowany): Barlow Semi Condensed + IBM Plex Sans</strong><span>kody błędów: IBM Plex Mono</span></header>
+    <div class="hero">
+      <span class="plakietka">Ambasador marki Beretta · od 1994 roku</span>
+      <h2>Serwis kotłów gazowych w Szczecinie</h2>
+      <p>Naprawiamy, przeglądamy i montujemy kotły Beretta, Junkers, Buderus, Vaillant, Unical i Saunier Duval. Dojeżdżamy do 60 km od Szczecina.</p>
+      <div class="rzad"><a class="tel" href="tel:+48601418645">601 418 645</a><a class="link" href="#">Zobacz zakres usług</a></div>
+    </div>
+    <div class="tresc">
+      <div>
+        <h3>Przegląd kotła kondensacyjnego</h3>
+        <p>Czyścimy wymiennik i palnik, sprawdzamy szczelność instalacji gazowej, robimy analizę spalin i zostawiamy protokół przeglądu. Żółć, gęś, źdźbło, łączność, ścieżka — test polskich znaków.</p>
+      </div>
+      <div class="kod"><b>F28</b><span><strong>Vaillant: brak zapłonu</strong>Sprawdź, czy zawór gazu jest otwarty, i zresetuj kocioł.</span></div>
+    </div>
+  </section>
+
+  <section class="wariant b">
+    <header><strong>B: Sofia Sans Semi Condensed + Sofia Sans</strong><span>jedna nadrodzina, miękkie</span></header>
+    <div class="hero">
+      <span class="plakietka">Ambasador marki Beretta · od 1994 roku</span>
+      <h2>Serwis kotłów gazowych w Szczecinie</h2>
+      <p>Naprawiamy, przeglądamy i montujemy kotły Beretta, Junkers, Buderus, Vaillant, Unical i Saunier Duval. Dojeżdżamy do 60 km od Szczecina.</p>
+      <div class="rzad"><a class="tel" href="tel:+48601418645">601 418 645</a><a class="link" href="#">Zobacz zakres usług</a></div>
+    </div>
+    <div class="tresc">
+      <div>
+        <h3>Przegląd kotła kondensacyjnego</h3>
+        <p>Czyścimy wymiennik i palnik, sprawdzamy szczelność instalacji gazowej, robimy analizę spalin i zostawiamy protokół przeglądu. Żółć, gęś, źdźbło, łączność, ścieżka — test polskich znaków.</p>
+      </div>
+      <div class="kod"><b>F28</b><span><strong>Vaillant: brak zapłonu</strong>Sprawdź, czy zawór gazu jest otwarty, i zresetuj kocioł.</span></div>
+    </div>
+  </section>
+
+  <section class="wariant c">
+    <header><strong>C: Archivo (jedna rodzina zmienna)</strong><span>nagłówki zwężone do 80%, tekst 100%</span></header>
+    <div class="hero">
+      <span class="plakietka">Ambasador marki Beretta · od 1994 roku</span>
+      <h2>Serwis kotłów gazowych w Szczecinie</h2>
+      <p>Naprawiamy, przeglądamy i montujemy kotły Beretta, Junkers, Buderus, Vaillant, Unical i Saunier Duval. Dojeżdżamy do 60 km od Szczecina.</p>
+      <div class="rzad"><a class="tel" href="tel:+48601418645">601 418 645</a><a class="link" href="#">Zobacz zakres usług</a></div>
+    </div>
+    <div class="tresc">
+      <div>
+        <h3>Przegląd kotła kondensacyjnego</h3>
+        <p>Czyścimy wymiennik i palnik, sprawdzamy szczelność instalacji gazowej, robimy analizę spalin i zostawiamy protokół przeglądu. Żółć, gęś, źdźbło, łączność, ścieżka — test polskich znaków.</p>
+      </div>
+      <div class="kod"><b>F28</b><span><strong>Vaillant: brak zapłonu</strong>Sprawdź, czy zawór gazu jest otwarty, i zresetuj kocioł.</span></div>
+    </div>
+  </section>
+
+  <section class="wariant teraz">
+    <header><strong>Obecnie: Inter</strong><span>dla porównania</span></header>
+    <div class="hero">
+      <span class="plakietka">Ambasador marki Beretta · od 1994 roku</span>
+      <h2>Serwis kotłów gazowych w Szczecinie</h2>
+      <p>Naprawiamy, przeglądamy i montujemy kotły Beretta, Junkers, Buderus, Vaillant, Unical i Saunier Duval. Dojeżdżamy do 60 km od Szczecina.</p>
+      <div class="rzad"><a class="tel" href="tel:+48601418645">601 418 645</a><a class="link" href="#">Zobacz zakres usług</a></div>
+    </div>
+  </section>
+
+  <section class="wariant">
+    <header><strong>Paleta</strong><span>płaskie wypełnienia</span></header>
+    <div class="paleta">
+      <div class="probka"><i style="background:#12245b"></i><div>Granat<br><code>#12245B</code></div></div>
+      <div class="probka"><i style="background:#0b1738"></i><div>Granat ciemny<br><code>#0B1738</code></div></div>
+      <div class="probka"><i style="background:#ffc61a"></i><div>Żółty gazowy<br><code>#FFC61A</code></div></div>
+      <div class="probka"><i style="background:#f2f4f8"></i><div>Tło alternatywne<br><code>#F2F4F8</code></div></div>
+      <div class="probka"><i style="background:#131a2b"></i><div>Tekst<br><code>#131A2B</code></div></div>
+      <div class="probka"><i style="background:#4b5672"></i><div>Tekst drugorzędny<br><code>#4B5672</code></div></div>
+      <div class="probka"><i style="background:#d7dce7"></i><div>Linia<br><code>#D7DCE7</code></div></div>
+      <div class="probka"><i style="background:#c2301c"></i><div>Awaria<br><code>#C2301C</code></div></div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+/* System wizualny: DESIGN.md. Płaskie kolory, bez gradientów i animacji ozdobnych. */
+@theme {
+  --color-granat: #12245b;
+  --color-granat-ciemny: #0b1738;
+  --color-zolty: #ffc61a;
+  --color-zolty-ciemny: #e9b000;
+  --color-tlo-alt: #f2f4f8;
+  --color-tekst: #131a2b;
+  --color-tekst-2: #4b5672;
+  --color-linia: #d7dce7;
+  --color-awaria: #c2301c;
+
+  --font-sans: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+  --font-naglowek: var(--font-barlow), "Arial Narrow", ui-sans-serif, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+  body {
+    color: var(--color-tekst);
+    background: #fff;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.0625rem;
+    }
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-naglowek);
+    color: var(--color-granat);
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-granat);
+    outline-offset: 2px;
+  }
+  .na-granacie :focus-visible {
+    outline-color: var(--color-zolty);
+  }
+  summary {
+    cursor: pointer;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .kontener {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  .sekcja {
+    padding-block: 4rem;
+  }
+  @media (min-width: 768px) {
+    .sekcja {
+      padding-block: 6rem;
+    }
+  }
+  .h1 {
+    font-size: 2.25rem;
+    line-height: 1.05;
+    font-weight: 700;
+  }
+  .h2 {
+    font-size: 1.75rem;
+    line-height: 1.15;
+    font-weight: 700;
+  }
+  .h3 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    .h1 {
+      font-size: 3.5rem;
+    }
+    .h2 {
+      font-size: 2.25rem;
+    }
+    .h3 {
+      font-size: 1.5rem;
+    }
+  }
+  .lead {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 768px) {
+    .lead {
+      font-size: 1.25rem;
+    }
+  }
+  .akapit {
+    max-width: 68ch;
+  }
+  .btn-tel {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    background: var(--color-zolty);
+    color: var(--color-granat-ciemny);
+    font-family: var(--font-naglowek);
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    padding: 0.875rem 1.25rem;
+    border-radius: 4px;
+    transition: background-color 150ms;
+  }
+  .btn-tel:hover {
+    background: var(--color-zolty-ciemny);
+  }
+  @media (min-width: 768px) {
+    .btn-tel {
+      font-size: 1.875rem;
+    }
+  }
+  .link {
+    color: var(--color-granat);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+  }
+  .link:hover {
+    text-decoration-thickness: 2px;
+  }
+  .odpowiedz {
+    border-left: 3px solid var(--color-granat);
+    padding-left: 1.25rem;
+    max-width: 68ch;
+  }
+  .karta {
+    border: 1px solid var(--color-linia);
+    border-radius: 8px;
+    background: #fff;
+  }
+  .plakietka {
+    display: inline-block;
+    background: var(--color-zolty);
+    color: var(--color-granat-ciemny);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+  }
+  .kod {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    background: var(--color-granat-ciemny);
+    color: var(--color-zolty);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  /* Kod jako link: cel dotykowy 44 px. */
+  /* Kod pokazany jak na wyświetlaczu kotła: pole wyszukiwarki, karta trafienia, nagłówek strony kodu. */
+  .wyswietlacz {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    background: var(--color-granat-ciemny);
+    color: var(--color-zolty);
+    border: 2px solid #33457f;
+    border-radius: 6px;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    caret-color: var(--color-zolty);
+  }
+  input.wyswietlacz {
+    text-transform: uppercase;
+  }
+  input.wyswietlacz::placeholder {
+    color: #7f8cb5;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  input.wyswietlacz:focus-visible {
+    outline: 3px solid var(--color-zolty);
+    outline-offset: 2px;
+  }
+  .kod-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+  }
+}
+
+/* Przesuwający się pasek logotypów w hero. Zatrzymuje się po najechaniu i przy fokusie. */
+.pasek-marek {
+  overflow: hidden;
+}
+.pasek-marek-tor {
+  display: flex;
+  width: max-content;
+  padding-block: 3px;
+  animation: pasek-marek 36s linear infinite;
+}
+.pasek-marek:hover .pasek-marek-tor,
+.pasek-marek:focus-within .pasek-marek-tor {
+  animation-play-state: paused;
+}
+@keyframes pasek-marek {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pasek-marek {
+    overflow-x: auto;
+  }
+  .pasek-marek-tor {
+    animation: none;
+  }
+
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
